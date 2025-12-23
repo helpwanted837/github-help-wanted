@@ -1,0 +1,4 @@
+{{- $limitRaw := (.Get "limit") | default "3" -}}
+{{- $limit := int $limitRaw -}}
+{{- partial "internal-links-inline.html" (dict "page" .Page "limit" $limit) -}}
+

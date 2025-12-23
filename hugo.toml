@@ -1,0 +1,38 @@
+baseURL = "https://github-help-wanted.com/"
+languageCode = "en"
+title = "GitHub Help Wanted"
+summaryLength = 30
+
+# PBN 必配：未来内容不提前构建（配合定时 Actions 做“自动发布”）
+buildFuture = false
+
+# 只保留我们需要的页面类型，避免生成无用的 taxonomy 页面
+disableKinds = ["taxonomy", "term"]
+
+enableRobotsTXT = true
+
+[params]
+brand = "GitHub Help Wanted"
+tagline = "Your Guide to Developer Success"
+description = "Resources for open source contribution, DevOps, testing, and product management."
+email = "hello@github-help-wanted.com"
+defaultOGImage = "/images/default-og.svg"
+
+[pagination]
+pagerSize = 10
+
+[outputs]
+home = ["HTML", "RSS", "Sitemap"]
+section = ["HTML"]
+page = ["HTML"]
+
+[outputFormats.Sitemap]
+mediaType = "application/xml"
+baseName = "sitemap"
+isPlainText = true
+rel = "sitemap"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,21 @@
+{{- $title := "" -}}
+{{- if .IsHome -}}
+  {{- $title = .Site.Title -}}
+{{- else -}}
+  {{- $title = printf "%s | %s" .Title .Site.Title -}}
+{{- end -}}
+
+{{- $desc := (.Description | default .Site.Params.description | default "") | plainify -}}
+{{- $img := .Params.image | default .Site.Params.defaultOGImage | default "" -}}
+
+<meta property="og:title" content="{{ $title }}" />
+{{- if $desc -}}<meta property="og:description" content="{{ $desc }}" />{{- end -}}
+<meta property="og:type" content="{{ cond .IsHome "website" "article" }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+{{- if $img -}}<meta property="og:image" content="{{ $img | absURL }}" />{{- end -}}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+{{- if $desc -}}<meta name="twitter:description" content="{{ $desc }}" />{{- end -}}
+{{- if $img -}}<meta name="twitter:image" content="{{ $img | absURL }}" />{{- end -}}

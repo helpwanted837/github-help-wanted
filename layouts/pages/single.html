@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    {{ partial "breadcrumb.html" . }}
+  </nav>
+
+  <article class="prose">
+    <header class="page-header">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ .Content }}
+  </article>
+{{ end }}
+

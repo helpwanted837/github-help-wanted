@@ -1,0 +1,14 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ $pages := sort .Site.Pages "Permalink" }}
+  {{ range $pages }}
+    {{ if and .Permalink (not .Sitemap.Disable) (ne .Kind "sitemap") (ne .Kind "robotsTXT") }}
+      {{ if not (in .RelPermalink "/page/") }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+        {{ with .Lastmod }}<lastmod>{{ .Format "2006-01-02T15:04:05Z07:00" }}</lastmod>{{ end }}
+  </url>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</urlset>

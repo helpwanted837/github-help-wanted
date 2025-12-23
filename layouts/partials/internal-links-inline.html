@@ -1,0 +1,16 @@
+{{- $page := .page | default . -}}
+{{- $limit := .limit | default 3 -}}
+{{- $data := site.Data.internal_links -}}
+{{- $entry := index $data $page.RelPermalink -}}
+
+{{- if and $entry $entry.links -}}
+  <aside class="inline-related" aria-label="Related articles">
+    <div class="inline-related__label">Related</div>
+    <ul class="inline-related__list">
+      {{- range first $limit $entry.links -}}
+        <li class="inline-related__item"><a href="{{ .url }}">{{ .title }}</a></li>
+      {{- end -}}
+    </ul>
+  </aside>
+{{- end -}}
+

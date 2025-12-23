@@ -1,0 +1,31 @@
+{
+  "header": [
+    { "name": "Open Source", "url": "/open-source/" },
+    { "name": "GitHub Pages", "url": "/github-pages/" },
+    { "name": "DevOps", "url": "/devops-engineer/" },
+    { "name": "SDLC", "url": "/sdlc/" },
+    { "name": "Unit Testing", "url": "/unit-testing/" },
+    { "name": "Product Management", "url": "/product-management/" }
+  ],
+  "footer": {
+    "categories": [
+      { "name": "Open Source", "url": "/open-source/" },
+      { "name": "GitHub Pages", "url": "/github-pages/" },
+      { "name": "DevOps Engineer", "url": "/devops-engineer/" },
+      { "name": "SDLC", "url": "/sdlc/" },
+      { "name": "Unit Testing", "url": "/unit-testing/" },
+      { "name": "Product Management", "url": "/product-management/" }
+    ],
+    "resources": [
+      { "name": "About Us", "url": "/about/" },
+      { "name": "Editorial Policy", "url": "/editorial-policy/" },
+      { "name": "Contact", "url": "/contact/" }
+    ],
+    "legal": [
+      { "name": "Privacy Policy", "url": "/privacy-policy/" },
+      { "name": "Terms of Service", "url": "/terms-of-service/" },
+      { "name": "Disclaimer", "url": "/disclaimer/" }
+    ]
+  }
+}
+

@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    {{ partial "breadcrumb.html" . }}
+  </nav>
+
+  <header class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+  </header>
+
+  <article class="prose">
+    {{ .Content }}
+  </article>
+
+  {{ $items := .RegularPages.ByDate.Reverse }}
+  {{ if gt (len $items) 0 }}
+    <section class="section-list">
+      <h2 class="section-title">Latest in {{ .Title }}</h2>
+      <div class="card-grid">
+        {{ range first 24 $items }}
+          <article class="card">
+            <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p class="card-desc">
+              {{- .Description | default (.Summary | plainify) -}}
+            </p>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+

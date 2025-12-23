@@ -1,0 +1,15 @@
+{{- $level := .Level -}}
+<h{{ $level }} id="{{ .Anchor | safeURL }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>
+  {{ .Text | safeHTML }}
+  <a class="heading-anchor" href="#{{ .Anchor | safeURL }}" aria-label="Link to this heading">#</a>
+</h{{ $level }}>
+
+{{- if eq $level 2 -}}
+  {{- $count := .Page.Scratch.Get "h2Count" | default 0 -}}
+  {{- $count = add $count 1 -}}
+  {{- .Page.Scratch.Set "h2Count" $count -}}
+  {{- if le $count 3 -}}
+    {{- partial "internal-links-inline.html" (dict "page" .Page "limit" 3) -}}
+  {{- end -}}
+{{- end -}}
+

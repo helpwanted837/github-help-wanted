@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      {{- if .IsHome -}}
+        {{ .Site.Title }}
+      {{- else -}}
+        {{ .Title }} | {{ .Site.Title }}
+      {{- end -}}
+    </title>
+
+    {{- $desc := (.Description | default .Site.Params.description | default "") | plainify -}}
+    {{- if $desc -}}
+      <meta name="description" content="{{ $desc }}" />
+    {{- end -}}
+
+    {{- with .Params.keywords -}}
+      <meta name="keywords" content="{{ delimit . ", " }}" />
+    {{- end -}}
+
+    {{- $canonical := .Params.canonical | default .Permalink -}}
+    <link rel="canonical" href="{{ $canonical }}" />
+
+    {{ partial "head/og.html" . }}
+    {{ partial "head/css.html" . }}
+
+    {{ partial "schema/website.html" . }}
+    {{ partial "schema/article.html" . }}
+    {{ partial "schema/breadcrumb.html" . }}
+    {{ partial "schema/faq.html" . }}
+
+    {{- with .OutputFormats.Get "RSS" -}}
+      <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}" />
+    {{- end -}}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    {{ partial "header.html" . }}
+
+    <main id="main" class="container">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

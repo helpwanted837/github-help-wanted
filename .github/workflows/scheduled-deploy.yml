@@ -1,0 +1,67 @@
+name: Scheduled Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *" # 每小时检查一次
+
+concurrency:
+  group: github-help-wanted-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Decide deploy (scheduled only)
+        if: github.event_name == 'schedule'
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pip install -r scripts/requirements.txt
+          result=$(python scripts/decide_deploy.py --workflow-file scheduled-deploy.yml)
+          echo "should_deploy=$result" >> $GITHUB_OUTPUT
+
+      - name: Random delay (jitter)
+        if: github.event_name == 'schedule' && steps.check.outputs.should_deploy == 'true'
+        run: sleep $((RANDOM % 900)) # 0-15 分钟随机延迟
+
+      - name: Setup Hugo
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Generate internal links
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        run: |
+          pip install -r scripts/requirements.txt
+          python scripts/generate_internal_links.py --incremental
+
+      - name: Build
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        run: hugo --minify --gc
+
+      - name: Deploy to Cloudflare Pages
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: github-help-wanted
+          directory: public
+          workingDirectory: .
+

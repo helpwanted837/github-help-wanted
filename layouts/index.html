@@ -1,0 +1,55 @@
+{{ define "main" }}
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-kicker">{{ .Site.Params.brand }}</p>
+      <h1 class="hero-title">{{ .Site.Params.tagline | default "Your Guide to Developer Success" }}</h1>
+      <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+      <p class="hero-cta">
+        <a class="button" href="/open-source/">Explore Categories</a>
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Featured Categories</h2>
+    <div class="card-grid">
+      {{ range site.Data.navigation.header }}
+        <article class="card">
+          <h3 class="card-title"><a href="{{ .url }}">{{ .name }}</a></h3>
+          {{ with (site.GetPage .url) }}
+            {{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="callout">
+      <h2 class="section-title">Start Your Open Source Journey</h2>
+      <p class="callout-text">
+        Learn how to contribute, find beginner-friendly issues, and build confidence through real pull requests.
+      </p>
+      <p class="callout-actions">
+        <a class="button button-secondary" href="/open-source/">Open Source Guides</a>
+      </p>
+    </div>
+  </section>
+
+  {{ $latest := where site.RegularPages "Section" "ne" "pages" }}
+  {{ $latest = where $latest "Type" "ne" "pages" }}
+  {{ $latest = $latest.ByDate.Reverse }}
+
+  <section class="section">
+    <h2 class="section-title">Latest Articles</h2>
+    <div class="list">
+      {{ range first 8 $latest }}
+        <article class="list-item">
+          <h3 class="list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p class="list-desc">{{ .Description | default (.Summary | plainify) }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+

@@ -1,0 +1,27 @@
+{{ $items := site.Data.navigation.header }}
+{{ $current := .RelPermalink }}
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a class="brand-link" href="/">{{ site.Params.brand | default site.Title }}</a>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+      <span class="nav-toggle-label">Menu</span>
+    </button>
+
+    <nav id="site-nav" class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        {{ range $items }}
+          {{ $url := .url }}
+          {{ $active := or (eq $current $url) (and (ne $url "/") (hasPrefix $current $url)) }}
+          <li class="nav-item">
+            <a class="nav-link {{ if $active }}is-active{{ end }}" href="{{ $url }}">{{ .name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>
+

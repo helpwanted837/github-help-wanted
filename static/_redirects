@@ -1,0 +1,4 @@
+# 说明：
+# - Cloudflare Pages 的 `_redirects` 不支持“按 query 参数匹配 source”，这里只放纯路径规则。
+# - 历史 `/?languages=...&labels=...` 这类 URL 的 301 由 Pages Functions 在 `functions/index.ts` 处理。
+

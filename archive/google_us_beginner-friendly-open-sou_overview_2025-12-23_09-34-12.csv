@@ -1,0 +1,41 @@
+#,Keyword,Country,Difficulty,Volume,CPC,CPS,Parent Keyword,Last Update,SERP Features,Global volume,Traffic potential,Global traffic potential,First seen,Intents,Languages
+1,github pull request,us,57,2100,0.25,0.98,github pull request,2025-12-19 00:29:41,"AI Overview,Video preview,Thumbnail,Sitelinks,People also ask",5400,5000,9500,2015-09-03,"Informational,Branded,Non-local",English
+2,gsoc,us,69,2000,0.25,0.46,gsoc,2025-12-22 23:59:07,"Sitelinks,People also ask,Top stories,Thumbnail,Video preview",8000,900,5900,2015-09-04,"Informational,Branded,Non-local",English
+3,git pull request,us,28,1700,0.08,0.99,github pull request,2025-12-21 20:49:22,"AI Overview,Video preview,Thumbnail,Sitelinks,People also ask,Top stories",4100,4900,9400,2015-09-15,"Informational,Non-branded,Non-local",English
+4,hacktoberfest,us,5,800,0.10,1.03,hacktoberfest,2025-12-13 21:59:15,"Sitelinks,People also ask,Top stories,Thumbnail,Video preview",10000,800,12000,2015-09-23,"Informational,Branded,Non-local",English
+5,open source community,us,55,250,2.50,0.74,open source community,2025-11-24 02:43:28,"AI Overview,Thumbnail,Sitelinks,People also ask,Knowledge panel",900,70,80,2015-09-13,"Informational,Non-branded,Non-local",English
+6,google summer of code,us,58,200,4.00,0.55,gsoc,2025-11-26 10:54:36,"Sitelinks,People also ask,Top stories,Thumbnail,Video preview",2000,900,6100,2015-09-06,"Informational,Branded,Non-local",English
+7,open source projects for beginners,us,8,200,2.50,1.37,open source projects for beginners,2025-12-21 23:24:24,"Sitelinks,AI Overview,Thumbnail,Video preview,Top stories,People also ask,Bottom ads,Paid sitelinks",500,70,100,2015-09-26,"Informational,Non-branded,Non-local",English
+8,how to contribute to open source,us,69,150,0.40,1.34,how to contribute to open source,2025-11-22 06:50:06,"Sitelinks,AI Overview,Discussions,Top stories,Thumbnail",600,200,350,2015-09-20,"Informational,Non-branded,Non-local",English
+9,good first issue,us,30,150,,,good first issue,2025-12-19 03:24:16,"Sitelinks,People also ask,Discussions",1800,90,500,2017-11-07,"Informational,Branded,Non-local",English
+10,github labels,us,2,150,,1.16,github labels,2025-12-14 13:37:56,"Sitelinks,People also ask",450,100,150,2016-01-12,"Informational,Branded,Non-local",English
+11,open source programs,us,82,100,2.50,0.95,open source programs,2025-11-10 16:08:40,"Sitelinks,Knowledge panel,People also ask",350,20,90,2015-09-08,"Informational,Non-branded,Non-local",English
+12,how to make a pull request,us,24,100,,1,create a pull request,2025-12-18 03:19:17,"AI Overview,Thumbnail,Sitelinks,People also ask",250,1100,3000,2015-10-04,"Informational,Non-branded,Non-local",English
+13,hacktoberfest 2025,us,,80,,,,,,1600,,,2024-08-09,,
+14,github issue tracker,us,2,70,4.00,1.08,github issue tracker,2025-12-19 10:52:10,"Sitelinks,People also ask",200,100,150,2015-09-03,"Informational,Branded,Non-local",English
+15,outreachy,us,7,70,0.25,1.1,outreachy,2025-12-13 05:24:48,"Sitelinks,People also ask",250,80,250,2015-10-05,"Informational,Branded,Non-local",
+16,open source contribution,us,75,50,0.06,1.14,how to contribute to open source,2025-11-27 11:40:34,"Sitelinks,People also ask,Top stories,Thumbnail",700,200,400,2015-09-15,"Informational,Non-branded,Non-local",English
+17,find open source projects,us,60,30,,,open-source projects,2025-11-26 17:58:24,"Sitelinks,Top stories,Thumbnail",50,1000,1300,2015-09-18,"Informational,Non-branded,Non-local",English
+18,github issue labels,us,3,20,,,github labels,2025-12-21 23:06:32,"Sitelinks,People also ask",60,100,150,2017-03-18,"Informational,Branded,Non-local",English
+19,hacktoberfest 2024,us,,10,,,,,,70,,,2023-09-01,,
+20,open source internship,us,2,10,,,open source programs,2025-12-18 06:23:06,"People also ask,Sitelinks",60,50,100,2020-01-16,"Informational,Non-branded,Non-local",English
+21,oss contribution,us,57,10,,,how to open source code,2025-12-04 16:50:03,"AI Overview,Thumbnail,People also ask,Sitelinks",20,30,100,2015-09-26,"Informational,Non-branded,Non-local",English
+22,open source contribution for beginners,us,50,10,2.00,,how to open source code,2025-11-24 03:36:37,"Sitelinks,Discussions,Top stories,Thumbnail,People also ask",40,30,80,2016-06-12,"Informational,Non-branded,Non-local",English
+23,beginner friendly open source projects,us,6,10,,,open source projects for beginners,2025-11-29 12:11:48,Sitelinks,40,200,400,2016-12-16,"Informational,Non-branded,Non-local",English
+24,pull request tutorial,us,,10,,,,,,30,,,2015-12-09,,
+25,my first pull request,us,,,,,,,,,,,2017-11-30,,
+26,help wanted github,us,,,,,,,,,,,2016-09-13,,
+27,good first issue finder,us,,,,,,,,10,,,2022-09-05,,
+28,github issues for beginners,us,,,,,,,,,,,2017-10-19,,
+29,first pull request,us,,,,,,,,10,,,2017-03-03,,
+30,how to get started with open source,us,,,,,,,,10,,,2016-12-19,,
+31,first open source contribution,us,,,,,,,,10,,,2017-02-21,,
+32,beginner open source,us,,,,,,,,,,,2016-12-31,,
+33,open source mentorship,us,,,,,,,,10,,,2022-11-06,,
+34,github contribution guide,us,,,,,,,,10,,,2020-01-13,,
+35,contribute to open source javascript,us,,,,,,,,,,,,,
+36,contribute to open source python,us,,,,,,,,,,,,,
+37,easy open source issues,us,,,,,,,,,,,,,
+38,how to find github issues,us,,,,,,,,,,,,,
+39,open source beginner guide,us,,,,,,,,,,,,,
+40,open source for students,us,,,,,,,,,,,,,

@@ -1,0 +1,13 @@
+{{- if .IsHome -}}
+  <a href="/">Home</a>
+{{- else -}}
+  <a href="/">Home</a>
+  {{- $ancestors := .Ancestors.Reverse -}}
+  {{- range $ancestors -}}
+    <span class="breadcrumb-sep">/</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{- end -}}
+  <span class="breadcrumb-sep">/</span>
+  <span aria-current="page">{{ .Title }}</span>
+{{- end -}}
+

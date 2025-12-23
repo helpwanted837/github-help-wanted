@@ -1,0 +1,47 @@
+{{ $nav := site.Data.navigation.footer }}
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-grid">
+      <section class="footer-col">
+        <h2 class="footer-title">Categories</h2>
+        <ul class="footer-list">
+          {{ range $nav.categories }}
+            <li><a href="{{ .url }}">{{ .name }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+
+      <section class="footer-col">
+        <h2 class="footer-title">Resources</h2>
+        <ul class="footer-list">
+          {{ range $nav.resources }}
+            <li><a href="{{ .url }}">{{ .name }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+
+      <section class="footer-col">
+        <h2 class="footer-title">Legal</h2>
+        <ul class="footer-list">
+          {{ range $nav.legal }}
+            <li><a href="{{ .url }}">{{ .name }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+
+      <section class="footer-col">
+        <h2 class="footer-title">Connect</h2>
+        <ul class="footer-list">
+          {{ with site.Params.email }}
+            <li><a href="mailto:{{ . }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+    </div>
+
+    <p class="footer-copy">
+      © {{ now.Format "2006" }} {{ site.Params.brand | default site.Title }}. All rights reserved.
+    </p>
+  </div>
+</footer>
+

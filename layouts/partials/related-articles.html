@@ -1,0 +1,37 @@
+{{- $manual := .Params.related -}}
+{{- if $manual -}}
+  <aside class="related">
+    <h2 class="section-title">Related Articles</h2>
+    <div class="list">
+      {{- range first 6 $manual -}}
+        {{- $u := . -}}
+        {{- with site.GetPage $u -}}
+          <article class="list-item">
+            <h3 class="list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </article>
+        {{- else -}}
+          <article class="list-item">
+            <h3 class="list-title"><a href="{{ $u }}">{{ $u }}</a></h3>
+          </article>
+        {{- end -}}
+      {{- end -}}
+    </div>
+  </aside>
+{{- else -}}
+  {{- $data := site.Data.internal_links -}}
+  {{- $key := .RelPermalink -}}
+  {{- $entry := index $data $key -}}
+
+  {{- if and $entry $entry.links -}}
+    <aside class="related">
+      <h2 class="section-title">Related Articles</h2>
+      <div class="list">
+        {{- range first 6 $entry.links -}}
+          <article class="list-item">
+            <h3 class="list-title"><a href="{{ .url }}">{{ .title }}</a></h3>
+          </article>
+        {{- end -}}
+      </div>
+    </aside>
+  {{- end -}}
+{{- end -}}
