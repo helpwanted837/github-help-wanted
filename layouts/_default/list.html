@@ -12,6 +12,8 @@
     {{ .Content }}
   </article>
 
+  {{ partial "faq-section.html" . }}
+
   {{ $items := .RegularPages.ByDate.Reverse }}
   {{ if gt (len $items) 0 }}
     <section class="section-list">
@@ -29,4 +31,3 @@
     </section>
   {{ end }}
 {{ end }}
-

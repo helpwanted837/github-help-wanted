@@ -1,0 +1,17 @@
+{{- $faq := .Params.faq -}}
+{{- if $faq -}}
+  <section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+    <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      {{- range $faq -}}
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary itemprop="name">{{ .question }}</summary>
+          <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">{{ .answer }}</p>
+          </div>
+        </details>
+      {{- end -}}
+    </div>
+  </section>
+{{- end -}}
+

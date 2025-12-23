@@ -18,6 +18,19 @@ description = "Resources for open source contribution, DevOps, testing, and prod
 email = "hello@github-help-wanted.com"
 defaultOGImage = "/images/default-og.svg"
 
+  [params.organization]
+  name = "GitHub Help Wanted"
+  logo = "/images/default-og.svg"
+  email = "hello@github-help-wanted.com"
+
+  # Umami Analytics (via Cloudflare Worker proxy)
+  # 1. 在 Umami 后台 (umami.hniapi.top) 添加站点，获取 websiteId
+  # 2. 部署 Worker: cd workers/umami-proxy && npx wrangler deploy
+  # 3. 将 enabled 改为 true
+  [params.umami]
+  enabled = false
+  websiteId = "REPLACE_WITH_YOUR_WEBSITE_ID"
+
 [pagination]
 pagerSize = 10
 

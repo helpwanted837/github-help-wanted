@@ -5,4 +5,5 @@
 node_modules/
 public/
 resources/
-
+__pycache__/
+*.pyc

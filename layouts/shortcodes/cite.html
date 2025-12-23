@@ -1,0 +1,13 @@
+{{- $url := .Get "url" -}}
+{{- $author := .Get "author" -}}
+{{- $title := .Get "title" -}}
+{{- $year := .Get "year" | default "" -}}
+
+<cite class="cite-reference">
+  <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+    {{- if $author -}}
+      {{- $author -}}{{- if $year }} ({{ $year }}){{ end -}}:{{- end -}}
+    <em>{{ $title }}</em>
+  </a>
+</cite>
+

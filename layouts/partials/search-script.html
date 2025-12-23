@@ -1,0 +1,131 @@
+<script>
+(() => {
+    const modal = document.getElementById('site-search');
+    const input = document.getElementById('site-search-input');
+    const results = document.getElementById('site-search-results');
+    if (!modal || !input || !results) return;
+
+    const openButton = document.getElementById('site-search-open');
+    const closeTargets = modal.querySelectorAll('[data-site-search-close]');
+
+    let pagefindPromise = null;
+    let debounceHandle = null;
+
+    function setOpen(isOpen) {
+        modal.hidden = !isOpen;
+        document.documentElement.classList.toggle('is-search-open', isOpen);
+        if (isOpen) {
+            requestAnimationFrame(() => input.focus());
+        }
+    }
+
+    function openSearch(prefill = '') {
+        setOpen(true);
+        if (typeof prefill === 'string' && prefill.length) {
+            input.value = prefill;
+        }
+        runSearch();
+    }
+
+    function closeSearch() {
+        setOpen(false);
+        input.value = '';
+        results.innerHTML = '';
+    }
+
+    async function ensurePagefind() {
+        if (window.pagefind) return window.pagefind;
+        if (pagefindPromise) return pagefindPromise;
+
+        pagefindPromise = new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = '/pagefind/pagefind.js';
+            script.async = true;
+            script.onload = () => (window.pagefind ? resolve(window.pagefind) : reject(new Error('pagefind missing')));
+            script.onerror = () => reject(new Error('failed to load pagefind'));
+            document.head.appendChild(script);
+        });
+
+        return pagefindPromise;
+    }
+
+    function renderEmpty(message) {
+        results.innerHTML = `<p class="site-search__hint">${message}</p>`;
+    }
+
+    async function runSearch() {
+        const query = input.value.trim();
+        if (!query) {
+            renderEmpty('Type to search...');
+            return;
+        }
+
+        results.innerHTML = '<p class="site-search__hint">Searching...</p>';
+
+        let pagefind;
+        try {
+            pagefind = await ensurePagefind();
+        } catch {
+            results.innerHTML =
+                '<p class="site-search__hint">Search index not available yet. (Pagefind builds on deploy.)</p>';
+            return;
+        }
+
+        const search = await pagefind.search(query);
+        const items = await Promise.all(search.results.slice(0, 8).map((r) => r.data()));
+
+        if (!items.length) {
+            renderEmpty('No results found.');
+            return;
+        }
+
+        results.innerHTML = items
+            .map((item) => {
+                const title = (item.meta && (item.meta.title || item.meta.h1)) || item.url;
+                const excerpt = item.excerpt || '';
+                return `
+<a class="site-search__result" href="${item.url}">
+  <div class="site-search__result-title">${title}</div>
+  <div class="site-search__result-excerpt">${excerpt}</div>
+</a>`;
+            })
+            .join('');
+    }
+
+    input.addEventListener('input', () => {
+        clearTimeout(debounceHandle);
+        debounceHandle = setTimeout(runSearch, 150);
+    });
+
+    if (openButton) {
+        openButton.addEventListener('click', () => openSearch());
+    }
+
+    closeTargets.forEach((el) => el.addEventListener('click', closeSearch));
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeSearch();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        const isOpen = !modal.hidden;
+
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+            e.preventDefault();
+            openSearch();
+            return;
+        }
+
+        if (isOpen && e.key === 'Escape') {
+            e.preventDefault();
+            closeSearch();
+        }
+    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const q = urlParams.get('q');
+    if (q && window.location.pathname.startsWith('/search')) {
+        openSearch(q);
+    }
+})();
+</script>

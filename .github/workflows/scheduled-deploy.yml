@@ -55,6 +55,10 @@ jobs:
         if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
         run: hugo --minify --gc
 
+      - name: Build search index (Pagefind)
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        run: npx pagefind --site public --output-subdir pagefind
+
       - name: Deploy to Cloudflare Pages
         if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
         uses: cloudflare/pages-action@v1

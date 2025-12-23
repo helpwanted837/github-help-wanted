@@ -1,0 +1,22 @@
+{{- $howto := .Params.howto -}}
+{{- if $howto -}}
+  {{- $steps := slice -}}
+  {{- range $i, $step := $howto.steps -}}
+    {{- $steps = $steps | append (dict
+      "@type" "HowToStep"
+      "position" (add $i 1)
+      "name" $step.name
+      "text" $step.text
+    ) -}}
+  {{- end -}}
+
+  {{- $data := dict
+    "@context" "https://schema.org"
+    "@type" "HowTo"
+    "name" ($howto.name | default .Title)
+    "totalTime" ($howto.totalTime | default "")
+    "step" $steps
+  -}}
+  <script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- end -}}
+

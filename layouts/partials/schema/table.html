@@ -1,0 +1,12 @@
+{{- $table := .Params.comparison_table -}}
+{{- if $table -}}
+  {{- $data := dict
+    "@context" "https://schema.org"
+    "@type" "Table"
+    "name" ($table.name | default (printf "%s Comparison" .Title))
+    "description" ((.Description | default .Site.Params.description | default "") | plainify)
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  -}}
+  <script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- end -}}
+

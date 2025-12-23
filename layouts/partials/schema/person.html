@@ -1,0 +1,14 @@
+{{- $people := .Params.people -}}
+{{- if $people -}}
+  {{- range $people -}}
+    {{- $data := dict
+      "@context" "https://schema.org"
+      "@type" "Person"
+      "name" (.name | default "Editor")
+      "description" (.description | default "")
+      "url" (.url | default "")
+    -}}
+    <script type="application/ld+json">{{ $data | jsonify }}</script>
+  {{- end -}}
+{{- end -}}
+

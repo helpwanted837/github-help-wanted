@@ -1,0 +1,25 @@
+{{- $org := .Site.Params.organization -}}
+{{- if not $org -}}
+  {{- $org = dict -}}
+{{- end -}}
+
+{{- $name := $org.name | default (.Site.Params.brand | default .Site.Title) -}}
+{{- $logo := $org.logo | default (.Site.Params.defaultOGImage | default "") -}}
+{{- $email := $org.email | default (.Site.Params.email | default "") -}}
+
+{{- $data := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "name" $name
+  "url" .Site.BaseURL
+-}}
+
+{{- if $logo -}}
+  {{- $data = merge $data (dict "logo" ($logo | absURL)) -}}
+{{- end -}}
+{{- if $email -}}
+  {{- $data = merge $data (dict "email" (printf "mailto:%s" $email)) -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ $data | jsonify }}</script>
+

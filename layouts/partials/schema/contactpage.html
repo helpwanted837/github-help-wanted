@@ -1,0 +1,11 @@
+{{- if eq .RelPermalink "/contact/" -}}
+  {{- $data := dict
+    "@context" "https://schema.org"
+    "@type" "ContactPage"
+    "name" .Title
+    "url" .Permalink
+    "description" ((.Description | default .Site.Params.description | default "") | plainify)
+  -}}
+  <script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- end -}}
+

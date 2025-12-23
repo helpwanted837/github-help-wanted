@@ -28,24 +28,41 @@
     {{ partial "head/css.html" . }}
 
     {{ partial "schema/website.html" . }}
+    {{ partial "schema/organization.html" . }}
     {{ partial "schema/article.html" . }}
     {{ partial "schema/breadcrumb.html" . }}
     {{ partial "schema/faq.html" . }}
+    {{ partial "schema/howto.html" . }}
+    {{ partial "schema/table.html" . }}
+    {{ partial "schema/itemlist.html" . }}
+    {{ partial "schema/contactpage.html" . }}
+    {{ partial "schema/person.html" . }}
 
     {{- with .OutputFormats.Get "RSS" -}}
       <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}" />
+    {{- end -}}
+
+    {{- if .Site.Params.umami.enabled -}}
+    <script
+      defer
+      src="/a/s.js"
+      data-website-id="{{ .Site.Params.umami.websiteId }}"
+      data-host-url="{{ .Site.BaseURL }}a"
+    ></script>
     {{- end -}}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     {{ partial "header.html" . }}
+    {{ partial "search-modal.html" . }}
 
-    <main id="main" class="container">
+    <main id="main" class="container" data-pagefind-body>
       {{ block "main" . }}{{ end }}
     </main>
 
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
+    {{ partial "search-script.html" . }}
   </body>
 </html>

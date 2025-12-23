@@ -1,0 +1,1726 @@
+pages:
+- type: home
+  section: home
+  url: /
+  keyword: developer success
+  min_words: 1500
+  schema:
+  - Organization
+  - WebSite
+- type: pillar
+  section: open-source
+  url: /open-source/
+  keyword: open source contribution
+  min_words: 3000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: pillar
+  section: github-pages
+  url: /github-pages/
+  keyword: github pages
+  min_words: 3000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: pillar
+  section: devops-engineer
+  url: /devops-engineer/
+  keyword: devops engineer
+  min_words: 3000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: pillar
+  section: sdlc
+  url: /sdlc/
+  keyword: sdlc
+  min_words: 3000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: pillar
+  section: unit-testing
+  url: /unit-testing/
+  keyword: unit testing
+  min_words: 3000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: pillar
+  section: product-management
+  url: /product-management/
+  keyword: product management
+  min_words: 3000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: trust
+  section: pages
+  url: /about/
+  keyword: ''
+  min_words: 800
+  schema:
+  - WebPage
+- type: trust
+  section: pages
+  url: /editorial-policy/
+  keyword: ''
+  min_words: 800
+  schema:
+  - WebPage
+- type: trust
+  section: pages
+  url: /privacy-policy/
+  keyword: ''
+  min_words: 800
+  schema:
+  - WebPage
+- type: trust
+  section: pages
+  url: /terms-of-service/
+  keyword: ''
+  min_words: 800
+  schema:
+  - WebPage
+- type: trust
+  section: pages
+  url: /contact/
+  keyword: ''
+  min_words: 800
+  schema:
+  - WebPage
+  - ContactPage
+- type: trust
+  section: pages
+  url: /disclaimer/
+  keyword: ''
+  min_words: 800
+  schema:
+  - WebPage
+- type: cluster
+  section: open-source
+  url: /open-source/hacktoberfest/
+  keyword: hacktoberfest 2025
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: open-source
+  url: /open-source/good-first-issue/
+  keyword: good first issue
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: open-source
+  url: /open-source/python/
+  keyword: python open source projects
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+- type: cluster
+  section: open-source
+  url: /open-source/javascript/
+  keyword: javascript open source
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: open-source
+  url: /open-source/rust/
+  keyword: rust open source projects
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+- type: cluster
+  section: open-source
+  url: /open-source/golang/
+  keyword: golang open source projects
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+- type: cluster
+  section: open-source
+  url: /open-source/how-to-contribute/
+  keyword: how to contribute to open source
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+- type: cluster
+  section: open-source
+  url: /open-source/beginners-guide/
+  keyword: open source for beginners
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/first-contribution/
+  keyword: first open source contribution
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/outreachy/
+  keyword: outreachy internship
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/gsoc/
+  keyword: google summer of code
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/maintainer-guide/
+  keyword: open source maintainer
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/licensing/
+  keyword: open source license types
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/mit-vs-gpl/
+  keyword: MIT vs GPL license
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+- type: extension
+  section: open-source
+  url: /open-source/contributing-md/
+  keyword: contributing.md template
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+- type: extension
+  section: open-source
+  url: /open-source/code-of-conduct/
+  keyword: open source code of conduct
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/issue-template/
+  keyword: github issue template
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+- type: extension
+  section: open-source
+  url: /open-source/pull-request-template/
+  keyword: pull request template
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+- type: extension
+  section: open-source
+  url: /open-source/triage/
+  keyword: open source triage
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/documentation/
+  keyword: open source documentation
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/security/
+  keyword: open source security best practices
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/sponsors/
+  keyword: github sponsors
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: open-source
+  url: /open-source/community/
+  keyword: open source community
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: github-pages
+  url: /github-pages/custom-domain/
+  keyword: github pages custom domain
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+- type: cluster
+  section: github-pages
+  url: /github-pages/jekyll/
+  keyword: github pages jekyll
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: github-pages
+  url: /github-pages/hugo/
+  keyword: github pages hugo
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: github-pages
+  url: /github-pages/deploy/
+  keyword: deploy to github pages
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+- type: cluster
+  section: github-pages
+  url: /github-pages/https/
+  keyword: github pages https
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: github-pages
+  url: /github-pages/404/
+  keyword: github pages 404 page
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: github-pages
+  url: /github-pages/redirect/
+  keyword: github pages redirect
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+- type: cluster
+  section: github-pages
+  url: /github-pages/react/
+  keyword: react github pages
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: github-pages
+  url: /github-pages/next-js/
+  keyword: next.js github pages
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: github-pages
+  url: /github-pages/template/
+  keyword: github pages template
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+- type: extension
+  section: github-pages
+  url: /github-pages/vs-netlify/
+  keyword: github pages vs netlify
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+- type: extension
+  section: github-pages
+  url: /github-pages/vs-vercel/
+  keyword: github pages vs vercel
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+- type: extension
+  section: github-pages
+  url: /github-pages/hosting/
+  keyword: github pages hosting
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: github-pages
+  url: /github-pages/ssl/
+  keyword: github pages ssl
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: github-pages
+  url: /github-pages/subdomain/
+  keyword: github pages subdomain
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/salary/
+  keyword: devops engineer salary
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/resume/
+  keyword: devops engineer resume
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+  priority: P0
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/job-description/
+  keyword: devops engineer job description
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/junior/
+  keyword: junior devops engineer
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/senior-salary/
+  keyword: senior devops engineer salary
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/interview-questions/
+  keyword: devops engineer interview questions
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/career-path/
+  keyword: devops engineer career path
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/skills/
+  keyword: devops engineer skills
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/responsibilities/
+  keyword: devops engineer responsibilities
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/how-to-become/
+  keyword: how to become devops engineer
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+  priority: P1
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/vs-software-engineer/
+  keyword: devops engineer vs software engineer
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+  priority: P1
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/roadmap/
+  keyword: devops engineer roadmap
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+  priority: P0
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/tools/
+  keyword: devops engineer tools
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+  priority: P2
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/projects/
+  keyword: devops engineer projects
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+  priority: P2
+- type: cluster
+  section: devops-engineer
+  url: /devops-engineer/entry-level/
+  keyword: entry level devops engineer
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: sdlc
+  url: /sdlc/agile/
+  keyword: agile sdlc
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: sdlc
+  url: /sdlc/tools/
+  keyword: sdlc tools
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+  priority: P0
+- type: cluster
+  section: sdlc
+  url: /sdlc/best-practices/
+  keyword: sdlc best practices
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: sdlc
+  url: /sdlc/security/
+  keyword: sdlc security
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: sdlc
+  url: /sdlc/methodology/
+  keyword: sdlc methodology
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: sdlc
+  url: /sdlc/documentation/
+  keyword: sdlc documentation
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: sdlc
+  url: /sdlc/devops/
+  keyword: devops sdlc
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: sdlc
+  url: /sdlc/types/
+  keyword: sdlc types
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: sdlc
+  url: /sdlc/vs-agile/
+  keyword: sdlc vs agile
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+  priority: P0
+- type: cluster
+  section: sdlc
+  url: /sdlc/planning-phase/
+  keyword: sdlc planning phase
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: sdlc
+  url: /sdlc/implementation/
+  keyword: sdlc implementation
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: sdlc
+  url: /sdlc/design-phase/
+  keyword: sdlc design phase
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: sdlc
+  url: /sdlc/interview-questions/
+  keyword: sdlc interview questions
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/what-is/
+  keyword: what is unit testing
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/vs-integration-testing/
+  keyword: unit testing vs integration testing
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+  priority: P0
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/best-practices/
+  keyword: unit testing best practices
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/tools/
+  keyword: unit testing tools
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+  priority: P0
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/how-to-write/
+  keyword: how to write unit tests
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+  priority: P0
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/python/
+  keyword: unit testing in python
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/automation/
+  keyword: unit testing automation
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/framework/
+  keyword: unit testing framework
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+  priority: P1
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/javascript/
+  keyword: unit testing javascript
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/java/
+  keyword: unit testing in java
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/examples/
+  keyword: unit testing examples
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+  priority: P1
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/strategies/
+  keyword: unit testing strategies
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/coverage/
+  keyword: unit testing coverage
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/tutorial/
+  keyword: unit testing tutorial
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/mocking/
+  keyword: unit testing mocking
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/tdd/
+  keyword: tdd unit testing
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/benefits/
+  keyword: unit testing benefits
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: unit-testing
+  url: /unit-testing/spring-boot/
+  keyword: unit testing spring boot
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: product-management
+  url: /product-management/software/
+  keyword: product management software
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: product-management
+  url: /product-management/tools/
+  keyword: product management tools
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+  priority: P0
+- type: cluster
+  section: product-management
+  url: /product-management/agile/
+  keyword: agile product management
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: product-management
+  url: /product-management/lifecycle/
+  keyword: product management lifecycle
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: product-management
+  url: /product-management/framework/
+  keyword: product management framework
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+  priority: P0
+- type: cluster
+  section: product-management
+  url: /product-management/books/
+  keyword: product management books
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+  priority: P1
+- type: cluster
+  section: product-management
+  url: /product-management/vs-project-management/
+  keyword: product management vs project management
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+  priority: P0
+- type: cluster
+  section: product-management
+  url: /product-management/salary/
+  keyword: product management salary
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: product-management
+  url: /product-management/templates/
+  keyword: product management templates
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+  - ItemList
+  priority: P1
+- type: cluster
+  section: product-management
+  url: /product-management/roadmap/
+  keyword: product management roadmap
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+  priority: P1
+- type: cluster
+  section: product-management
+  url: /product-management/process/
+  keyword: product management process
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: product-management
+  url: /product-management/best-practices/
+  keyword: product management best practices
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P0
+- type: cluster
+  section: product-management
+  url: /product-management/interview-questions/
+  keyword: product management interview questions
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: product-management
+  url: /product-management/skills/
+  keyword: product management skills
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: product-management
+  url: /product-management/how-to-become/
+  keyword: how to become product manager
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+  priority: P1
+- type: cluster
+  section: product-management
+  url: /product-management/metrics/
+  keyword: product management metrics
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P1
+- type: cluster
+  section: product-management
+  url: /product-management/strategy/
+  keyword: product management strategy
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: product-management
+  url: /product-management/responsibilities/
+  keyword: product management responsibilities
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: product-management
+  url: /product-management/career/
+  keyword: product management career
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: product-management
+  url: /product-management/kpi/
+  keyword: product management kpi
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: cluster
+  section: product-management
+  url: /product-management/beginners/
+  keyword: product management for beginners
+  min_words: 2000
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  priority: P2
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/certification/
+  keyword: devops certification
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/vs-sre/
+  keyword: devops vs sre
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/vs-developer/
+  keyword: devops vs developer
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/remote-jobs/
+  keyword: remote devops jobs
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/bootcamp/
+  keyword: devops bootcamp
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/aws-certification/
+  keyword: aws devops certification
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/azure-certification/
+  keyword: azure devops certification
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/gcp-certification/
+  keyword: gcp devops certification
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/kubernetes-certification/
+  keyword: kubernetes certification for devops
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/docker-certification/
+  keyword: docker certification for devops
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/terraform-certification/
+  keyword: terraform certification
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/learning-resources/
+  keyword: devops learning resources
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - ItemList
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/career-switch/
+  keyword: switch to devops
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/day-in-the-life/
+  keyword: day in the life devops engineer
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: devops-engineer
+  url: /devops-engineer/devsecops/
+  keyword: devsecops engineer
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+- type: extension
+  section: sdlc
+  url: /sdlc/phases/
+  keyword: sdlc phases
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: sdlc
+  url: /sdlc/waterfall/
+  keyword: waterfall sdlc
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: sdlc
+  url: /sdlc/models/
+  keyword: sdlc models
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: sdlc
+  url: /sdlc/testing/
+  keyword: sdlc testing phase
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: sdlc
+  url: /sdlc/maintenance/
+  keyword: sdlc maintenance
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: sdlc
+  url: /sdlc/requirements/
+  keyword: sdlc requirements
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: sdlc
+  url: /sdlc/iterative/
+  keyword: iterative sdlc
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: sdlc
+  url: /sdlc/spiral/
+  keyword: spiral model sdlc
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: sdlc
+  url: /sdlc/v-model/
+  keyword: v-model sdlc
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: sdlc
+  url: /sdlc/qa/
+  keyword: sdlc quality assurance
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/jest/
+  keyword: jest unit testing
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/pytest/
+  keyword: pytest unit testing
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/junit/
+  keyword: junit unit testing
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/mocha/
+  keyword: mocha unit testing
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/nunit/
+  keyword: nunit unit testing
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/xunit/
+  keyword: xunit unit testing
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/react/
+  keyword: react unit testing
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/angular/
+  keyword: angular unit testing
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/c-sharp/
+  keyword: c# unit testing
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: unit-testing
+  url: /unit-testing/vs-e2e/
+  keyword: unit testing vs e2e
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - Table
+- type: extension
+  section: product-management
+  url: /product-management/certification/
+  keyword: product management certification
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/resume/
+  keyword: product manager resume
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+  - HowTo
+- type: extension
+  section: product-management
+  url: /product-management/job-description/
+  keyword: product manager job description
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/associate-pm/
+  keyword: associate product manager
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/senior-pm/
+  keyword: senior product manager
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/technical-pm/
+  keyword: technical product manager
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/growth-pm/
+  keyword: growth product manager
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/b2b/
+  keyword: b2b product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/b2c/
+  keyword: b2c product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/jira/
+  keyword: jira for product managers
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/notion/
+  keyword: notion for product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/linear/
+  keyword: linear for product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/asana/
+  keyword: asana for product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/monday/
+  keyword: monday.com for product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/productboard/
+  keyword: productboard for product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/trello/
+  keyword: trello for product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/confluence/
+  keyword: confluence for product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/miro/
+  keyword: miro for product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/user-stories/
+  keyword: user stories
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/prioritization/
+  keyword: product prioritization
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/prd/
+  keyword: product requirements document
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/okr/
+  keyword: product okr
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/scrum/
+  keyword: product owner scrum
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/remote-jobs/
+  keyword: remote product manager jobs
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/stakeholder-management/
+  keyword: product manager stakeholder management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/product-discovery/
+  keyword: product discovery
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/go-to-market/
+  keyword: go to market product management
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage
+- type: extension
+  section: product-management
+  url: /product-management/ux/
+  keyword: product management ux
+  min_words: 1500
+  schema:
+  - Article
+  - BreadcrumbList
+  - FAQPage

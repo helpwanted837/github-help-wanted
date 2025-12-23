@@ -1,0 +1,14 @@
+# Umami analytics proxy Worker
+# Route: github-help-wanted.com/a/*
+
+name = "ghw-umami-proxy"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Proxy path: /a/*
+routes = [
+  { pattern = "github-help-wanted.com/a/*", zone_name = "github-help-wanted.com" }
+]
+
+[vars]
+UMAMI_HOST = "umami.hniapi.top"

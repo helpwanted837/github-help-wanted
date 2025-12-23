@@ -1,0 +1,23 @@
+{{- $list := .Params.itemlist -}}
+{{- if $list -}}
+  {{- $items := slice -}}
+  {{- range $i, $it := $list -}}
+    {{- $name := $it.name | default (printf "Item %d" (add $i 1)) -}}
+    {{- $url := $it.url | default "" -}}
+    {{- $items = $items | append (dict
+      "@type" "ListItem"
+      "position" (add $i 1)
+      "name" $name
+      "url" (cond (ne $url "") ($url | absURL) "")
+    ) -}}
+  {{- end -}}
+
+  {{- $data := dict
+    "@context" "https://schema.org"
+    "@type" "ItemList"
+    "name" .Title
+    "itemListElement" $items
+  -}}
+  <script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- end -}}
+

@@ -1,0 +1,29 @@
+<div class="site-search" id="site-search" hidden data-pagefind-ignore>
+    <div class="site-search__backdrop" data-site-search-close></div>
+    <div class="site-search__dialog" role="dialog" aria-modal="true" aria-label="Search">
+        <div class="site-search__header">
+            <svg class="site-search__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+                class="site-search__input"
+                id="site-search-input"
+                type="search"
+                placeholder="Search articles..."
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="Search site"
+            />
+            <button type="button" class="site-search__close" data-site-search-close aria-label="Close search (Esc)">
+                Esc
+            </button>
+        </div>
+
+        <div class="site-search__results" id="site-search-results" aria-live="polite"></div>
+
+        <div class="site-search__footer">
+            <span>Press Ctrl+K to search</span>
+        </div>
+    </div>
+</div>
