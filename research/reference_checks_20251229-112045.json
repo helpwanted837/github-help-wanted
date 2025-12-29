@@ -1,0 +1,3417 @@
+{
+  "started_at": "2025-12-29T11:20:13+08:00",
+  "timeout_seconds": 15.0,
+  "fetch_title": false,
+  "unique_urls": 89,
+  "pages": [
+    {
+      "url": "/",
+      "type": "home",
+      "path": "content/_index.md",
+      "refs": [
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://docs.github.com/en/pages",
+        "https://dora.dev/research/",
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://scrumguides.org/"
+      ]
+    },
+    {
+      "url": "/open-source/",
+      "type": "pillar",
+      "path": "content/open-source/_index.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/",
+        "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+      ]
+    },
+    {
+      "url": "/github-pages/",
+      "type": "pillar",
+      "path": "content/github-pages/_index.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/"
+      ]
+    },
+    {
+      "url": "/devops-engineer/",
+      "type": "pillar",
+      "path": "content/devops-engineer/_index.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://dora.dev/guides/dora-metrics-four-keys/",
+        "https://aws.amazon.com/devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+      ]
+    },
+    {
+      "url": "/sdlc/",
+      "type": "pillar",
+      "path": "content/sdlc/_index.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/",
+      "type": "pillar",
+      "path": "content/unit-testing/_index.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/",
+      "type": "pillar",
+      "path": "content/product-management/_index.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/about/",
+      "type": "trust",
+      "path": "content/pages/about.md",
+      "refs": [
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://docs.github.com/en/pages",
+        "https://dora.dev/research/",
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://scrumguides.org/"
+      ]
+    },
+    {
+      "url": "/editorial-policy/",
+      "type": "trust",
+      "path": "content/pages/editorial-policy.md",
+      "refs": [
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "https://dora.dev/research/",
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owasp.org/"
+      ]
+    },
+    {
+      "url": "/privacy-policy/",
+      "type": "trust",
+      "path": "content/pages/privacy-policy.md",
+      "refs": [
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "https://oag.ca.gov/privacy/ccpa",
+        "https://umami.is/docs",
+        "https://www.cloudflare.com/privacypolicy/",
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/terms-of-service/",
+      "type": "trust",
+      "path": "content/pages/terms-of-service.md",
+      "refs": [
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "https://www.cloudflare.com/terms/",
+        "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+        "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews"
+      ]
+    },
+    {
+      "url": "/contact/",
+      "type": "trust",
+      "path": "content/pages/contact.md",
+      "refs": [
+        "https://www.rfc-editor.org/rfc/rfc5322",
+        "https://www.rfc-editor.org/rfc/rfc6068",
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "https://oag.ca.gov/privacy/ccpa"
+      ]
+    },
+    {
+      "url": "/disclaimer/",
+      "type": "trust",
+      "path": "content/pages/disclaimer.md",
+      "refs": [
+        "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews",
+        "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+        "https://www.ftc.gov/business-guidance/resources/com-disclosures-how-make-effective-disclosures-digital-advertising",
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/open-source/hacktoberfest/",
+      "type": "cluster",
+      "path": "content/open-source/hacktoberfest.md",
+      "refs": [
+        "https://hacktoberfest.com/faq/",
+        "https://hacktoberfest.com/about",
+        "https://hacktoberfest.com/",
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics",
+        "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+        "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews"
+      ]
+    },
+    {
+      "url": "/open-source/good-first-issue/",
+      "type": "cluster",
+      "path": "content/open-source/good-first-issue.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://docs.github.com/github/administering-a-repository/finding-information-in-a-repository/using-search-to-filter-issues-and-pull-requests?tool=webui",
+        "https://docs.github.com/articles/creating-a-pull-request-from-a-fork",
+        "https://docs.github.com/articles/syncing-a-fork",
+        "https://opensource.guide/how-to-contribute/"
+      ]
+    },
+    {
+      "url": "/open-source/python/",
+      "type": "cluster",
+      "path": "content/open-source/python.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/javascript/",
+      "type": "cluster",
+      "path": "content/open-source/javascript.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/rust/",
+      "type": "cluster",
+      "path": "content/open-source/rust.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/golang/",
+      "type": "cluster",
+      "path": "content/open-source/golang.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/how-to-contribute/",
+      "type": "cluster",
+      "path": "content/open-source/how-to-contribute.md",
+      "refs": [
+        "https://opensource.guide/how-to-contribute/",
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://docs.github.com/articles/creating-a-pull-request-from-a-fork",
+        "https://docs.github.com/articles/syncing-a-fork",
+        "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews",
+        "https://docs.github.com/github/administering-a-repository/finding-information-in-a-repository/using-search-to-filter-issues-and-pull-requests?tool=webui"
+      ]
+    },
+    {
+      "url": "/open-source/beginners-guide/",
+      "type": "cluster",
+      "path": "content/open-source/beginners-guide.md",
+      "refs": [
+        "https://opensource.guide/how-to-contribute/",
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://docs.github.com/articles/fork-a-repo",
+        "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests",
+        "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project",
+        "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests"
+      ]
+    },
+    {
+      "url": "/open-source/first-contribution/",
+      "type": "extension",
+      "path": "content/open-source/first-contribution.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/outreachy/",
+      "type": "extension",
+      "path": "content/open-source/outreachy.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/gsoc/",
+      "type": "extension",
+      "path": "content/open-source/gsoc.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/maintainer-guide/",
+      "type": "extension",
+      "path": "content/open-source/maintainer-guide.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/licensing/",
+      "type": "extension",
+      "path": "content/open-source/licensing.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/mit-vs-gpl/",
+      "type": "extension",
+      "path": "content/open-source/mit-vs-gpl.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/contributing-md/",
+      "type": "extension",
+      "path": "content/open-source/contributing-md.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/code-of-conduct/",
+      "type": "extension",
+      "path": "content/open-source/code-of-conduct.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/issue-template/",
+      "type": "extension",
+      "path": "content/open-source/issue-template.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/pull-request-template/",
+      "type": "extension",
+      "path": "content/open-source/pull-request-template.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/triage/",
+      "type": "extension",
+      "path": "content/open-source/triage.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/documentation/",
+      "type": "extension",
+      "path": "content/open-source/documentation.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/security/",
+      "type": "extension",
+      "path": "content/open-source/security.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/sponsors/",
+      "type": "extension",
+      "path": "content/open-source/sponsors.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/open-source/community/",
+      "type": "extension",
+      "path": "content/open-source/community.md",
+      "refs": [
+        "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+        "https://opensource.guide/",
+        "https://www.linuxfoundation.org/resources/open-source-guides",
+        "https://opensource.org/licenses",
+        "https://spdx.org/licenses/",
+        "https://choosealicense.com/",
+        "https://hacktoberfest.com/",
+        "https://www.outreachy.org/",
+        "https://summerofcode.withgoogle.com/"
+      ]
+    },
+    {
+      "url": "/github-pages/custom-domain/",
+      "type": "cluster",
+      "path": "content/github-pages/custom-domain.md",
+      "refs": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages",
+        "https://developers.cloudflare.com/dns/manage-dns-records/reference/cname-flattening/"
+      ]
+    },
+    {
+      "url": "/github-pages/jekyll/",
+      "type": "cluster",
+      "path": "content/github-pages/jekyll.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/hugo/",
+      "type": "cluster",
+      "path": "content/github-pages/hugo.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/deploy/",
+      "type": "cluster",
+      "path": "content/github-pages/deploy.md",
+      "refs": [
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+        "https://docs.github.com/en/pages/quickstart",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
+      ]
+    },
+    {
+      "url": "/github-pages/https/",
+      "type": "cluster",
+      "path": "content/github-pages/https.md",
+      "refs": [
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages",
+        "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS",
+        "https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content"
+      ]
+    },
+    {
+      "url": "/github-pages/404/",
+      "type": "cluster",
+      "path": "content/github-pages/404.md",
+      "refs": [
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages",
+        "https://gohugo.io/templates/404/",
+        "https://jekyllrb.com/docs/permalinks/",
+        "https://www.rfc-editor.org/rfc/rfc9110.html#name-404-not-found"
+      ]
+    },
+    {
+      "url": "/github-pages/redirect/",
+      "type": "cluster",
+      "path": "content/github-pages/redirect.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/react/",
+      "type": "cluster",
+      "path": "content/github-pages/react.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/next-js/",
+      "type": "cluster",
+      "path": "content/github-pages/next-js.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/template/",
+      "type": "cluster",
+      "path": "content/github-pages/template.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/vs-netlify/",
+      "type": "extension",
+      "path": "content/github-pages/vs-netlify.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/vs-vercel/",
+      "type": "extension",
+      "path": "content/github-pages/vs-vercel.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/hosting/",
+      "type": "extension",
+      "path": "content/github-pages/hosting.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/ssl/",
+      "type": "extension",
+      "path": "content/github-pages/ssl.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/github-pages/subdomain/",
+      "type": "extension",
+      "path": "content/github-pages/subdomain.md",
+      "refs": [
+        "https://docs.github.com/en/pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "https://jekyllrb.com/docs/",
+        "https://gohugo.io/documentation/",
+        "https://nextjs.org/docs",
+        "https://react.dev/learn",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/salary/",
+      "type": "cluster",
+      "path": "content/devops-engineer/salary.md",
+      "refs": [
+        "https://survey.stackoverflow.co/2024/work/#salary",
+        "https://www.bls.gov/oes/current/oes151252.htm",
+        "https://www.onetonline.org/link/summary/15-1252.00",
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/"
+      ]
+    },
+    {
+      "url": "/devops-engineer/resume/",
+      "type": "cluster",
+      "path": "content/devops-engineer/resume.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/job-description/",
+      "type": "cluster",
+      "path": "content/devops-engineer/job-description.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/junior/",
+      "type": "cluster",
+      "path": "content/devops-engineer/junior.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/senior-salary/",
+      "type": "cluster",
+      "path": "content/devops-engineer/senior-salary.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/interview-questions/",
+      "type": "cluster",
+      "path": "content/devops-engineer/interview-questions.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/career-path/",
+      "type": "cluster",
+      "path": "content/devops-engineer/career-path.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/skills/",
+      "type": "cluster",
+      "path": "content/devops-engineer/skills.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/responsibilities/",
+      "type": "cluster",
+      "path": "content/devops-engineer/responsibilities.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/how-to-become/",
+      "type": "cluster",
+      "path": "content/devops-engineer/how-to-become.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/vs-software-engineer/",
+      "type": "cluster",
+      "path": "content/devops-engineer/vs-software-engineer.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/roadmap/",
+      "type": "cluster",
+      "path": "content/devops-engineer/roadmap.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/tools/",
+      "type": "cluster",
+      "path": "content/devops-engineer/tools.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/projects/",
+      "type": "cluster",
+      "path": "content/devops-engineer/projects.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/entry-level/",
+      "type": "cluster",
+      "path": "content/devops-engineer/entry-level.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/agile/",
+      "type": "cluster",
+      "path": "content/sdlc/agile.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/tools/",
+      "type": "cluster",
+      "path": "content/sdlc/tools.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/best-practices/",
+      "type": "cluster",
+      "path": "content/sdlc/best-practices.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/security/",
+      "type": "cluster",
+      "path": "content/sdlc/security.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/methodology/",
+      "type": "cluster",
+      "path": "content/sdlc/methodology.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/documentation/",
+      "type": "cluster",
+      "path": "content/sdlc/documentation.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/devops/",
+      "type": "cluster",
+      "path": "content/sdlc/devops.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/types/",
+      "type": "cluster",
+      "path": "content/sdlc/types.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/vs-agile/",
+      "type": "cluster",
+      "path": "content/sdlc/vs-agile.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/planning-phase/",
+      "type": "cluster",
+      "path": "content/sdlc/planning-phase.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/implementation/",
+      "type": "cluster",
+      "path": "content/sdlc/implementation.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/design-phase/",
+      "type": "cluster",
+      "path": "content/sdlc/design-phase.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/interview-questions/",
+      "type": "cluster",
+      "path": "content/sdlc/interview-questions.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/what-is/",
+      "type": "cluster",
+      "path": "content/unit-testing/what-is.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/vs-integration-testing/",
+      "type": "cluster",
+      "path": "content/unit-testing/vs-integration-testing.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/best-practices/",
+      "type": "cluster",
+      "path": "content/unit-testing/best-practices.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/tools/",
+      "type": "cluster",
+      "path": "content/unit-testing/tools.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/how-to-write/",
+      "type": "cluster",
+      "path": "content/unit-testing/how-to-write.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/python/",
+      "type": "cluster",
+      "path": "content/unit-testing/python.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/automation/",
+      "type": "cluster",
+      "path": "content/unit-testing/automation.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/framework/",
+      "type": "cluster",
+      "path": "content/unit-testing/framework.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/javascript/",
+      "type": "cluster",
+      "path": "content/unit-testing/javascript.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/java/",
+      "type": "cluster",
+      "path": "content/unit-testing/java.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/examples/",
+      "type": "cluster",
+      "path": "content/unit-testing/examples.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/strategies/",
+      "type": "cluster",
+      "path": "content/unit-testing/strategies.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/coverage/",
+      "type": "cluster",
+      "path": "content/unit-testing/coverage.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/tutorial/",
+      "type": "cluster",
+      "path": "content/unit-testing/tutorial.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/mocking/",
+      "type": "cluster",
+      "path": "content/unit-testing/mocking.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/tdd/",
+      "type": "cluster",
+      "path": "content/unit-testing/tdd.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/benefits/",
+      "type": "cluster",
+      "path": "content/unit-testing/benefits.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/spring-boot/",
+      "type": "cluster",
+      "path": "content/unit-testing/spring-boot.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/software/",
+      "type": "cluster",
+      "path": "content/product-management/software.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/tools/",
+      "type": "cluster",
+      "path": "content/product-management/tools.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/agile/",
+      "type": "cluster",
+      "path": "content/product-management/agile.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/lifecycle/",
+      "type": "cluster",
+      "path": "content/product-management/lifecycle.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/framework/",
+      "type": "cluster",
+      "path": "content/product-management/framework.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/books/",
+      "type": "cluster",
+      "path": "content/product-management/books.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/vs-project-management/",
+      "type": "cluster",
+      "path": "content/product-management/vs-project-management.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/salary/",
+      "type": "cluster",
+      "path": "content/product-management/salary.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/templates/",
+      "type": "cluster",
+      "path": "content/product-management/templates.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/roadmap/",
+      "type": "cluster",
+      "path": "content/product-management/roadmap.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/process/",
+      "type": "cluster",
+      "path": "content/product-management/process.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/best-practices/",
+      "type": "cluster",
+      "path": "content/product-management/best-practices.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/interview-questions/",
+      "type": "cluster",
+      "path": "content/product-management/interview-questions.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/skills/",
+      "type": "cluster",
+      "path": "content/product-management/skills.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/how-to-become/",
+      "type": "cluster",
+      "path": "content/product-management/how-to-become.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/metrics/",
+      "type": "cluster",
+      "path": "content/product-management/metrics.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/strategy/",
+      "type": "cluster",
+      "path": "content/product-management/strategy.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/responsibilities/",
+      "type": "cluster",
+      "path": "content/product-management/responsibilities.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/career/",
+      "type": "cluster",
+      "path": "content/product-management/career.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/kpi/",
+      "type": "cluster",
+      "path": "content/product-management/kpi.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/beginners/",
+      "type": "cluster",
+      "path": "content/product-management/beginners.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/certification/",
+      "type": "extension",
+      "path": "content/devops-engineer/certification.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/vs-sre/",
+      "type": "extension",
+      "path": "content/devops-engineer/vs-sre.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/vs-developer/",
+      "type": "extension",
+      "path": "content/devops-engineer/vs-developer.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/remote-jobs/",
+      "type": "extension",
+      "path": "content/devops-engineer/remote-jobs.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/bootcamp/",
+      "type": "extension",
+      "path": "content/devops-engineer/bootcamp.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/aws-certification/",
+      "type": "extension",
+      "path": "content/devops-engineer/aws-certification.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/azure-certification/",
+      "type": "extension",
+      "path": "content/devops-engineer/azure-certification.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/gcp-certification/",
+      "type": "extension",
+      "path": "content/devops-engineer/gcp-certification.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/kubernetes-certification/",
+      "type": "extension",
+      "path": "content/devops-engineer/kubernetes-certification.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/docker-certification/",
+      "type": "extension",
+      "path": "content/devops-engineer/docker-certification.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/terraform-certification/",
+      "type": "extension",
+      "path": "content/devops-engineer/terraform-certification.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/learning-resources/",
+      "type": "extension",
+      "path": "content/devops-engineer/learning-resources.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/career-switch/",
+      "type": "extension",
+      "path": "content/devops-engineer/career-switch.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/day-in-the-life/",
+      "type": "extension",
+      "path": "content/devops-engineer/day-in-the-life.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/devops-engineer/devsecops/",
+      "type": "extension",
+      "path": "content/devops-engineer/devsecops.md",
+      "refs": [
+        "https://dora.dev/research/",
+        "https://aws.amazon.com/devops/what-is-devops/",
+        "https://learn.microsoft.com/en-us/azure/devops/",
+        "https://kubernetes.io/docs/",
+        "https://landscape.cncf.io/",
+        "https://survey.stackoverflow.co/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/phases/",
+      "type": "extension",
+      "path": "content/sdlc/phases.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/waterfall/",
+      "type": "extension",
+      "path": "content/sdlc/waterfall.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/models/",
+      "type": "extension",
+      "path": "content/sdlc/models.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/testing/",
+      "type": "extension",
+      "path": "content/sdlc/testing.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/maintenance/",
+      "type": "extension",
+      "path": "content/sdlc/maintenance.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/requirements/",
+      "type": "extension",
+      "path": "content/sdlc/requirements.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/iterative/",
+      "type": "extension",
+      "path": "content/sdlc/iterative.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/spiral/",
+      "type": "extension",
+      "path": "content/sdlc/spiral.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/v-model/",
+      "type": "extension",
+      "path": "content/sdlc/v-model.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/sdlc/qa/",
+      "type": "extension",
+      "path": "content/sdlc/qa.md",
+      "refs": [
+        "https://csrc.nist.gov/Projects/ssdf",
+        "https://owaspsamm.org/",
+        "https://www.atlassian.com/agile/software-development/sdlc",
+        "https://www.microsoft.com/en-us/securityengineering/sdl",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/jest/",
+      "type": "extension",
+      "path": "content/unit-testing/jest.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/pytest/",
+      "type": "extension",
+      "path": "content/unit-testing/pytest.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/junit/",
+      "type": "extension",
+      "path": "content/unit-testing/junit.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/mocha/",
+      "type": "extension",
+      "path": "content/unit-testing/mocha.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/nunit/",
+      "type": "extension",
+      "path": "content/unit-testing/nunit.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/xunit/",
+      "type": "extension",
+      "path": "content/unit-testing/xunit.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/react/",
+      "type": "extension",
+      "path": "content/unit-testing/react.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/angular/",
+      "type": "extension",
+      "path": "content/unit-testing/angular.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/c-sharp/",
+      "type": "extension",
+      "path": "content/unit-testing/c-sharp.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/unit-testing/vs-e2e/",
+      "type": "extension",
+      "path": "content/unit-testing/vs-e2e.md",
+      "refs": [
+        "https://xunit.net/",
+        "https://junit.org/junit5/docs/current/user-guide/",
+        "https://docs.pytest.org/en/stable/",
+        "https://jestjs.io/docs/getting-started",
+        "https://martinfowler.com/bliki/UnitTest.html",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/certification/",
+      "type": "extension",
+      "path": "content/product-management/certification.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/resume/",
+      "type": "extension",
+      "path": "content/product-management/resume.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/job-description/",
+      "type": "extension",
+      "path": "content/product-management/job-description.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/associate-pm/",
+      "type": "extension",
+      "path": "content/product-management/associate-pm.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/senior-pm/",
+      "type": "extension",
+      "path": "content/product-management/senior-pm.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/technical-pm/",
+      "type": "extension",
+      "path": "content/product-management/technical-pm.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/growth-pm/",
+      "type": "extension",
+      "path": "content/product-management/growth-pm.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/b2b/",
+      "type": "extension",
+      "path": "content/product-management/b2b.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/b2c/",
+      "type": "extension",
+      "path": "content/product-management/b2c.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/jira/",
+      "type": "extension",
+      "path": "content/product-management/jira.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/notion/",
+      "type": "extension",
+      "path": "content/product-management/notion.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/linear/",
+      "type": "extension",
+      "path": "content/product-management/linear.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/asana/",
+      "type": "extension",
+      "path": "content/product-management/asana.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/monday/",
+      "type": "extension",
+      "path": "content/product-management/monday.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/productboard/",
+      "type": "extension",
+      "path": "content/product-management/productboard.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/trello/",
+      "type": "extension",
+      "path": "content/product-management/trello.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/confluence/",
+      "type": "extension",
+      "path": "content/product-management/confluence.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/miro/",
+      "type": "extension",
+      "path": "content/product-management/miro.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/user-stories/",
+      "type": "extension",
+      "path": "content/product-management/user-stories.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/prioritization/",
+      "type": "extension",
+      "path": "content/product-management/prioritization.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/prd/",
+      "type": "extension",
+      "path": "content/product-management/prd.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/okr/",
+      "type": "extension",
+      "path": "content/product-management/okr.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/scrum/",
+      "type": "extension",
+      "path": "content/product-management/scrum.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/remote-jobs/",
+      "type": "extension",
+      "path": "content/product-management/remote-jobs.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/stakeholder-management/",
+      "type": "extension",
+      "path": "content/product-management/stakeholder-management.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/product-discovery/",
+      "type": "extension",
+      "path": "content/product-management/product-discovery.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/go-to-market/",
+      "type": "extension",
+      "path": "content/product-management/go-to-market.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "url": "/product-management/ux/",
+      "type": "extension",
+      "path": "content/product-management/ux.md",
+      "refs": [
+        "https://www.atlassian.com/agile/product-management",
+        "https://www.svpg.com/product-management-an-introduction/",
+        "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "https://scrumguides.org/",
+        "https://hbr.org/",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    }
+  ],
+  "checks": {
+    "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+      "title": null,
+      "elapsed_ms": 761,
+      "error": null,
+      "domain": "developers.google.com"
+    },
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "title": null,
+      "elapsed_ms": 407,
+      "error": null,
+      "domain": "developers.google.com"
+    },
+    "https://developers.google.com/search/docs/fundamentals/creating-helpful-content": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "title": null,
+      "elapsed_ms": 504,
+      "error": null,
+      "domain": "developers.google.com"
+    },
+    "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github",
+      "title": null,
+      "elapsed_ms": 25,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages",
+      "title": null,
+      "elapsed_ms": 8,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://dora.dev/research/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://dora.dev/research/",
+      "title": null,
+      "elapsed_ms": 1127,
+      "error": null,
+      "domain": "dora.dev"
+    },
+    "https://csrc.nist.gov/Projects/ssdf": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://csrc.nist.gov/Projects/ssdf",
+      "title": null,
+      "elapsed_ms": 1195,
+      "error": null,
+      "domain": "csrc.nist.gov"
+    },
+    "https://scrumguides.org/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://scrumguides.org/",
+      "title": null,
+      "elapsed_ms": 27,
+      "error": null,
+      "domain": "scrumguides.org"
+    },
+    "https://opensource.guide/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://opensource.guide/",
+      "title": null,
+      "elapsed_ms": 27,
+      "error": null,
+      "domain": "opensource.guide"
+    },
+    "https://www.linuxfoundation.org/resources/open-source-guides": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.linuxfoundation.org/resources/open-source-guides",
+      "title": null,
+      "elapsed_ms": 98,
+      "error": null,
+      "domain": "www.linuxfoundation.org"
+    },
+    "https://opensource.org/licenses": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://opensource.org/licenses",
+      "title": null,
+      "elapsed_ms": 43,
+      "error": null,
+      "domain": "opensource.org"
+    },
+    "https://spdx.org/licenses/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://spdx.org/licenses/",
+      "title": null,
+      "elapsed_ms": 1010,
+      "error": null,
+      "domain": "spdx.org"
+    },
+    "https://choosealicense.com/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://choosealicense.com/",
+      "title": null,
+      "elapsed_ms": 29,
+      "error": null,
+      "domain": "choosealicense.com"
+    },
+    "https://hacktoberfest.com/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://hacktoberfest.com/",
+      "title": null,
+      "elapsed_ms": 119,
+      "error": null,
+      "domain": "hacktoberfest.com"
+    },
+    "https://www.outreachy.org/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.outreachy.org/",
+      "title": null,
+      "elapsed_ms": 1125,
+      "error": null,
+      "domain": "www.outreachy.org"
+    },
+    "https://summerofcode.withgoogle.com/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://summerofcode.withgoogle.com/",
+      "title": null,
+      "elapsed_ms": 231,
+      "error": null,
+      "domain": "summerofcode.withgoogle.com"
+    },
+    "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests",
+      "title": null,
+      "elapsed_ms": 38,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+      "title": null,
+      "elapsed_ms": 9,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+      "title": null,
+      "elapsed_ms": 8,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+      "title": null,
+      "elapsed_ms": 8,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+      "title": null,
+      "elapsed_ms": 7,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages",
+      "title": null,
+      "elapsed_ms": 11,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+      "title": null,
+      "elapsed_ms": 9,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+      "title": null,
+      "elapsed_ms": 9,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://jekyllrb.com/docs/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://jekyllrb.com/docs/",
+      "title": null,
+      "elapsed_ms": 26,
+      "error": null,
+      "domain": "jekyllrb.com"
+    },
+    "https://gohugo.io/documentation/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://gohugo.io/documentation/",
+      "title": null,
+      "elapsed_ms": 30,
+      "error": null,
+      "domain": "gohugo.io"
+    },
+    "https://dora.dev/guides/dora-metrics-four-keys/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://dora.dev/guides/dora-metrics-four-keys/",
+      "title": null,
+      "elapsed_ms": 26,
+      "error": null,
+      "domain": "dora.dev"
+    },
+    "https://aws.amazon.com/devops/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://aws.amazon.com/devops/",
+      "title": null,
+      "elapsed_ms": 215,
+      "error": null,
+      "domain": "aws.amazon.com"
+    },
+    "https://learn.microsoft.com/en-us/azure/devops/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/",
+      "title": null,
+      "elapsed_ms": 41,
+      "error": null,
+      "domain": "learn.microsoft.com"
+    },
+    "https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://kubernetes.io/docs/concepts/overview/",
+      "title": null,
+      "elapsed_ms": 37,
+      "error": null,
+      "domain": "kubernetes.io"
+    },
+    "https://landscape.cncf.io/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://landscape.cncf.io/",
+      "title": null,
+      "elapsed_ms": 31,
+      "error": null,
+      "domain": "landscape.cncf.io"
+    },
+    "https://survey.stackoverflow.co/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://survey.stackoverflow.co/",
+      "title": null,
+      "elapsed_ms": 28,
+      "error": null,
+      "domain": "survey.stackoverflow.co"
+    },
+    "https://owaspsamm.org/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://owaspsamm.org/",
+      "title": null,
+      "elapsed_ms": 27,
+      "error": null,
+      "domain": "owaspsamm.org"
+    },
+    "https://www.atlassian.com/agile/software-development/sdlc": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.atlassian.com/agile/software-development/sdlc",
+      "title": null,
+      "elapsed_ms": 569,
+      "error": null,
+      "domain": "www.atlassian.com"
+    },
+    "https://www.microsoft.com/en-us/securityengineering/sdl": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.microsoft.com/en-us/securityengineering/sdl",
+      "title": null,
+      "elapsed_ms": 433,
+      "error": null,
+      "domain": "www.microsoft.com"
+    },
+    "https://www.computer.org/education/bodies-of-knowledge/software-engineering": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+      "title": null,
+      "elapsed_ms": 377,
+      "error": null,
+      "domain": "www.computer.org"
+    },
+    "https://xunit.net/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://xunit.net/",
+      "title": null,
+      "elapsed_ms": 113,
+      "error": null,
+      "domain": "xunit.net"
+    },
+    "https://junit.org/junit5/docs/current/user-guide/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.junit.org/6.0.1/overview.html",
+      "title": null,
+      "elapsed_ms": 921,
+      "error": null,
+      "domain": "junit.org"
+    },
+    "https://docs.pytest.org/en/stable/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.pytest.org/en/stable/",
+      "title": null,
+      "elapsed_ms": 148,
+      "error": null,
+      "domain": "docs.pytest.org"
+    },
+    "https://jestjs.io/docs/getting-started": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://jestjs.io/docs/getting-started",
+      "title": null,
+      "elapsed_ms": 146,
+      "error": null,
+      "domain": "jestjs.io"
+    },
+    "https://martinfowler.com/bliki/UnitTest.html": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://martinfowler.com/bliki/UnitTest.html",
+      "title": null,
+      "elapsed_ms": 906,
+      "error": null,
+      "domain": "martinfowler.com"
+    },
+    "https://www.atlassian.com/agile/product-management": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.atlassian.com/agile/product-management",
+      "title": null,
+      "elapsed_ms": 510,
+      "error": null,
+      "domain": "www.atlassian.com"
+    },
+    "https://www.svpg.com/product-management-an-introduction/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.svpg.com/product-management-an-introduction/",
+      "title": null,
+      "elapsed_ms": 643,
+      "error": null,
+      "domain": "www.svpg.com"
+    },
+    "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+      "title": null,
+      "elapsed_ms": 315,
+      "error": null,
+      "domain": "rework.withgoogle.com"
+    },
+    "https://hbr.org/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://hbr.org/",
+      "title": null,
+      "elapsed_ms": 431,
+      "error": null,
+      "domain": "hbr.org"
+    },
+    "https://owasp.org/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://owasp.org/",
+      "title": null,
+      "elapsed_ms": 179,
+      "error": null,
+      "domain": "owasp.org"
+    },
+    "https://eur-lex.europa.eu/eli/reg/2016/679/oj": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "title": null,
+      "elapsed_ms": 1488,
+      "error": null,
+      "domain": "eur-lex.europa.eu"
+    },
+    "https://oag.ca.gov/privacy/ccpa": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://oag.ca.gov/privacy/ccpa",
+      "title": null,
+      "elapsed_ms": 1235,
+      "error": null,
+      "domain": "oag.ca.gov"
+    },
+    "https://umami.is/docs": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://umami.is/docs",
+      "title": null,
+      "elapsed_ms": 340,
+      "error": null,
+      "domain": "umami.is"
+    },
+    "https://www.cloudflare.com/privacypolicy/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.cloudflare.com/privacypolicy/",
+      "title": null,
+      "elapsed_ms": 463,
+      "error": null,
+      "domain": "www.cloudflare.com"
+    },
+    "https://www.cloudflare.com/terms/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.cloudflare.com/terms/",
+      "title": null,
+      "elapsed_ms": 258,
+      "error": null,
+      "domain": "www.cloudflare.com"
+    },
+    "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+      "title": null,
+      "elapsed_ms": 27,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews",
+      "title": null,
+      "elapsed_ms": 3855,
+      "error": null,
+      "domain": "www.ftc.gov"
+    },
+    "https://www.rfc-editor.org/rfc/rfc5322": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc5322",
+      "title": null,
+      "elapsed_ms": 153,
+      "error": null,
+      "domain": "www.rfc-editor.org"
+    },
+    "https://www.rfc-editor.org/rfc/rfc6068": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc6068",
+      "title": null,
+      "elapsed_ms": 80,
+      "error": null,
+      "domain": "www.rfc-editor.org"
+    },
+    "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+      "title": null,
+      "elapsed_ms": 364,
+      "error": null,
+      "domain": "www.ftc.gov"
+    },
+    "https://www.ftc.gov/business-guidance/resources/com-disclosures-how-make-effective-disclosures-digital-advertising": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.ftc.gov/business-guidance/resources/com-disclosures-how-make-effective-disclosures-digital-advertising",
+      "title": null,
+      "elapsed_ms": 2729,
+      "error": null,
+      "domain": "www.ftc.gov"
+    },
+    "https://hacktoberfest.com/faq/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://hacktoberfest.com/participation/#faq",
+      "title": null,
+      "elapsed_ms": 872,
+      "error": null,
+      "domain": "hacktoberfest.com"
+    },
+    "https://hacktoberfest.com/about": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://hacktoberfest.com/about",
+      "title": null,
+      "elapsed_ms": 43,
+      "error": null,
+      "domain": "hacktoberfest.com"
+    },
+    "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics",
+      "title": null,
+      "elapsed_ms": 11,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+      "title": null,
+      "elapsed_ms": 11,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews",
+      "title": null,
+      "elapsed_ms": 8,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/github/administering-a-repository/finding-information-in-a-repository/using-search-to-filter-issues-and-pull-requests?tool=webui": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests?tool=webui",
+      "title": null,
+      "elapsed_ms": 321,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/articles/creating-a-pull-request-from-a-fork": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork",
+      "title": null,
+      "elapsed_ms": 1032,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/articles/syncing-a-fork": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork",
+      "title": null,
+      "elapsed_ms": 763,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://opensource.guide/how-to-contribute/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://opensource.guide/how-to-contribute/",
+      "title": null,
+      "elapsed_ms": 271,
+      "error": null,
+      "domain": "opensource.guide"
+    },
+    "https://docs.github.com/articles/fork-a-repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo",
+      "title": null,
+      "elapsed_ms": 14,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project",
+      "title": null,
+      "elapsed_ms": 15,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests",
+      "title": null,
+      "elapsed_ms": 7,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+      "title": null,
+      "elapsed_ms": 7,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "title": null,
+      "elapsed_ms": 19,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://developers.cloudflare.com/dns/manage-dns-records/reference/cname-flattening/": {
+      "ok": false,
+      "status": 404,
+      "final_url": "https://developers.cloudflare.com/dns/manage-dns-records/reference/cname-flattening/",
+      "title": null,
+      "elapsed_ms": 305,
+      "error": "HTTP 404",
+      "domain": "developers.cloudflare.com"
+    },
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+      "title": null,
+      "elapsed_ms": 11,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://nextjs.org/docs": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://nextjs.org/docs",
+      "title": null,
+      "elapsed_ms": 139,
+      "error": null,
+      "domain": "nextjs.org"
+    },
+    "https://react.dev/learn": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://react.dev/learn",
+      "title": null,
+      "elapsed_ms": 133,
+      "error": null,
+      "domain": "react.dev"
+    },
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "title": null,
+      "elapsed_ms": 8,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/pages/quickstart": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/quickstart",
+      "title": null,
+      "elapsed_ms": 8,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+      "title": null,
+      "elapsed_ms": 7,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS",
+      "title": null,
+      "elapsed_ms": 55,
+      "error": null,
+      "domain": "developer.mozilla.org"
+    },
+    "https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Mixed_content",
+      "title": null,
+      "elapsed_ms": 15,
+      "error": null,
+      "domain": "developer.mozilla.org"
+    },
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+      "title": null,
+      "elapsed_ms": 8,
+      "error": null,
+      "domain": "docs.github.com"
+    },
+    "https://gohugo.io/templates/404/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://gohugo.io/templates/404/",
+      "title": null,
+      "elapsed_ms": 630,
+      "error": null,
+      "domain": "gohugo.io"
+    },
+    "https://jekyllrb.com/docs/permalinks/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://jekyllrb.com/docs/permalinks/",
+      "title": null,
+      "elapsed_ms": 278,
+      "error": null,
+      "domain": "jekyllrb.com"
+    },
+    "https://www.rfc-editor.org/rfc/rfc9110.html#name-404-not-found": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html#name-404-not-found",
+      "title": null,
+      "elapsed_ms": 67,
+      "error": null,
+      "domain": "www.rfc-editor.org"
+    },
+    "https://survey.stackoverflow.co/2024/work/#salary": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://survey.stackoverflow.co/2024/work#salary",
+      "title": null,
+      "elapsed_ms": 260,
+      "error": null,
+      "domain": "survey.stackoverflow.co"
+    },
+    "https://www.bls.gov/oes/current/oes151252.htm": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.bls.gov/oes/tables.htm",
+      "title": null,
+      "elapsed_ms": 704,
+      "error": null,
+      "domain": "www.bls.gov"
+    },
+    "https://www.onetonline.org/link/summary/15-1252.00": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.onetonline.org/link/summary/15-1252.00",
+      "title": null,
+      "elapsed_ms": 2217,
+      "error": null,
+      "domain": "www.onetonline.org"
+    },
+    "https://aws.amazon.com/devops/what-is-devops/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://aws.amazon.com/devops/what-is-devops/",
+      "title": null,
+      "elapsed_ms": 213,
+      "error": null,
+      "domain": "aws.amazon.com"
+    },
+    "https://kubernetes.io/docs/": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://kubernetes.io/docs/home/",
+      "title": null,
+      "elapsed_ms": 40,
+      "error": null,
+      "domain": "kubernetes.io"
+    }
+  },
+  "finished_at": "2025-12-29T11:20:45+08:00",
+  "ok": 88,
+  "failed": 1
+}
