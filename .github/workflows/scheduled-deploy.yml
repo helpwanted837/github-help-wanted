@@ -45,6 +45,22 @@ jobs:
           hugo-version: "latest"
           extended: true
 
+      - name: Setup Node (for Pagefind)
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Restore internal link state cache
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        uses: actions/cache@v4
+        with:
+          path: .cache/internal_links
+          key: internal-links-state-ghw-v1
+          restore-keys: |
+            internal-links-state-ghw-
+            internal-links-state-
+
       - name: Generate internal links
         if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
         run: |
@@ -59,6 +75,41 @@ jobs:
         if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
         run: npx pagefind --site public --output-subdir pagefind
 
+      - name: Check internal links (built output)
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        run: |
+          pip install -r scripts/requirements.txt
+          python scripts/check_internal_links.py --public public
+
+      - name: Sitemap sanity checks
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        run: |
+          set -euo pipefail
+
+          if [ ! -f public/sitemap.xml ]; then
+            echo "::error::Missing public/sitemap.xml"
+            exit 1
+          fi
+
+          # Hugo 可能把 sitemap.xml 压成一行，因此用“出现次数”而不是行数判断。
+          head -c 5 public/sitemap.xml | grep -q "<?xml" || { echo "::error::sitemap.xml missing XML header"; exit 1; }
+          grep -q "<urlset" public/sitemap.xml || { echo "::error::sitemap.xml missing <urlset>"; exit 1; }
+          if grep -q "&lt;\\?xml" public/sitemap.xml; then
+            echo "::error::sitemap.xml is HTML-escaped (check outputFormats.Sitemap.isPlainText)"
+            exit 1
+          fi
+
+          URL_COUNT=$(grep -o "<url>" public/sitemap.xml | wc -l | tr -d ' ')
+          if [ "${URL_COUNT:-0}" -lt 5 ]; then
+            echo "::error::sitemap.xml has too few URLs (${URL_COUNT:-0})"
+            exit 1
+          fi
+
+          if grep -q "/p/" public/sitemap.xml; then
+            echo "::error::sitemap.xml contains paginated URLs (/p/)"
+            exit 1
+          fi
+
       - name: Deploy to Cloudflare Pages
         if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
         uses: cloudflare/pages-action@v1
@@ -68,4 +119,3 @@ jobs:
           projectName: github-help-wanted
           directory: public
           workingDirectory: .
-

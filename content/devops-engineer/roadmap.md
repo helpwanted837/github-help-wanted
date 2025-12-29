@@ -1,8 +1,8 @@
 ---
 title: DevOps Engineer Roadmap
 description: 'Guide for: devops engineer roadmap'
-date: 2025-12-23 22:57:01+08:00
-draft: true
+date: 2026-01-01T10:04:28+08:00
+draft: false
 keywords:
 - devops engineer roadmap
 pillar: /devops-engineer/
@@ -48,7 +48,6 @@ howto:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 DevOps Engineer Roadmap is usually about outcomes: faster delivery, safer releases, and lower incident load. When you evaluate guidance (or job requirements), map every tool to an outcome and a verification step.
 
 A practical DevOps approach is constraints-first: identify reliability, security, and compliance constraints, then design the smallest automation that keeps changes reversible. Good systems make the safe path the easy path.

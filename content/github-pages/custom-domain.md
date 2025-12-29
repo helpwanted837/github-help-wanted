@@ -1,8 +1,8 @@
 ---
 title: GitHub Pages Custom Domain
 description: Step-by-step guide to set up a GitHub Pages custom domain (apex or www), enable HTTPS, and avoid common DNS and verification pitfalls.
-date: 2025-12-23 12:27:01+08:00
-draft: true
+date: 2026-01-02T08:37:33+08:00
+draft: false
 keywords:
 - github pages custom domain
 - github pages dns
@@ -55,7 +55,6 @@ howto:
 lastmod: '2025-12-29T20:05:34+08:00'
 type: cluster
 ---
-
 Setting up a GitHub Pages custom domain is mostly a DNS problem, not a “GitHub” problem. Once the DNS points to the correct place, Pages can publish the same static site you already have—but with your own domain and (usually) HTTPS.
 
 This guide walks through a safe setup path: pick the right domain shape (apex vs `www`), configure DNS, connect the domain in GitHub Pages settings, enable HTTPS, and (optionally but strongly recommended) verify the domain to reduce hijacking/takeover risk.

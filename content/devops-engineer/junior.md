@@ -1,8 +1,8 @@
 ---
 title: Junior DevOps Engineer
 description: 'Guide for: junior devops engineer'
-date: 2025-12-23 19:57:01+08:00
-draft: true
+date: 2025-12-31T11:03:40+08:00
+draft: false
 keywords:
 - junior devops engineer
 pillar: /devops-engineer/
@@ -38,7 +38,6 @@ faq:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 Junior DevOps Engineer is usually about outcomes: faster delivery, safer releases, and lower incident load. When you evaluate guidance (or job requirements), map every tool to an outcome and a verification step.
 
 A practical DevOps approach is constraints-first: identify reliability, security, and compliance constraints, then design the smallest automation that keeps changes reversible. Good systems make the safe path the easy path.

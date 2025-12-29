@@ -1,7 +1,7 @@
 ---
 title: "Hacktoberfest 2025: Rules and Participation Guide"
 description: "Learn Hacktoberfest 2025 rules, how PRs are counted, how to find eligible projects, and how to avoid spam so your contributions get accepted."
-date: 2025-12-23 12:30:00+08:00
+date: 2026-02-08T19:24:32+08:00
 lastmod: 2025-12-29T10:00:00+08:00
 draft: false
 type: cluster
@@ -25,7 +25,6 @@ faq:
   - question: How do I find Hacktoberfest issues?
     answer: Start with projects that opt in using the 'hacktoberfest' topic and look for labels like 'good first issue', 'help wanted', or 'documentation', then read CONTRIBUTING.md before opening a PR.
 ---
-
 Hacktoberfest is one of the simplest ways to practice real-world open-source workflows: finding an issue, reading contribution rules, shipping a small pull request (PR), and responding to review. Hacktoberfest 2025 has ended, but the workflow and “what counts” rules are still a useful reference—especially if you want to prepare for the next cycle or contribute year-round without annoying maintainers.
 
 The key mindset shift: treat Hacktoberfest as **quality-first contribution practice**, not a PR-collection sprint. If you focus on meaningful contributions, you’ll learn faster, your PRs are more likely to be accepted, and you’ll build a public track record that actually helps your career.

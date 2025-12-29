@@ -1,8 +1,8 @@
 ---
 title: GitHub Pages HTTPS
 description: How HTTPS works on GitHub Pages, how to enable Enforce HTTPS, and how to fix certificate and mixed-content issues for custom domains.
-date: '2026-01-02T03:55:54+08:00'
-draft: true
+date: '2026-02-03T23:09:11+08:00'
+draft: false
 commercial_value: 3
 affiliate_products: []
 keywords:
@@ -46,7 +46,6 @@ howto:
 lastmod: '2025-12-29T20:34:22+08:00'
 type: cluster
 ---
-
 HTTPS on GitHub Pages is usually “set it and forget it” for sites on the default `github.io` domain, but custom domains introduce two extra moving parts: DNS correctness and certificate provisioning. Most HTTPS problems on Pages are not about TLS details—they are about whether GitHub can validate your domain and whether your site loads everything over HTTPS.
 
 This guide explains how HTTPS works on GitHub Pages, how to enable **Enforce HTTPS**, and how to troubleshoot the two most common failure modes: **certificate not provisioned** and **mixed content**.

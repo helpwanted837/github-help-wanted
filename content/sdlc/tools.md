@@ -1,8 +1,8 @@
 ---
 title: SDLC Tools
 description: 'Guide for: sdlc tools'
-date: 2025-12-24 01:57:01+08:00
-draft: true
+date: 2026-01-08T09:00:54+08:00
+draft: false
 keywords:
 - sdlc tools
 pillar: /sdlc/
@@ -44,7 +44,6 @@ itemlist:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 SDLC Tools matters because software is a process, not a single event. Good SDLC practices reduce surprise by making requirements, design decisions, testing, and release criteria explicit.
 
 The right SDLC model depends on risk and feedback speed. When uncertainty is high, shorten the loop (iterative, prototypes). When compliance is strict, make evidence and traceability first-class.

@@ -1,8 +1,8 @@
 ---
 title: Deploy To GitHub Pages
 description: A practical, repeatable guide to deploy a static site to GitHub Pages using branch publishing or GitHub Actions, with checks and troubleshooting.
-date: '2026-01-02T02:25:54+08:00'
-draft: true
+date: '2026-02-03T11:06:11+08:00'
+draft: false
 commercial_value: 3
 affiliate_products: []
 keywords:
@@ -45,7 +45,6 @@ howto:
 lastmod: '2025-12-29T20:34:22+08:00'
 type: cluster
 ---
-
 Deploying to GitHub Pages is conceptually simple: GitHub Pages serves static files from a publishing source you configure. In practice, most failures happen when the publishing source doesn’t match your build output, or when the site URL/base path is misunderstood (especially for project sites).
 
 This guide gives you a repeatable deployment workflow with two supported models:

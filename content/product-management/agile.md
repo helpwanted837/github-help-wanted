@@ -1,8 +1,8 @@
 ---
 title: Agile Product Management
 description: 'Guide for: agile product management'
-date: 2025-12-24 18:27:01+08:00
-draft: true
+date: 2026-01-03T09:48:36+08:00
+draft: false
 keywords:
 - agile product management
 pillar: /product-management/
@@ -38,7 +38,6 @@ faq:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 Agile Product Management is easiest when you make decisions visible: why you chose a problem, what you’re optimizing for, and what trade-offs you accepted.
 
 A strong product process connects strategy to execution: customer insight → priorities → roadmap → delivery → learning. If any link is missing, teams ship features but don’t build understanding.

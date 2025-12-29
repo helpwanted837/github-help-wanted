@@ -1,8 +1,8 @@
 ---
 title: Product Management Vs Project Management
 description: 'Guide for: product management vs project management'
-date: 2025-12-24 22:57:01+08:00
-draft: true
+date: 2026-01-06T13:08:12+08:00
+draft: false
 keywords:
 - product management vs project management
 pillar: /product-management/
@@ -58,7 +58,6 @@ comparison_table:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 Product Management Vs Project Management is easiest when you make decisions visible: why you chose a problem, what you’re optimizing for, and what trade-offs you accepted.
 
 A strong product process connects strategy to execution: customer insight → priorities → roadmap → delivery → learning. If any link is missing, teams ship features but don’t build understanding.

@@ -1,8 +1,8 @@
 ---
 title: GitHub Pages Jekyll
 description: A practical guide to using Jekyll on GitHub Pages, including local builds, baseurl pitfalls, plugin limits, and when to switch to GitHub Actions.
-date: 2025-12-23 13:57:01+08:00
-draft: true
+date: 2026-01-02T16:38:34+08:00
+draft: false
 keywords:
 - github pages jekyll
 - github pages jekyll theme
@@ -46,7 +46,6 @@ howto:
 lastmod: '2025-12-29T21:02:41+08:00'
 type: cluster
 ---
-
 Jekyll is the “classic” GitHub Pages workflow: write Markdown, choose a theme, push to GitHub, and get a site. The confusing part is that there are now two common ways to ship a Jekyll site:
 
 1) let GitHub Pages build Jekyll for you, or  

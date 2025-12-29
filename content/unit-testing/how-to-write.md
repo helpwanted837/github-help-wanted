@@ -1,8 +1,8 @@
 ---
 title: How To Write Unit Tests
 description: 'Guide for: how to write unit tests'
-date: 2025-12-24 13:57:01+08:00
-draft: true
+date: 2026-01-09T20:48:04+08:00
+draft: false
 keywords:
 - how to write unit tests
 pillar: /unit-testing/
@@ -48,7 +48,6 @@ howto:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 How To Write Unit Tests works when tests are fast, deterministic, and written for behavior. If tests are slow or brittle, teams stop running them, and the whole system collapses.
 
 A useful unit test suite acts like a safety net for refactoring. It should tell you what broke, why it matters, and how to reproduce it—without requiring deep context.

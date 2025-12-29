@@ -2,6 +2,10 @@ baseURL = "https://github-help-wanted.com/"
 languageCode = "en"
 title = "GitHub Help Wanted"
 summaryLength = 30
+# RSS 描述摘要最大字符数（用于 Telegram/Telegraph 分发的 excerpt）
+rssDescriptionMaxChars = 1200
+# RSS content:encoded 最大字符数（0 表示不输出）
+rssContentMaxChars = 4000
 
 # PBN 必配：未来内容不提前构建（配合定时 Actions 做“自动发布”）
 buildFuture = false

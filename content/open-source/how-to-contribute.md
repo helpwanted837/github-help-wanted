@@ -1,9 +1,9 @@
 ---
 title: "How to Contribute to Open Source (Step-by-Step Guide)"
 description: "A practical end-to-end guide to contributing to open source on GitHub: choose a project, find an issue, open a PR, and handle review."
-date: 2025-12-31T20:25:54+08:00
+date: 2026-02-07T08:49:48+08:00
 lastmod: 2025-12-29T10:35:00+08:00
-draft: true
+draft: false
 type: cluster
 pillar: /open-source/
 commercial_value: 3
@@ -39,7 +39,6 @@ howto:
     - name: Respond to review and ship
       text: Address feedback promptly, keep scope tight, and iterate until merge.
 ---
-
 Contributing to open source is the fastest way to build real-world engineering skills: reading unfamiliar code, following team conventions, validating changes with CI, and communicating clearly in public. It can also be intimidating—especially when your first PR is reviewed by strangers.
 
 This guide removes guesswork with a simple, repeatable workflow you can reuse across projects. The goal is not “ship the biggest change,” but “ship the smallest change that’s clearly useful,” then learn from review and repeat.

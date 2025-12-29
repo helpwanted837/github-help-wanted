@@ -1,9 +1,9 @@
 ---
 title: "Open Source for Beginners: Your First Contribution (Step-by-Step)"
 description: "A beginner-friendly guide to open source: how to pick a project, find an issue, fork a repo, open a PR, and communicate well with maintainers."
-date: 2025-12-31T21:55:54+08:00
+date: 2026-02-06T10:56:18+08:00
 lastmod: 2025-12-29T11:05:00+08:00
-draft: true
+draft: false
 type: cluster
 pillar: /open-source/
 commercial_value: 3
@@ -25,7 +25,6 @@ faq:
   - question: What should I write in my first PR?
     answer: Keep it small, link the issue, explain what changed and why, and include “how to test” with commands or screenshots so maintainers can verify quickly.
 ---
-
 Open source can feel intimidating because the work is public: your code, your questions, your mistakes, and your learning all happen in front of strangers. The good news is that open source is also one of the fastest ways to learn how real teams work—because the workflow is the same: issues, pull requests, review, CI, and collaboration.
 
 This beginner guide is built around one outcome: **get your first contribution accepted** while respecting maintainers’ time. You don’t need to be an expert. You need a repeatable process and the ability to keep scope small and verifiable.

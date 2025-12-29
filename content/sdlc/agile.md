@@ -1,8 +1,8 @@
 ---
 title: Agile SDLC
 description: 'Guide for: agile sdlc'
-date: 2025-12-24 00:27:01+08:00
-draft: true
+date: 2026-01-06T23:22:54+08:00
+draft: false
 keywords:
 - agile sdlc
 pillar: /sdlc/
@@ -33,7 +33,6 @@ faq:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 Agile SDLC matters because software is a process, not a single event. Good SDLC practices reduce surprise by making requirements, design decisions, testing, and release criteria explicit.
 
 The right SDLC model depends on risk and feedback speed. When uncertainty is high, shorten the loop (iterative, prototypes). When compliance is strict, make evidence and traceability first-class.

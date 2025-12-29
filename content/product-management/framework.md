@@ -1,8 +1,8 @@
 ---
 title: Product Management Framework
 description: 'Guide for: product management framework'
-date: 2025-12-24 21:27:01+08:00
-draft: true
+date: 2026-01-04T08:57:08+08:00
+draft: false
 keywords:
 - product management framework
 pillar: /product-management/
@@ -49,7 +49,6 @@ itemlist:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 Product Management Framework is easiest when you make decisions visible: why you chose a problem, what you’re optimizing for, and what trade-offs you accepted.
 
 A strong product process connects strategy to execution: customer insight → priorities → roadmap → delivery → learning. If any link is missing, teams ship features but don’t build understanding.

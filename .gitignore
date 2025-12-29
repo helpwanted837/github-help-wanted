@@ -7,3 +7,4 @@ public/
 resources/
 __pycache__/
 *.pyc
+.cache/

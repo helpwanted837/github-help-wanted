@@ -15,6 +15,7 @@
     {{- if .IsHome -}}
       {{- $pages = .Site.RegularPages -}}
     {{- end -}}
+    {{- $pages = where $pages "Section" "ne" "pages" -}}
     {{- range $pages.ByDate.Reverse }}
     <item>
       <title>{{ .Title }}</title>
@@ -22,8 +23,18 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
       <guid>{{ .Permalink }}</guid>
 
-      {{/* 纯文本摘要：优先 frontmatter description，否则用 .Summary 去 HTML */}}
-      <description>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 300 }}{{ end }}</description>
+      {{/* 纯文本摘要：优先 frontmatter abstract；否则用正文纯文本截断（用于 Telegram/Telegraph 分发） */}}
+      {{- $excerpt := .Params.abstract | default "" -}}
+      {{- if not $excerpt -}}
+        {{- $excerpt = .Plain -}}
+      {{- end -}}
+      {{- $maxDesc := int (default 1200 .Site.Params.rssDescriptionMaxChars) -}}
+      {{- if gt $maxDesc 0 -}}
+        {{- $excerpt = $excerpt | plainify | truncate $maxDesc -}}
+      {{- else -}}
+        {{- $excerpt = $excerpt | plainify -}}
+      {{- end -}}
+      <description>{{ $excerpt }}</description>
 
       {{/* Markdown 正文：优先使用 .RawContent（原始 Markdown，不含 shortcode 渲染）。若为空则回退从源文件读取并剥离 frontmatter。 */}}
       {{- $markdown := .RawContent -}}

@@ -1,8 +1,8 @@
 ---
 title: DevOps Engineer Resume
 description: 'Guide for: devops engineer resume'
-date: 2025-12-23 16:57:01+08:00
-draft: true
+date: 2025-12-31T19:14:45+08:00
+draft: false
 keywords:
 - devops engineer resume
 pillar: /devops-engineer/
@@ -48,7 +48,6 @@ howto:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 DevOps Engineer Resume is usually about outcomes: faster delivery, safer releases, and lower incident load. When you evaluate guidance (or job requirements), map every tool to an outcome and a verification step.
 
 A practical DevOps approach is constraints-first: identify reliability, security, and compliance constraints, then design the smallest automation that keeps changes reversible. Good systems make the safe path the easy path.

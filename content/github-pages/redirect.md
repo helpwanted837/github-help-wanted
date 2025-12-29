@@ -2,8 +2,8 @@
 title: GitHub Pages Redirect
 description: Practical guide to github pages redirect with steps, examples, FAQs,
   and authoritative references.
-date: '2026-01-02T06:55:54+08:00'
-draft: true
+date: '2026-02-05T21:26:15+08:00'
+draft: false
 commercial_value: 3
 affiliate_products: []
 keywords:
@@ -48,7 +48,6 @@ howto:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 GitHub Pages Redirect often fails for boring reasons: DNS records, build output paths, or repo settings. This guide focuses on the practical checks that prevent common “it works locally but not on Pages” situations.
 
 Treat GitHub Pages as an automated deploy system: your job is to make builds deterministic, make URLs stable, and make errors easy to diagnose. Once those are true, publishing becomes low-maintenance.

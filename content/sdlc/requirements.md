@@ -2,8 +2,8 @@
 title: SDLC Requirements
 description: Deep dive into sdlc requirements with templates, checklists, FAQs, and
   references.
-date: '2026-01-08T06:55:54+08:00'
-draft: true
+date: '2026-03-16T13:30:20+08:00'
+draft: false
 commercial_value: 3
 affiliate_products: []
 keywords:
@@ -25,7 +25,6 @@ faq:
 lastmod: '2025-12-23T18:36:57+08:00'
 type: extension
 ---
-
 SDLC Requirements matters because software is a process, not a single event. Good SDLC practices reduce surprise by making requirements, design decisions, testing, and release criteria explicit.
 
 The right SDLC model depends on risk and feedback speed. When uncertainty is high, shorten the loop (iterative, prototypes). When compliance is strict, make evidence and traceability first-class.

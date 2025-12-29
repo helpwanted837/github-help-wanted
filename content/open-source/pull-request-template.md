@@ -2,8 +2,8 @@
 title: Pull Request Template
 description: Deep dive into pull request template with templates, checklists, FAQs,
   and references.
-date: '2026-01-01T12:55:54+08:00'
-draft: true
+date: '2026-02-25T21:18:07+08:00'
+draft: false
 commercial_value: 3
 affiliate_products: []
 keywords:
@@ -38,7 +38,6 @@ howto:
 lastmod: '2025-12-23T18:36:57+08:00'
 type: extension
 ---
-
 Pull Request Template is easier when you treat it as a workflow, not a one-off event. The fastest path is to pick an active repository, read its contribution guidelines, and ship a small change that maintainers can review quickly.
 
 A reliable contribution process has three parts: discovering the right issue, setting up a reproducible environment, and communicating clearly (scope, tests, screenshots). If any part is missing, your PR can stall even if the code is correct.

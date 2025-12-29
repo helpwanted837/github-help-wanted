@@ -2,7 +2,7 @@
 title: JavaScript Open Source
 description: A practical guide to contributing to JavaScript open source projects
   (frontend, Node.js, tooling).
-date: 2025-12-23 12:33:00+08:00
+date: 2026-02-09T09:31:16+08:00
 draft: false
 keywords:
 - javascript open source
@@ -40,7 +40,6 @@ faq:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 JavaScript Open Source is easier when you treat it as a workflow, not a one-off event. The fastest path is to pick an active repository, read its contribution guidelines, and ship a small change that maintainers can review quickly.
 
 A reliable contribution process has three parts: discovering the right issue, setting up a reproducible environment, and communicating clearly (scope, tests, screenshots). If any part is missing, your PR can stall even if the code is correct.

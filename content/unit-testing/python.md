@@ -2,8 +2,8 @@
 title: Unit Testing In Python
 description: Practical guide to unit testing in python with steps, examples, FAQs,
   and authoritative references.
-date: '2026-01-04T21:55:54+08:00'
-draft: true
+date: '2026-01-23T16:56:44+08:00'
+draft: false
 commercial_value: 3
 affiliate_products: []
 keywords:
@@ -39,7 +39,6 @@ faq:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 Unit Testing In Python works when tests are fast, deterministic, and written for behavior. If tests are slow or brittle, teams stop running them, and the whole system collapses.
 
 A useful unit test suite acts like a safety net for refactoring. It should tell you what broke, why it matters, and how to reproduce it—without requiring deep context.

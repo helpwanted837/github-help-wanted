@@ -2,141 +2,181 @@
   "/devops-engineer/": {
     "links": [
       {
-        "score": 0.1131,
+        "score": 0.2586,
+        "title": "Open Source",
+        "url": "/open-source/"
+      },
+      {
+        "score": 0.2369,
         "title": "Product Management",
         "url": "/product-management/"
       },
       {
-        "score": 0.0431,
-        "title": "Unit Testing",
-        "url": "/unit-testing/"
-      },
-      {
-        "score": 0.0354,
+        "score": 0.2319,
         "title": "SDLC",
         "url": "/sdlc/"
       },
       {
-        "score": 0.0242,
-        "title": "Open Source",
-        "url": "/open-source/"
+        "score": 0.2198,
+        "title": "Unit Testing",
+        "url": "/unit-testing/"
+      },
+      {
+        "score": 0.2074,
+        "title": "GitHub Pages",
+        "url": "/github-pages/"
       }
     ],
-    "updated": "2025-12-23T04:27:36.613125Z"
+    "updated": "2025-12-29T08:17:51.268825Z"
   },
   "/github-pages/": {
     "links": [
       {
-        "score": 0.02,
+        "score": 0.2114,
+        "title": "Open Source",
+        "url": "/open-source/"
+      },
+      {
+        "score": 0.2074,
+        "title": "DevOps Engineer",
+        "url": "/devops-engineer/"
+      },
+      {
+        "score": 0.1807,
+        "title": "Product Management",
+        "url": "/product-management/"
+      },
+      {
+        "score": 0.1746,
         "title": "Unit Testing",
         "url": "/unit-testing/"
       },
       {
-        "score": 0.0176,
-        "title": "Open Source",
-        "url": "/open-source/"
+        "score": 0.1738,
+        "title": "SDLC",
+        "url": "/sdlc/"
       }
     ],
-    "updated": "2025-12-23T04:27:36.613125Z"
+    "updated": "2025-12-29T08:17:51.268825Z"
   },
   "/open-source/": {
     "links": [
       {
-        "score": 0.0339,
-        "title": "Product Management",
-        "url": "/product-management/"
-      },
-      {
-        "score": 0.0242,
+        "score": 0.2586,
         "title": "DevOps Engineer",
         "url": "/devops-engineer/"
       },
       {
-        "score": 0.0195,
+        "score": 0.2487,
+        "title": "Product Management",
+        "url": "/product-management/"
+      },
+      {
+        "score": 0.2477,
         "title": "SDLC",
         "url": "/sdlc/"
       },
       {
-        "score": 0.0176,
+        "score": 0.2445,
+        "title": "Unit Testing",
+        "url": "/unit-testing/"
+      },
+      {
+        "score": 0.2114,
         "title": "GitHub Pages",
         "url": "/github-pages/"
       }
     ],
-    "updated": "2025-12-23T04:27:36.613125Z"
+    "updated": "2025-12-29T08:17:51.268825Z"
   },
   "/product-management/": {
     "links": [
       {
-        "score": 0.1131,
-        "title": "DevOps Engineer",
-        "url": "/devops-engineer/"
-      },
-      {
-        "score": 0.0432,
+        "score": 0.8966,
         "title": "SDLC",
         "url": "/sdlc/"
       },
       {
-        "score": 0.0339,
-        "title": "Open Source",
-        "url": "/open-source/"
-      },
-      {
-        "score": 0.0338,
-        "title": "Unit Testing",
-        "url": "/unit-testing/"
-      }
-    ],
-    "updated": "2025-12-23T04:27:36.613125Z"
-  },
-  "/sdlc/": {
-    "links": [
-      {
-        "score": 0.064,
+        "score": 0.8695,
         "title": "Unit Testing",
         "url": "/unit-testing/"
       },
       {
-        "score": 0.0432,
-        "title": "Product Management",
-        "url": "/product-management/"
-      },
-      {
-        "score": 0.0354,
-        "title": "DevOps Engineer",
-        "url": "/devops-engineer/"
-      },
-      {
-        "score": 0.0195,
+        "score": 0.2487,
         "title": "Open Source",
         "url": "/open-source/"
-      }
-    ],
-    "updated": "2025-12-23T04:27:36.613125Z"
-  },
-  "/unit-testing/": {
-    "links": [
-      {
-        "score": 0.064,
-        "title": "SDLC",
-        "url": "/sdlc/"
       },
       {
-        "score": 0.0431,
+        "score": 0.2369,
         "title": "DevOps Engineer",
         "url": "/devops-engineer/"
       },
       {
-        "score": 0.0338,
-        "title": "Product Management",
-        "url": "/product-management/"
-      },
-      {
-        "score": 0.02,
+        "score": 0.1807,
         "title": "GitHub Pages",
         "url": "/github-pages/"
       }
     ],
-    "updated": "2025-12-23T04:27:36.613125Z"
+    "updated": "2025-12-29T08:17:51.268825Z"
+  },
+  "/sdlc/": {
+    "links": [
+      {
+        "score": 0.8966,
+        "title": "Product Management",
+        "url": "/product-management/"
+      },
+      {
+        "score": 0.8689,
+        "title": "Unit Testing",
+        "url": "/unit-testing/"
+      },
+      {
+        "score": 0.2477,
+        "title": "Open Source",
+        "url": "/open-source/"
+      },
+      {
+        "score": 0.2319,
+        "title": "DevOps Engineer",
+        "url": "/devops-engineer/"
+      },
+      {
+        "score": 0.1738,
+        "title": "GitHub Pages",
+        "url": "/github-pages/"
+      }
+    ],
+    "updated": "2025-12-29T08:17:51.268825Z"
+  },
+  "/unit-testing/": {
+    "links": [
+      {
+        "score": 0.8695,
+        "title": "Product Management",
+        "url": "/product-management/"
+      },
+      {
+        "score": 0.8689,
+        "title": "SDLC",
+        "url": "/sdlc/"
+      },
+      {
+        "score": 0.2445,
+        "title": "Open Source",
+        "url": "/open-source/"
+      },
+      {
+        "score": 0.2198,
+        "title": "DevOps Engineer",
+        "url": "/devops-engineer/"
+      },
+      {
+        "score": 0.1746,
+        "title": "GitHub Pages",
+        "url": "/github-pages/"
+      }
+    ],
+    "updated": "2025-12-29T08:17:51.268825Z"
   }
 }

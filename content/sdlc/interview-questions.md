@@ -2,8 +2,8 @@
 title: SDLC Interview Questions
 description: Practical guide to sdlc interview questions with steps, examples, FAQs,
   and authoritative references.
-date: '2026-01-04T12:55:54+08:00'
-draft: true
+date: '2026-01-29T11:57:28+08:00'
+draft: false
 commercial_value: 3
 affiliate_products: []
 keywords:
@@ -39,7 +39,6 @@ faq:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 SDLC Interview Questions matters because software is a process, not a single event. Good SDLC practices reduce surprise by making requirements, design decisions, testing, and release criteria explicit.
 
 The right SDLC model depends on risk and feedback speed. When uncertainty is high, shorten the loop (iterative, prototypes). When compliance is strict, make evidence and traceability first-class.

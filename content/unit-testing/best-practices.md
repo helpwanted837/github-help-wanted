@@ -1,8 +1,8 @@
 ---
 title: Unit Testing Best Practices
 description: 'Guide for: unit testing best practices'
-date: 2025-12-24 10:57:01+08:00
-draft: true
+date: 2026-01-09T11:52:05+08:00
+draft: false
 keywords:
 - unit testing best practices
 pillar: /unit-testing/
@@ -38,7 +38,6 @@ faq:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 Unit Testing Best Practices works when tests are fast, deterministic, and written for behavior. If tests are slow or brittle, teams stop running them, and the whole system collapses.
 
 A useful unit test suite acts like a safety net for refactoring. It should tell you what broke, why it matters, and how to reproduce it—without requiring deep context.

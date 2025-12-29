@@ -1,7 +1,7 @@
 ---
 title: "Good First Issue: How to Find Beginner-Friendly Issues on GitHub"
 description: "Learn how to search for good first issues, evaluate project health, and ship a small PR with a maintainers-first workflow."
-date: 2025-12-23 12:31:00+08:00
+date: 2026-02-08T11:19:59+08:00
 lastmod: 2025-12-29T10:20:00+08:00
 draft: false
 type: cluster
@@ -25,7 +25,6 @@ faq:
   - question: How do I make sure my PR is reviewable?
     answer: Keep the change small, follow CONTRIBUTING.md, explain how to test, and include evidence (commands, screenshots, logs) so maintainers can verify quickly.
 ---
-
 A “good first issue” is not just an easy ticket—it’s a *workflow hack*. The best beginner issues are curated by maintainers to teach you the repo’s norms without forcing you to understand the entire codebase first. If you treat “good first issue” as a repeatable system (not a one-off lucky find), you’ll get consistent results: fewer stalled PRs, faster feedback, and higher merge rates.
 
 This guide focuses on two problems:

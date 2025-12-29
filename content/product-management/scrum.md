@@ -2,8 +2,8 @@
 title: Product Owner Scrum
 description: Deep dive into product owner scrum with templates, checklists, FAQs,
   and references.
-date: '2026-01-10T14:25:54+08:00'
-draft: true
+date: '2026-03-10T09:49:43+08:00'
+draft: false
 commercial_value: 3
 affiliate_products: []
 keywords:
@@ -25,7 +25,6 @@ faq:
 lastmod: '2025-12-23T18:36:57+08:00'
 type: extension
 ---
-
 Product Owner Scrum is easiest when you make decisions visible: why you chose a problem, what you’re optimizing for, and what trade-offs you accepted.
 
 A strong product process connects strategy to execution: customer insight → priorities → roadmap → delivery → learning. If any link is missing, teams ship features but don’t build understanding.

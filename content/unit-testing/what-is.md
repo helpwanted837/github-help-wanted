@@ -1,8 +1,8 @@
 ---
 title: What Is Unit Testing
 description: 'Guide for: what is unit testing'
-date: 2025-12-24 07:57:01+08:00
-draft: true
+date: 2026-01-11T12:00:28+08:00
+draft: false
 keywords:
 - what is unit testing
 pillar: /unit-testing/
@@ -38,7 +38,6 @@ faq:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 What Is Unit Testing works when tests are fast, deterministic, and written for behavior. If tests are slow or brittle, teams stop running them, and the whole system collapses.
 
 A useful unit test suite acts like a safety net for refactoring. It should tell you what broke, why it matters, and how to reproduce it—without requiring deep context.

@@ -2,7 +2,7 @@
 title: Python Open Source
 description: How to find Python open source projects and contribute effectively as
   a beginner.
-date: 2025-12-23 12:32:00+08:00
+date: 2026-02-09T22:24:14+08:00
 draft: false
 keywords:
 - python open source projects
@@ -52,7 +52,6 @@ itemlist:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 Python Open Source Projects is easier when you treat it as a workflow, not a one-off event. The fastest path is to pick an active repository, read its contribution guidelines, and ship a small change that maintainers can review quickly.
 
 A reliable contribution process has three parts: discovering the right issue, setting up a reproducible environment, and communicating clearly (scope, tests, screenshots). If any part is missing, your PR can stall even if the code is correct.

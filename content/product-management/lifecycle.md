@@ -1,8 +1,8 @@
 ---
 title: Product Management Lifecycle
 description: 'Guide for: product management lifecycle'
-date: 2025-12-24 19:57:01+08:00
-draft: true
+date: 2026-01-04T23:37:35+08:00
+draft: false
 keywords:
 - product management lifecycle
 pillar: /product-management/
@@ -38,7 +38,6 @@ faq:
 lastmod: '2025-12-23T18:40:14+08:00'
 type: cluster
 ---
-
 Product Management Lifecycle is easiest when you make decisions visible: why you chose a problem, what you’re optimizing for, and what trade-offs you accepted.
 
 A strong product process connects strategy to execution: customer insight → priorities → roadmap → delivery → learning. If any link is missing, teams ship features but don’t build understanding.

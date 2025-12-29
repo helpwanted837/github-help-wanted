@@ -1,9 +1,9 @@
 ---
 title: "Unit Testing vs Integration Testing: Differences, Examples, and When to Use Each (2025)"
 description: "Learn the difference between unit tests and integration tests, when to use each, how to build a balanced test strategy, and common mistakes to avoid in 2025."
-date: '2025-12-24T09:27:01+08:00'
+date: '2026-01-10T21:45:44+08:00'
 lastmod: '2025-12-29T12:00:00+08:00'
-draft: true
+draft: false
 type: cluster
 pillar: /unit-testing/
 priority: P0
@@ -47,7 +47,6 @@ comparison_table:
       - Closest to real behavior
       - Slowest, brittle if overused
 ---
-
 Unit testing vs integration testing is a decision about **trade-offs**: speed vs realism, isolation vs confidence, and cost vs coverage. If you treat them as competing “religions,” you’ll either ship bugs because you didn’t test real boundaries, or you’ll ship slowly because your test suite is too heavy to run continuously.
 
 This guide explains what each test type is, how they differ, when to use each, and how to build a practical test strategy for modern apps (APIs, services, databases, and frontends).
