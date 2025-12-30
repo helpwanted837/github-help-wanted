@@ -1,0 +1,68 @@
+{{/*
+  Auto Comparison (github-help-wanted)
+
+  - Section-only: renders on `Kind == "section"` pages (content/<section>/_index.md)
+  - Uses data/comparisons.json, keyed by `.Section`
+  - Optional highlight: set `comparison_highlight` in frontmatter to match an option name
+*/}}
+
+{{- $page := . -}}
+{{- $section := $page.Section | default "" -}}
+
+{{- if and (eq $page.Kind "section") (ne $section "pages") -}}
+  {{- $compData := index $page.Site.Data.comparisons $section -}}
+  {{- if not $compData -}}
+    {{- /* No data for this section */ -}}
+  {{- else -}}
+
+    {{- $title := $compData.title | default "Comparison" -}}
+    {{- $subtitle := $compData.subtitle | default "" -}}
+    {{- $features := $compData.features | default (slice) -}}
+    {{- $options := $compData.options | default (dict) -}}
+    {{- $order := $compData.order | default (slice) -}}
+    {{- $highlight := $page.Params.comparison_highlight | default "" -}}
+
+    {{- /* NOTE: keep output deterministic; require `order` in data/comparisons.json */ -}}
+
+    {{- if and $features $options (gt (len $order) 0) -}}
+      <section class="comparison-section" aria-label="Comparison table">
+        <h2 class="comparison-title">{{ $title }}</h2>
+        {{- if $subtitle -}}<p class="comparison-subtitle">{{ $subtitle }}</p>{{- end -}}
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table" itemscope itemtype="https://schema.org/Table">
+            <thead>
+              <tr>
+                <th scope="col">Dimension</th>
+                {{- range $order -}}
+                  <th scope="col" {{ if and $highlight (eq $highlight .) }}class="comparison-highlight"{{ end }}>{{ . }}</th>
+                {{- end -}}
+              </tr>
+            </thead>
+            <tbody>
+              {{- range $i, $feature := $features -}}
+                <tr>
+                  <th scope="row" class="comparison-feature">
+                    {{- $feature.name -}}
+                    {{- if $feature.description -}}
+                      <span class="comparison-feature-desc">{{ $feature.description }}</span>
+                    {{- end -}}
+                  </th>
+                  {{- range $order -}}
+                    {{- $optName := . -}}
+                    {{- $vals := index $options $optName -}}
+                    {{- $v := "—" -}}
+                    {{- if and $vals (lt $i (len $vals)) -}}
+                      {{- $v = index $vals $i -}}
+                    {{- end -}}
+                    <td {{ if and $highlight (eq $highlight $optName) }}class="comparison-highlight"{{ end }}>{{ $v }}</td>
+                  {{- end -}}
+                </tr>
+              {{- end -}}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

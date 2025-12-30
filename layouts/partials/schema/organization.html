@@ -4,7 +4,14 @@
 {{- end -}}
 
 {{- $name := $org.name | default (.Site.Params.brand | default .Site.Title) -}}
-{{- $logo := $org.logo | default (.Site.Params.defaultOGImage | default "") -}}
+{{- $orgLogo := $org.logo | default "" -}}
+{{- $logo := $orgLogo | default (.Site.Params.defaultOGImage | default "") -}}
+{{- if not $orgLogo -}}
+  {{- $siteDefault := "og/site-default.jpg" -}}
+  {{- if fileExists (printf "static/%s" $siteDefault) -}}
+    {{- $logo = $siteDefault -}}
+  {{- end -}}
+{{- end -}}
 {{- $email := $org.email | default (.Site.Params.email | default "") -}}
 
 {{- $data := dict
@@ -22,4 +29,3 @@
 {{- end -}}
 
 <script type="application/ld+json">{{ $data | jsonify }}</script>
-

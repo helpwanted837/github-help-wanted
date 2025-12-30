@@ -1,0 +1,187 @@
+{
+  "_description": "Category-based comparison tables for pillar/section pages.",
+  "_usage": "Rendered by layouts/partials/auto-comparison.html. For github-help-wanted we key by `.Section` and only render on section pages (content/<section>/_index.md).",
+  "open-source": {
+    "title": "Open Source Contribution Options (Quick Comparison)",
+    "subtitle": "Pick a contribution type that matches your time, risk tolerance, and verification ability.",
+    "features": [
+      { "name": "Typical effort", "description": "Time for a first contribution" },
+      { "name": "Risk level", "description": "Likelihood of breaking product behavior" },
+      { "name": "Verification", "description": "How easy it is to prove it works" },
+      { "name": "Best for", "description": "Who should start here" },
+      { "name": "Common pitfall", "description": "What usually goes wrong" }
+    ],
+    "order": ["Documentation", "Issue triage", "Bug fix", "Test improvement"],
+    "options": {
+      "Documentation": [
+        "Low–medium",
+        "Low",
+        "Before/after text + screenshots",
+        "Beginners",
+        "Changing wording without aligning with project intent"
+      ],
+      "Issue triage": [
+        "Low",
+        "Low",
+        "Repro steps + minimal example",
+        "Beginners who like investigation",
+        "Not providing environment details or logs"
+      ],
+      "Bug fix": [
+        "Medium",
+        "Medium",
+        "Failing test → passing test",
+        "Intermediate contributors",
+        "Large scope without a clear reproduction"
+      ],
+      "Test improvement": [
+        "Medium",
+        "Low–medium",
+        "Tests pass locally + in CI",
+        "Contributors learning codebases",
+        "Writing brittle tests coupled to implementation details"
+      ]
+    }
+  },
+  "devops-engineer": {
+    "title": "DevOps Roles (Quick Comparison)",
+    "subtitle": "Different teams use different titles—this table helps you map expectations.",
+    "features": [
+      { "name": "Primary focus", "description": "What success looks like" },
+      { "name": "Core work", "description": "Typical responsibilities" },
+      { "name": "Key metrics", "description": "How impact is measured" },
+      { "name": "Strong skills", "description": "Where depth matters most" },
+      { "name": "Best fit", "description": "Common org context" }
+    ],
+    "order": ["DevOps Engineer", "SRE", "Platform Engineer"],
+    "options": {
+      "DevOps Engineer": [
+        "Fast, safe delivery",
+        "CI/CD, IaC, automation, enablement",
+        "Lead time, deploy frequency",
+        "Pipelines, cloud basics, debugging",
+        "Product teams scaling delivery"
+      ],
+      "SRE": [
+        "Reliability at scale",
+        "SLIs/SLOs, incident response, toil reduction",
+        "MTTR, change failure rate, SLO compliance",
+        "Observability, systems, incident leadership",
+        "High-traffic services with uptime goals"
+      ],
+      "Platform Engineer": [
+        "Internal platforms",
+        "Golden paths, developer experience, governance",
+        "Adoption, productivity, platform reliability",
+        "Platform design, self-serve tooling, security",
+        "Multi-team orgs needing standardization"
+      ]
+    }
+  },
+  "product-management": {
+    "title": "Product Roles (Quick Comparison)",
+    "subtitle": "Clarify ownership so expectations and handoffs are explicit.",
+    "features": [
+      { "name": "Owns outcomes?", "description": "Accountability for impact" },
+      { "name": "Main artifacts", "description": "Common deliverables" },
+      { "name": "Typical decisions", "description": "What they decide" },
+      { "name": "Daily collaboration", "description": "Who they work with" },
+      { "name": "Common pitfall", "description": "What derails the role" }
+    ],
+    "order": ["Product Manager", "Product Owner", "Program Manager"],
+    "options": {
+      "Product Manager": [
+        "✅ Yes",
+        "Problem framing, roadmap, success metrics",
+        "What to build and why (priorities)",
+        "Engineering, design, stakeholders, customers",
+        "Confusing outputs with outcomes"
+      ],
+      "Product Owner": [
+        "⚠️ Indirect",
+        "Backlog, user stories, acceptance criteria",
+        "What to build next (execution detail)",
+        "Engineering team + scrum stakeholders",
+        "Becoming a ticket router without product clarity"
+      ],
+      "Program Manager": [
+        "⚠️ Indirect",
+        "Plans, dependencies, status, risk logs",
+        "How/when teams ship together (coordination)",
+        "Multiple teams, leadership, ops",
+        "Status reporting without solving blockers"
+      ]
+    }
+  },
+  "unit-testing": {
+    "title": "Testing Types (Quick Comparison)",
+    "subtitle": "A balanced test strategy uses different layers for different risks.",
+    "features": [
+      { "name": "Speed", "description": "Typical runtime" },
+      { "name": "Scope", "description": "What it validates" },
+      { "name": "Flakiness risk", "description": "How often it fails for non-bugs" },
+      { "name": "Best for", "description": "Where it shines" },
+      { "name": "Common pitfall", "description": "What to avoid" }
+    ],
+    "order": ["Unit tests", "Integration tests", "End-to-end tests"],
+    "options": {
+      "Unit tests": [
+        "Fast",
+        "Single module/function",
+        "Low",
+        "Business logic, edge cases",
+        "Over-mocking and testing implementation details"
+      ],
+      "Integration tests": [
+        "Medium",
+        "Multiple components (DB/API)",
+        "Medium",
+        "Contract mismatches, real boundaries",
+        "Slow suites that don’t run locally"
+      ],
+      "End-to-end tests": [
+        "Slow",
+        "Full user workflow",
+        "High",
+        "Critical paths and releases",
+        "Brittle selectors and unstable environments"
+      ]
+    }
+  },
+  "sdlc": {
+    "title": "SDLC Approaches (Quick Comparison)",
+    "subtitle": "Most teams blend approaches; the goal is fast feedback with safe changes.",
+    "features": [
+      { "name": "Cadence", "description": "How often you ship" },
+      { "name": "Feedback loop", "description": "How quickly you learn" },
+      { "name": "Risk control", "description": "How failures are limited" },
+      { "name": "Where it fits", "description": "Common environment" },
+      { "name": "Common failure", "description": "What goes wrong" }
+    ],
+    "order": ["Waterfall", "Agile", "DevOps"],
+    "options": {
+      "Waterfall": [
+        "Infrequent",
+        "Slow",
+        "Up-front planning",
+        "Stable/regulated requirements",
+        "Big-bang delivery and late surprises"
+      ],
+      "Agile": [
+        "Regular (sprints)",
+        "Medium-fast",
+        "Small batches + iteration",
+        "Product teams with changing scope",
+        "Shipping without operational readiness"
+      ],
+      "DevOps": [
+        "Frequent",
+        "Fast",
+        "Automation + observability",
+        "Teams optimizing delivery + reliability",
+        "Tooling-first mindset without process change"
+      ]
+    }
+  }
+}
+

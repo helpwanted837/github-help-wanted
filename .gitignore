@@ -8,3 +8,4 @@ resources/
 __pycache__/
 *.pyc
 .cache/
+static/og/

@@ -1,0 +1,49 @@
+{{/* 生成 OG 图片路径（相对路径/站内路径），优先使用自动生成的 /og/<slug>.jpg，不存在则回退默认图 */}}
+
+{{- $path := "" -}}
+{{- with .Params.image -}}
+  {{- $path = . -}}
+{{- end -}}
+
+{{- if and (not $path) (or (eq .Kind "page") (eq .Kind "section")) (ne .Section "pages") -}}
+  {{- $key := "" -}}
+  {{- with .Params.slug -}}
+    {{- $key = . -}}
+  {{- end -}}
+  {{- if not $key -}}
+    {{- with .File -}}
+      {{- $base := .BaseFileName -}}
+      {{- if or (eq $base "index") (eq $base "_index") -}}
+        {{- $key = path.Base (path.Clean .Dir) -}}
+      {{- else -}}
+        {{- $key = $base -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if $key -}}
+    {{- $key = lower ($key | plainify) -}}
+    {{- $key = replaceRE "[^a-z0-9]+" "-" $key -}}
+    {{- $key = replaceRE "-{2,}" "-" $key -}}
+    {{- $key = trim $key "-" -}}
+    {{- if $key -}}
+      {{- $candidate := printf "og/%s.jpg" $key -}}
+      {{- if fileExists (printf "static/%s" $candidate) -}}
+        {{- $path = $candidate -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $path -}}
+  {{- $siteDefault := "og/site-default.jpg" -}}
+  {{- if fileExists (printf "static/%s" $siteDefault) -}}
+    {{- $path = $siteDefault -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $path -}}
+  {{- $path = (.Site.Params.defaultOGImage | default "") -}}
+{{- end -}}
+
+{{- $path -}}

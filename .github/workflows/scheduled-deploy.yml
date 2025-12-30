@@ -61,11 +61,27 @@ jobs:
             internal-links-state-ghw-
             internal-links-state-
 
+      - name: Restore OG image cache
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        uses: actions/cache@v4
+        with:
+          path: |
+            .cache/og_images
+            static/og
+          key: og-images-cache-v1
+          restore-keys: |
+            og-images-cache-
+
       - name: Generate internal links
         if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
         run: |
           pip install -r scripts/requirements.txt
           python scripts/generate_internal_links.py --incremental
+
+      - name: Generate OG images
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        run: |
+          python scripts/generate_og_images.py
 
       - name: Build
         if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
@@ -73,7 +89,12 @@ jobs:
 
       - name: Build search index (Pagefind)
         if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
-        run: npx pagefind --site public --output-subdir pagefind
+        run: npx -y pagefind --site public --output-subdir pagefind --force-language en --exclude-selectors "pre, table"
+
+      - name: SEO sanity checks (offline)
+        if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'
+        run: |
+          python scripts/audit_seo.py --public public
 
       - name: Check internal links (built output)
         if: github.event_name != 'schedule' || steps.check.outputs.should_deploy == 'true'

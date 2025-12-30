@@ -12,6 +12,7 @@
     {{ .Content }}
   </article>
 
+  {{ partial "auto-comparison.html" . }}
   {{ partial "faq-section.html" . }}
 
   {{ $items := .RegularPages.ByDate.Reverse }}

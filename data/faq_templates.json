@@ -1,0 +1,129 @@
+{
+  "_description": "Category-based FAQ templates. Used when a page has no frontmatter `faq`.",
+  "_usage": "Rendered by layouts/partials/auto-faq.html using `.Section` as the category key. Pages under `content/pages/` only render FAQ when `faq` is explicitly provided.",
+  "_default": [
+    {
+      "question": "What is {title}?",
+      "answer": "{title} is a practical guide that explains core concepts, common workflows, and safe next steps so you can apply the topic in real projects."
+    },
+    {
+      "question": "Who is {title} for?",
+      "answer": "It is written for beginners and intermediate practitioners who want a repeatable process: what to do first, what to avoid, and how to verify results."
+    },
+    {
+      "question": "What are the most common mistakes in {title}?",
+      "answer": "The most common mistakes are starting with changes that are too large, skipping project/process guidelines, and failing to validate with a reproducible checklist."
+    }
+  ],
+  "open-source": [
+    {
+      "question": "What counts as an open source contribution?",
+      "answer": "Any useful, public work that helps a project: code, documentation, tests, issue triage, reviews, reproductions, design, or community support."
+    },
+    {
+      "question": "How do I find beginner-friendly issues?",
+      "answer": "Start with maintainer intent labels like “good first issue” and “documentation”, then filter by recent activity and clear reproduction/acceptance criteria."
+    },
+    {
+      "question": "What makes a pull request easy to review?",
+      "answer": "Small scope, clear summary, links to the issue, and a concrete “how to test” section with commands, logs, or screenshots."
+    },
+    {
+      "question": "Fork vs branch: which workflow should I use?",
+      "answer": "For public repos, fork + PR is the safe default. Branch + PR is common in org repos when you have write access and collaboration needs."
+    },
+    {
+      "question": "How do I avoid wasting time on stalled projects?",
+      "answer": "Check recent commits and PR merges, maintainer responsiveness, and whether CONTRIBUTING docs and issue templates exist before you invest effort."
+    }
+  ],
+  "devops-engineer": [
+    {
+      "question": "What does a DevOps engineer do day-to-day?",
+      "answer": "Typical work includes CI/CD pipelines, infrastructure automation, reliability practices, observability, incident response, and enabling faster delivery with guardrails."
+    },
+    {
+      "question": "DevOps vs SRE vs Platform Engineering: what’s the difference?",
+      "answer": "DevOps is the collaboration and delivery model; SRE focuses on reliability with error budgets; Platform engineering builds internal platforms to scale delivery across teams."
+    },
+    {
+      "question": "What skills matter most for DevOps roles in {year}?",
+      "answer": "Strong fundamentals (Linux, networking), cloud basics, CI/CD, IaC, containers, and observability. Depth in one area beats shallow familiarity across many tools."
+    },
+    {
+      "question": "How do I build a DevOps portfolio without production access?",
+      "answer": "Ship small but complete demos: IaC + CI + app deploy + monitoring + runbook. Treat “how to operate” as part of the deliverable."
+    },
+    {
+      "question": "What are common interview pitfalls for DevOps candidates?",
+      "answer": "Over-indexing on tool names, not explaining trade-offs, and lacking incident/debugging examples with clear timelines and actions."
+    }
+  ],
+  "product-management": [
+    {
+      "question": "What does a product manager actually own?",
+      "answer": "PMs own outcomes and decisions: defining the problem, setting priorities, aligning stakeholders, and ensuring teams ship the right thing with measurable impact."
+    },
+    {
+      "question": "PM vs Product Owner vs Program Manager: how do they differ?",
+      "answer": "PM focuses on product outcomes and strategy, PO focuses on backlog execution within agile teams, and program managers coordinate delivery across multiple teams."
+    },
+    {
+      "question": "How do I write a good PRD?",
+      "answer": "Keep it decision-focused: problem, users, constraints, success metrics, scope boundaries, and how to validate. Avoid implementation micromanagement unless needed."
+    },
+    {
+      "question": "How do I prioritize work with limited data?",
+      "answer": "Use lightweight frameworks (RICE, impact/effort), write assumptions explicitly, and run the smallest experiment that reduces uncertainty quickly."
+    },
+    {
+      "question": "What are common mistakes new PMs make?",
+      "answer": "Confusing outputs with outcomes, over-committing scope, skipping alignment, and not defining success metrics before shipping."
+    }
+  ],
+  "unit-testing": [
+    {
+      "question": "What is the goal of unit testing?",
+      "answer": "Unit tests protect behavior at the smallest reasonable scope and make refactoring safer by providing fast, deterministic feedback."
+    },
+    {
+      "question": "Unit vs integration vs end-to-end tests: which should I write?",
+      "answer": "Start with a small set of high-value integration/E2E tests for critical flows, then add unit tests where logic is complex and changes frequently."
+    },
+    {
+      "question": "What should I avoid mocking?",
+      "answer": "Avoid mocking your own code heavily. Prefer mocking external boundaries (network, clock, filesystem) and keep assertions behavior-focused."
+    },
+    {
+      "question": "How many tests are “enough”?",
+      "answer": "Enough tests to catch regressions in core behavior and enable refactors. Coverage is a signal, but stable behavior and fast feedback are the real goal."
+    },
+    {
+      "question": "What are common unit testing mistakes?",
+      "answer": "Brittle tests coupled to implementation details, slow tests that discourage running locally, and skipping edge cases like timeouts and error handling."
+    }
+  ],
+  "sdlc": [
+    {
+      "question": "What is SDLC in simple terms?",
+      "answer": "SDLC is the end-to-end process of building software: planning, design, implementation, testing, release, and maintenance with feedback loops."
+    },
+    {
+      "question": "Waterfall vs Agile vs DevOps: which should teams use?",
+      "answer": "Most modern teams use agile delivery plus DevOps practices. Waterfall can work in stable, regulated contexts, but feedback cycles are slower."
+    },
+    {
+      "question": "What is the fastest way to improve delivery speed safely?",
+      "answer": "Automate the pipeline, reduce batch size, add tests at the right layer, and use feature flags to decouple deployment from release."
+    },
+    {
+      "question": "What metrics should I track for SDLC health?",
+      "answer": "Start with DORA metrics (lead time, deployment frequency, change failure rate, MTTR) and add product metrics that reflect outcomes."
+    },
+    {
+      "question": "What are common SDLC anti-patterns?",
+      "answer": "Big-bang releases, unclear ownership, manual deployments, and treating quality/security as “after the sprint” instead of part of the workflow."
+    }
+  ]
+}
+

@@ -1,0 +1,67 @@
+{{/* Markdown 图片渲染钩子：
+  - 如果图片是 Page Bundle 资源：自动生成 WebP + 多尺寸 srcset，并补齐 width/height
+  - 其他情况：至少补齐 loading/decoding，避免阻塞渲染 */}}
+
+{{- $dest := .Destination | safeURL -}}
+{{- $alt := .Text | default "" | plainify -}}
+{{- $title := .Title | default "" | plainify -}}
+{{- $isRemote := or (hasPrefix $dest "http://") (hasPrefix $dest "https://") -}}
+
+{{- $loading := cond (eq .Ordinal 0) "eager" "lazy" -}}
+{{- $fetchPriority := cond (eq .Ordinal 0) "high" "auto" -}}
+
+{{- $imgRes := nil -}}
+{{- if not $isRemote -}}
+  {{- $candidate := $dest -}}
+  {{- if hasPrefix $candidate "./" -}}
+    {{- $candidate = strings.TrimPrefix "./" $candidate -}}
+  {{- end -}}
+  {{- $imgRes = or (.Page.Resources.GetMatch $candidate) (.Page.Resources.GetMatch (path.Base $candidate)) -}}
+{{- end -}}
+
+{{- if and $imgRes (ne $imgRes.MediaType.Type "image/svg+xml") (ne $imgRes.MediaType.Type "image/gif") -}}
+  {{- $widths := slice 480 768 1024 1440 -}}
+  {{- $webpSet := slice -}}
+  {{- $fallbackSet := slice -}}
+  {{- range $w := $widths -}}
+    {{- if ge $imgRes.Width $w -}}
+      {{- $webp := $imgRes.Resize (printf "%dx webp q75" $w) -}}
+      {{- $fb := $imgRes.Resize (printf "%dx q75" $w) -}}
+      {{- $webpSet = $webpSet | append (printf "%s %dw" $webp.RelPermalink $w) -}}
+      {{- $fallbackSet = $fallbackSet | append (printf "%s %dw" $fb.RelPermalink $w) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $webpSrcset := delimit $webpSet ", " -}}
+  {{- $fbSrcset := delimit $fallbackSet ", " -}}
+  {{- $sizes := "(max-width: 720px) 100vw, 720px" -}}
+
+  <picture>
+    {{- if $webpSrcset -}}
+      <source type="image/webp" srcset="{{ $webpSrcset }}" sizes="{{ $sizes }}">
+    {{- end -}}
+    {{- if $fbSrcset -}}
+      <source srcset="{{ $fbSrcset }}" sizes="{{ $sizes }}">
+    {{- end -}}
+    <img
+      src="{{ $imgRes.RelPermalink }}"
+      {{- if $alt }} alt="{{ $alt }}"{{ end -}}
+      {{- if $title }} title="{{ $title }}"{{ end -}}
+      width="{{ $imgRes.Width }}"
+      height="{{ $imgRes.Height }}"
+      loading="{{ $loading }}"
+      decoding="async"
+      fetchpriority="{{ $fetchPriority }}"
+    >
+  </picture>
+{{- else -}}
+  <img
+    src="{{ $dest }}"
+    {{- if $alt }} alt="{{ $alt }}"{{ end -}}
+    {{- if $title }} title="{{ $title }}"{{ end -}}
+    loading="{{ $loading }}"
+    decoding="async"
+    {{- if eq $loading "eager" }} fetchpriority="high"{{ end -}}
+  >
+{{- end -}}
+

@@ -18,7 +18,7 @@ enableRobotsTXT = true
 [params]
 brand = "GitHub Help Wanted"
 tagline = "Your Guide to Developer Success"
-description = "Resources for open source contribution, DevOps, testing, and product management."
+description = "Guides for open source contribution, DevOps, testing, CI/CD, and product management—checklists, tool comparisons, and workflows to help developers ship."
 email = "hello@github-help-wanted.com"
 defaultOGImage = "/images/default-og.svg"
 

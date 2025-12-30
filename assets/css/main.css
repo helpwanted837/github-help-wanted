@@ -1,3 +1,4 @@
+/* 由 Hugo Pipes 处理的源文件（assets/css/main.css） */
 :root {
   --bg: #0d1117;
   --panel: #161b22;
@@ -371,6 +372,66 @@ a:hover { text-decoration: underline; }
 }
 
 .faq-answer p { margin: 0; }
+
+.comparison-section {
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.25rem 1rem;
+}
+
+.comparison-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.comparison-subtitle {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.comparison-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: calc(var(--radius) - 6px);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  vertical-align: top;
+}
+
+.comparison-table thead th {
+  background: rgba(255, 255, 255, 0.04);
+  font-weight: 700;
+}
+
+.comparison-feature {
+  width: 34%;
+}
+
+.comparison-feature-desc {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.comparison-highlight {
+  background: rgba(124, 92, 255, 0.12);
+  border-color: rgba(124, 92, 255, 0.25);
+}
 
 .heading-anchor {
   margin-left: 8px;

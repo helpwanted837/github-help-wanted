@@ -1,3 +1,4 @@
+// 由 Hugo Pipes 处理的源文件（assets/js/main.js）
 (() => {
   const toggle = document.querySelector("[data-menu-toggle]");
   const nav = document.getElementById("site-nav");

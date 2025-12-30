@@ -5,8 +5,8 @@
   {{- $title = printf "%s | %s" .Title .Site.Title -}}
 {{- end -}}
 
-{{- $desc := (.Description | default .Site.Params.description | default "") | plainify -}}
-{{- $img := .Params.image | default .Site.Params.defaultOGImage | default "" -}}
+{{- $desc := partial "helpers/meta-description.html" . -}}
+{{- $img := partial "helpers/og-image-path.html" . -}}
 
 <meta property="og:title" content="{{ $title }}" />
 {{- if $desc -}}<meta property="og:description" content="{{ $desc }}" />{{- end -}}
@@ -14,6 +14,8 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 {{- if $img -}}<meta property="og:image" content="{{ $img | absURL }}" />{{- end -}}
+{{- if $img -}}<meta property="og:image:width" content="1200" />{{- end -}}
+{{- if $img -}}<meta property="og:image:height" content="630" />{{- end -}}
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ $title }}" />

@@ -1,0 +1,57 @@
+{{/*
+  Auto FAQ (github-help-wanted)
+
+  - Uses frontmatter `faq` when present
+  - Falls back to section-based templates in data/faq_templates.json
+  - Generates schema.org FAQPage markup
+
+  Notes:
+  - For `content/pages/*`, only render when `faq` is explicitly provided (avoid polluting trust pages).
+*/}}
+
+{{- $page := . -}}
+{{- $section := $page.Section | default "_default" -}}
+
+{{- $faqItems := $page.Params.faq -}}
+
+{{- if and (not $faqItems) (ne $section "pages") -}}
+  {{- $templates := index $page.Site.Data.faq_templates $section -}}
+  {{- if not $templates -}}
+    {{- $templates = index $page.Site.Data.faq_templates "_default" -}}
+  {{- end -}}
+
+  {{- if $templates -}}
+    {{- $faqItems = slice -}}
+    {{- range $templates -}}
+      {{- $q := .question -}}
+      {{- $a := .answer -}}
+
+      {{- $q = replace $q "{title}" $page.Title -}}
+      {{- $q = replace $q "{section}" $section -}}
+      {{- $q = replace $q "{year}" (now.Format "2006") -}}
+
+      {{- $a = replace $a "{title}" $page.Title -}}
+      {{- $a = replace $a "{section}" $section -}}
+      {{- $a = replace $a "{year}" (now.Format "2006") -}}
+
+      {{- $faqItems = $faqItems | append (dict "question" $q "answer" $a) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $faqItems -}}
+  <section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+    <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      {{- range $faqItems -}}
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary itemprop="name">{{ .question }}</summary>
+          <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">{{ .answer }}</p>
+          </div>
+        </details>
+      {{- end -}}
+    </div>
+  </section>
+{{- end -}}
+

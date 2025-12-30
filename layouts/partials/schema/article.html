@@ -1,6 +1,7 @@
 {{- if and (or (eq .Kind "page") (eq .Kind "section")) (ne .Section "pages") -}}
   {{- $authorName := .Site.Params.brand | default .Site.Title -}}
-  {{- $img := .Params.image | default .Site.Params.defaultOGImage -}}
+  {{- $desc := partial "helpers/meta-description.html" . -}}
+  {{- $img := partial "helpers/og-image-path.html" . -}}
   {{- $published := .Date -}}
   {{- if $published.IsZero -}}
     {{- $published = now -}}
@@ -10,7 +11,7 @@
     "@context" "https://schema.org"
     "@type" "Article"
     "headline" .Title
-    "description" ((.Description | default .Site.Params.description | default "") | plainify)
+    "description" $desc
     "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
     "author" (dict "@type" "Organization" "name" $authorName)
     "publisher" (dict "@type" "Organization" "name" $authorName)

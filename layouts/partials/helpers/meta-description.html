@@ -1,0 +1,25 @@
+{{/* 生成统一的 Meta Description（纯文本 + 控长），用于 <meta name="description"> / OG / Schema */}}
+
+{{- $desc := (.Description | default "") | plainify -}}
+{{- $desc = replaceRE "\\s+" " " $desc -}}
+
+{{- if or (not $desc) (lt (len $desc) 150) -}}
+  {{- if and (or (eq .Kind "page") (eq .Kind "section")) (ne .Section "pages") -}}
+    {{- $fallback := (.Plain | default "") | plainify -}}
+    {{- $fallback = replaceRE "\\s+" " " $fallback -}}
+    {{- if $fallback -}}
+      {{- $desc = $fallback -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $desc -}}
+  {{- $desc = (.Site.Params.description | default "") | plainify -}}
+  {{- $desc = replaceRE "\\s+" " " $desc -}}
+{{- end -}}
+
+{{- if gt (len $desc) 160 -}}
+  {{- $desc = truncate 160 $desc -}}
+{{- end -}}
+
+{{- return $desc -}}
