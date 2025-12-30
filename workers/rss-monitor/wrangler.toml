@@ -1,0 +1,14 @@
+# Cloudflare Worker - RSS Health Monitor (github-help-wanted)
+
+name = "ghw-rss-monitor"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Cron Trigger - Run daily (UTC). Keep timing different across sites for PBN isolation.
+[triggers]
+crons = ["17 4 * * *"]
+
+[vars]
+SITE_NAME = "github-help-wanted"
+RSS_URL = "https://github-help-wanted.com/index.xml"
+

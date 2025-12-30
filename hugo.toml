@@ -32,8 +32,8 @@ defaultOGImage = "/images/default-og.svg"
   # 2. 部署 Worker: cd workers/umami-proxy && npx wrangler deploy
   # 3. 将 enabled 改为 true
   [params.umami]
-  enabled = false
-  websiteId = "REPLACE_WITH_YOUR_WEBSITE_ID"
+  enabled = true
+  websiteId = "f9fb89b2-9e0a-4af9-884e-858758847fc6"
 
 [pagination]
 pagerSize = 10
