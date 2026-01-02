@@ -29,8 +29,12 @@
         <h2 class="comparison-title">{{ $title }}</h2>
         {{- if $subtitle -}}<p class="comparison-subtitle">{{ $subtitle }}</p>{{- end -}}
 
+        {{/*
+          NOTE: Table schema is optional and handled via JSON-LD in schema/table.html if needed.
+          Avoid Microdata to keep schema format consistent (JSON-LD only).
+        */}}
         <div class="comparison-table-wrap">
-          <table class="comparison-table" itemscope itemtype="https://schema.org/Table">
+          <table class="comparison-table">
             <thead>
               <tr>
                 <th scope="col">Dimension</th>

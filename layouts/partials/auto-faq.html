@@ -40,14 +40,18 @@
 {{- end -}}
 
 {{- if $faqItems -}}
-  <section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+  {{/*
+    NOTE: Schema.org FAQPage is output via JSON-LD in layouts/partials/schema/faq.html
+    Do NOT add Microdata (itemscope/itemprop) here - it would cause duplicate FAQPage errors in GSC.
+  */}}
+  <section class="faq-section">
     <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
     <div class="faq-list">
       {{- range $faqItems -}}
-        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <summary itemprop="name">{{ .question }}</summary>
-          <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">{{ .answer }}</p>
+        <details class="faq-item">
+          <summary class="faq-question">{{ .question }}</summary>
+          <div class="faq-answer">
+            <p>{{ .answer }}</p>
           </div>
         </details>
       {{- end -}}
