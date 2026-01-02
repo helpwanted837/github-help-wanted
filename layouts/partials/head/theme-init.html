@@ -1,0 +1,11 @@
+<script>
+(function() {
+    var theme;
+    try {
+        theme = localStorage.getItem('theme');
+    } catch (e) {}
+    if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+    }
+})();
+</script>

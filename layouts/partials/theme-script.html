@@ -1,0 +1,50 @@
+<script>
+(() => {
+    const STORAGE_KEY = 'theme';
+    const btn = document.querySelector('[data-theme-toggle]');
+    if (!btn) return;
+
+    function getStoredTheme() {
+        try {
+            return localStorage.getItem(STORAGE_KEY);
+        } catch {
+            return null;
+        }
+    }
+
+    function setStoredTheme(theme) {
+        try {
+            if (theme) {
+                localStorage.setItem(STORAGE_KEY, theme);
+            } else {
+                localStorage.removeItem(STORAGE_KEY);
+            }
+        } catch {}
+    }
+
+    function getCurrentTheme() {
+        const stored = getStoredTheme();
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+    }
+
+    // Toggle between dark and light
+    btn.addEventListener('click', () => {
+        const current = getCurrentTheme();
+        const next = current === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+        setStoredTheme(next);
+    });
+
+    // Listen for system theme changes (only when no stored preference)
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+        if (!getStoredTheme()) {
+            applyTheme(e.matches ? 'light' : 'dark');
+        }
+    });
+})();
+</script>

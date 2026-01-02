@@ -1,16 +1,66 @@
 /* 由 Hugo Pipes 处理的源文件（assets/css/main.css） */
 :root {
+  --radius: 14px;
+  --max: 1080px;
+  --brand: #7c5cff;
+  --brand-2: #00d4ff;
+}
+
+/* Dark theme (default) */
+:root,
+[data-theme="dark"] {
   --bg: #0d1117;
   --panel: #161b22;
   --text: #f0f2f8;
   --muted: #8b949e;
   --border: rgba(240, 246, 252, 0.1);
-  --brand: #7c5cff;
-  --brand-2: #00d4ff;
-
-  --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-  --max: 1080px;
+  --header-bg: rgba(11, 16, 32, 0.7);
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --code-bg: rgba(255, 255, 255, 0.06);
+  --pre-bg: rgba(0, 0, 0, 0.25);
+  --hover-bg: rgba(255, 255, 255, 0.02);
+  --btn-secondary-bg: rgba(255, 255, 255, 0.06);
+  --search-close-bg: rgba(255, 255, 255, 0.1);
+  --search-backdrop: rgba(0, 0, 0, 0.7);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --panel: #f6f8fa;
+  --text: #1f2328;
+  --muted: #656d76;
+  --border: rgba(31, 35, 40, 0.15);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --header-bg: rgba(255, 255, 255, 0.85);
+  --card-bg: rgba(0, 0, 0, 0.02);
+  --code-bg: rgba(0, 0, 0, 0.05);
+  --pre-bg: #f6f8fa;
+  --hover-bg: rgba(0, 0, 0, 0.03);
+  --btn-secondary-bg: rgba(0, 0, 0, 0.05);
+  --search-close-bg: rgba(0, 0, 0, 0.08);
+  --search-backdrop: rgba(0, 0, 0, 0.5);
+}
+
+/* Auto theme based on system preference */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --text: #1f2328;
+    --muted: #656d76;
+    --border: rgba(31, 35, 40, 0.15);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --header-bg: rgba(255, 255, 255, 0.85);
+    --card-bg: rgba(0, 0, 0, 0.02);
+    --code-bg: rgba(0, 0, 0, 0.05);
+    --pre-bg: #f6f8fa;
+    --hover-bg: rgba(0, 0, 0, 0.03);
+    --btn-secondary-bg: rgba(0, 0, 0, 0.05);
+    --search-close-bg: rgba(0, 0, 0, 0.08);
+    --search-backdrop: rgba(0, 0, 0, 0.5);
+  }
 }
 
 * { box-sizing: border-box; }
@@ -18,12 +68,37 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: radial-gradient(1200px 600px at 20% 0%, rgba(124, 92, 255, 0.25), transparent 60%),
-              radial-gradient(1200px 600px at 80% 10%, rgba(0, 212, 255, 0.18), transparent 55%),
-              var(--bg);
+  background: var(--bg);
   color: var(--text);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.6;
+}
+
+/* Background gradients - theme aware */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+[data-theme="dark"] body::before,
+:root:not([data-theme]) body::before {
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(124, 92, 255, 0.25), transparent 60%),
+              radial-gradient(1200px 600px at 80% 10%, rgba(0, 212, 255, 0.18), transparent 55%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) body::before {
+    background: radial-gradient(1200px 600px at 20% 0%, rgba(124, 92, 255, 0.08), transparent 60%),
+                radial-gradient(1200px 600px at 80% 10%, rgba(0, 212, 255, 0.06), transparent 55%);
+  }
+}
+
+[data-theme="light"] body::before {
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(124, 92, 255, 0.08), transparent 60%),
+              radial-gradient(1200px 600px at 80% 10%, rgba(0, 212, 255, 0.06), transparent 55%);
 }
 
 a { color: inherit; text-decoration: none; }
@@ -51,7 +126,7 @@ a:hover { text-decoration: underline; }
   top: 0;
   z-index: 50;
   backdrop-filter: blur(12px);
-  background: rgba(11, 16, 32, 0.7);
+  background: var(--header-bg);
   border-bottom: 1px solid var(--border);
 }
 
@@ -71,7 +146,7 @@ a:hover { text-decoration: underline; }
 .nav-toggle {
   display: none;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--btn-secondary-bg);
   color: var(--text);
   padding: 8px 10px;
   border-radius: 12px;
@@ -139,7 +214,7 @@ a:hover { text-decoration: underline; }
 .button:hover { text-decoration: none; filter: brightness(1.05); }
 
 .button-secondary {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--btn-secondary-bg);
   border: 1px solid var(--border);
   color: var(--text);
 }
@@ -155,7 +230,7 @@ a:hover { text-decoration: underline; }
 
 .card {
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--card-bg);
   border-radius: var(--radius);
   padding: 16px;
 }
@@ -174,7 +249,7 @@ a:hover { text-decoration: underline; }
 .list { display: grid; gap: 10px; }
 .list-item {
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--card-bg);
   border-radius: var(--radius);
   padding: 14px 16px;
 }
@@ -201,7 +276,7 @@ a:hover { text-decoration: underline; }
 .prose p { margin: 14px 0; }
 .prose h2, .prose h3 { margin-top: 28px; }
 .prose code {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--code-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 2px 6px;
@@ -211,7 +286,7 @@ a:hover { text-decoration: underline; }
   padding: 14px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--pre-bg);
 }
 .prose pre code { border: none; background: transparent; padding: 0; }
 
@@ -221,7 +296,7 @@ a:hover { text-decoration: underline; }
   right: 0.5rem;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--search-close-bg);
   border: 1px solid var(--border);
   border-radius: 6px;
   color: var(--muted);
@@ -229,7 +304,7 @@ a:hover { text-decoration: underline; }
 }
 
 .copy-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--code-bg);
   color: var(--text);
 }
 
@@ -318,7 +393,7 @@ a:hover { text-decoration: underline; }
   vertical-align: top;
 }
 
-.prose tr:hover td { background: rgba(255, 255, 255, 0.02); }
+.prose tr:hover td { background: var(--hover-bg); }
 
 .prose td:has(✅),
 .prose td:has(❌),
@@ -342,7 +417,7 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   margin-bottom: 0.75rem;
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--card-bg);
 }
 
 .faq-item summary {
@@ -376,7 +451,7 @@ a:hover { text-decoration: underline; }
 .comparison-section {
   margin: 2rem 0;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--card-bg);
   border-radius: var(--radius);
   padding: 1.25rem 1.25rem 1rem;
 }
@@ -412,7 +487,7 @@ a:hover { text-decoration: underline; }
 }
 
 .comparison-table thead th {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--btn-secondary-bg);
   font-weight: 700;
 }
 
@@ -512,7 +587,7 @@ a:hover { text-decoration: underline; }
 .site-search__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--search-backdrop);
   backdrop-filter: blur(4px);
 }
 
@@ -555,7 +630,7 @@ a:hover { text-decoration: underline; }
 
 .site-search__close {
   padding: 4px 8px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--search-close-bg);
   border: 1px solid var(--border);
   border-radius: 6px;
   color: var(--muted);
@@ -564,7 +639,7 @@ a:hover { text-decoration: underline; }
 }
 
 .site-search__close:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--code-bg);
   color: var(--text);
 }
 
@@ -632,7 +707,7 @@ html.is-search-open {
   align-items: center;
   gap: 6px;
   padding: 6px 10px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--btn-secondary-bg);
   border: 1px solid var(--border);
   border-radius: 8px;
   color: var(--muted);
@@ -641,13 +716,60 @@ html.is-search-open {
 }
 
 .search-button:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--code-bg);
   color: var(--text);
 }
 
 .search-button kbd {
   font-size: 11px;
   padding: 2px 4px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--search-close-bg);
   border-radius: 4px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: var(--btn-secondary-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.theme-toggle:hover {
+  background: var(--code-bg);
+  color: var(--text);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Show/hide icons based on theme */
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+[data-theme="light"] .theme-toggle .icon-sun { display: none; }
+[data-theme="light"] .theme-toggle .icon-moon { display: block; }
+
+/* Auto theme - show based on system preference */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .theme-toggle .icon-sun { display: block; }
+  :root:not([data-theme]) .theme-toggle .icon-moon { display: none; }
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) .theme-toggle .icon-sun { display: none; }
+  :root:not([data-theme]) .theme-toggle .icon-moon { display: block; }
 }
