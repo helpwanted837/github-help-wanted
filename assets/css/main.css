@@ -378,7 +378,7 @@ a:hover { text-decoration: underline; }
 
 .nav-link.is-active {
   color: var(--brand);
-  background: rgba(124, 92, 255, 0.12);
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
