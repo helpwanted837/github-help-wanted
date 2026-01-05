@@ -6,30 +6,22 @@
   <header class="page-header">
     <h1 class="page-title">{{ .Title }}</h1>
     {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+    <p class="page-meta">{{ len .RegularPages }} articles</p>
   </header>
-
-  <article class="prose">
-    {{ .Content }}
-  </article>
-
-  {{ partial "auto-comparison.html" . }}
-  {{ partial "faq-section.html" . }}
 
   {{ $paginator := .Paginate (.RegularPages.ByDate.Reverse) 12 }}
   {{ if gt (len $paginator.Pages) 0 }}
-    <section class="section-list">
-      <h2 class="section-title">Latest in {{ .Title }}</h2>
-      <div class="card-grid">
-        {{ range $paginator.Pages }}
-          <article class="card">
-            <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <p class="card-desc">
-              {{- .Description | default (.Summary | plainify) -}}
-            </p>
-          </article>
-        {{ end }}
-      </div>
-    </section>
+    <div class="article-list" aria-label="Articles in {{ .Title }}">
+      {{ range $paginator.Pages }}
+        <a class="article-item" href="{{ .RelPermalink }}">
+          <div class="article-item-content">
+            <h3 class="article-item-title">{{ .Title }}</h3>
+            <p class="article-item-desc">{{ .Description | default (.Summary | plainify) | truncate 120 }}</p>
+          </div>
+          <span class="article-item-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      {{ end }}
+    </div>
 
     {{/* 分页导航 */}}
     {{ if gt $paginator.TotalPages 1 }}
@@ -44,4 +36,24 @@
     </nav>
     {{ end }}
   {{ end }}
+
+  {{ partial "auto-comparison.html" . }}
+
+  {{ with .Content }}
+    {{ $plain := . | plainify }}
+    {{ if gt (len $plain) 500 }}
+      <details class="pillar-details">
+        <summary>About {{ $.Title }}</summary>
+        <article class="prose">
+          {{ . }}
+        </article>
+      </details>
+    {{ else }}
+      <article class="prose">
+        {{ . }}
+      </article>
+    {{ end }}
+  {{ end }}
+
+  {{ partial "faq-section.html" . }}
 {{ end }}
