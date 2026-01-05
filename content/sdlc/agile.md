@@ -1,7 +1,7 @@
 ---
 title: Agile SDLC
 description: 'Guide for: agile sdlc'
-date: 2026-01-06T23:22:54+08:00
+date: 2026-01-02T23:22:54+08:00
 draft: false
 keywords:
 - agile sdlc

@@ -1,0 +1,5 @@
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+DEVTO_API_KEY=your_devto_api_key
+TUMBLR_ACCESS_TOKEN=your_tumblr_access_token
+REPORT_API_KEY=your_report_api_key
+

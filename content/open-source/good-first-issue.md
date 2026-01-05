@@ -1,7 +1,7 @@
 ---
 title: "Good First Issue: How to Find Beginner-Friendly Issues on GitHub"
 description: "Learn how to search for good first issues, evaluate project health, and ship a small PR with a maintainers-first workflow."
-date: 2026-02-08T11:19:59+08:00
+date: 2026-01-04T11:19:59+08:00
 lastmod: 2025-12-29T10:20:00+08:00
 draft: false
 type: cluster

@@ -1,7 +1,7 @@
 ---
 title: SDLC Phases
 description: Deep dive into sdlc phases with templates, checklists, FAQs, and references.
-date: '2026-03-15T14:16:53+08:00'
+date: '2026-01-04T14:16:53+08:00'
 draft: false
 commercial_value: 3
 affiliate_products: []

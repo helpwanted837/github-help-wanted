@@ -1,0 +1,15 @@
+{
+  "name": "cf-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "syndication-core": "workspace:*"
+  },
+  "scripts": {
+    "build": "pnpm exec tsc -p tsconfig.json --noEmit",
+    "typecheck": "pnpm exec tsc -p tsconfig.json --noEmit",
+    "dev": "pnpm exec wrangler dev --local",
+    "deploy": "pnpm exec wrangler deploy"
+  }
+}

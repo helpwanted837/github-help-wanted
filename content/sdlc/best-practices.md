@@ -1,7 +1,7 @@
 ---
 title: SDLC Best Practices
 description: 'Guide for: sdlc best practices'
-date: 2026-01-07T11:37:27+08:00
+date: 2026-01-03T11:37:27+08:00
 draft: false
 keywords:
 - sdlc best practices

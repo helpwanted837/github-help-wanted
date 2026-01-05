@@ -2,7 +2,7 @@
 title: First Open Source Contribution
 description: Deep dive into first open source contribution with templates, checklists,
   FAQs, and references.
-date: '2026-02-22T09:47:57+08:00'
+date: '2026-01-03T09:47:57+08:00'
 draft: false
 commercial_value: 3
 affiliate_products: []

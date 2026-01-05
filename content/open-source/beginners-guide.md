@@ -1,7 +1,7 @@
 ---
 title: "Open Source for Beginners: Your First Contribution (Step-by-Step)"
 description: "A beginner-friendly guide to open source: how to pick a project, find an issue, fork a repo, open a PR, and communicate well with maintainers."
-date: 2026-02-06T10:56:18+08:00
+date: 2026-01-02T10:56:18+08:00
 lastmod: 2025-12-29T11:05:00+08:00
 draft: false
 type: cluster

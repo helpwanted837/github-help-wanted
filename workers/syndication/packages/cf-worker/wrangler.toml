@@ -1,0 +1,15 @@
+name = "syndication-worker"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[triggers]
+crons = ["0 8 * * *"]
+
+[[kv_namespaces]]
+binding = "CONFIG"
+id = "ca59339f69054549a704b4849e92c57b"
+
+[[kv_namespaces]]
+binding = "STATE"
+id = "86dffb4fb36e4b029db218c0d08b9d34"
+

@@ -1,0 +1,14 @@
+name = "ghw-syndication"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[triggers]
+crons = ["0 */6 * * *"]  # 每6小时执行一次
+
+[[kv_namespaces]]
+binding = "CONFIG"
+id = "a7341de80e7b4a0bb408abaae66fc061"
+
+[[kv_namespaces]]
+binding = "STATE"
+id = "23b1b7097efd4d0cade2d65cd0ec12c2"

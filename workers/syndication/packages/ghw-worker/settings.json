@@ -1,0 +1,32 @@
+{
+  "site": "github-help-wanted",
+  "rssUrl": "https://github-help-wanted.com/index.xml",
+  "enabledPlatforms": ["telegram", "telegraph"],
+  "bootstrapMaxItems": 1,
+  "rssOptions": {
+    "maxItems": 10
+  },
+  "platformConfigs": {
+    "telegram": {
+      "enabled": true,
+      "credentials": {
+        "botToken": "",
+        "channelId": "@github_help_wanted"
+      },
+      "options": {
+        "messageTemplate": "{title}\n\n{excerpt}\n\nRead more: {url}",
+        "disableWebPagePreview": false
+      }
+    },
+    "telegraph": {
+      "enabled": true,
+      "credentials": {
+        "accessToken": ""
+      },
+      "options": {
+        "authorName": "GitHub Help Wanted",
+        "shortName": "ghw"
+      }
+    }
+  }
+}
