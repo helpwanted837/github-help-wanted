@@ -1,13 +1,22 @@
-{{- if .IsHome -}}
-  <a href="/">Home</a>
-{{- else -}}
-  <a href="/">Home</a>
-  {{- $ancestors := .Ancestors.Reverse -}}
-  {{- range $ancestors -}}
-    <span class="breadcrumb-sep">&rsaquo;</span>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+<ol class="breadcrumb-list">
+  {{- if .IsHome -}}
+    <li class="breadcrumb-item breadcrumb-current">
+      <span aria-current="page">Home</span>
+    </li>
+  {{- else -}}
+    <li class="breadcrumb-item">
+      <a href="/">Home</a>
+    </li>
+    {{- $ancestors := .Ancestors.Reverse -}}
+    {{- range $ancestors -}}
+      {{- if not .IsHome -}}
+        <li class="breadcrumb-item">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{- end -}}
+    {{- end -}}
+    <li class="breadcrumb-item breadcrumb-current">
+      <span aria-current="page">{{ .Title }}</span>
+    </li>
   {{- end -}}
-  <span class="breadcrumb-sep">&rsaquo;</span>
-  <span aria-current="page">{{ .Title }}</span>
-{{- end -}}
-
+</ol>

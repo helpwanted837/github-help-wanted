@@ -1,0 +1,31 @@
+{{/* Markdown Table 渲染钩子：
+  - 统一包一层横向滚动容器（移动端友好）
+  - 采用“横向滚动”而非“卡片式堆叠”，避免破坏对比信息结构 */}}
+
+<div class="table-wrap">
+  <table>
+    {{- with .THead -}}
+      <thead>
+        {{- range . -}}
+          <tr>
+            {{- range . -}}
+              <th{{ with .Alignment }} style="text-align: {{ . }}"{{ end }}>{{ .Text | safeHTML }}</th>
+            {{- end -}}
+          </tr>
+        {{- end -}}
+      </thead>
+    {{- end -}}
+
+    {{- with .TBody -}}
+      <tbody>
+        {{- range . -}}
+          <tr>
+            {{- range . -}}
+              <td{{ with .Alignment }} style="text-align: {{ . }}"{{ end }}>{{ .Text | safeHTML }}</td>
+            {{- end -}}
+          </tr>
+        {{- end -}}
+      </tbody>
+    {{- end -}}
+  </table>
+</div>

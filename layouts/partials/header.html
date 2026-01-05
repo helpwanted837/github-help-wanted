@@ -11,7 +11,12 @@
       <span class="nav-toggle-label">Menu</span>
     </button>
 
+    <div class="nav-backdrop" data-nav-backdrop aria-hidden="true"></div>
+
     <nav id="site-nav" class="nav" aria-label="Primary">
+      <button class="nav-close" type="button" aria-label="Close menu" data-nav-close>
+        ×
+      </button>
       <ul class="nav-list">
         {{ range $items }}
           {{ $url := .url }}
@@ -44,4 +49,3 @@
     </nav>
   </div>
 </header>
-

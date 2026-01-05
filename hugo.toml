@@ -37,6 +37,7 @@ defaultOGImage = "/og/site-default.jpg"
 
 [pagination]
 pagerSize = 10
+disableAliases = true
 
 [outputs]
 home = ["HTML", "RSS", "Sitemap"]

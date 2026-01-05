@@ -34,7 +34,7 @@
 
   {{- $webpSrcset := delimit $webpSet ", " -}}
   {{- $fbSrcset := delimit $fallbackSet ", " -}}
-  {{- $sizes := "(max-width: 720px) 100vw, 720px" -}}
+  {{- $sizes := "(max-width: 768px) 100vw, 768px" -}}
 
   <picture>
     {{- if $webpSrcset -}}
@@ -64,4 +64,3 @@
     {{- if eq $loading "eager" }} fetchpriority="high"{{ end -}}
   >
 {{- end -}}
-
