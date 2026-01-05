@@ -7,12 +7,13 @@
           <a class="footer-brand-link" href="/">{{ site.Params.brand | default site.Title }}</a>
           {{ with site.Params.tagline }}<p class="footer-brand-tagline">{{ . }}</p>{{ end }}
           {{ with site.Params.description }}<p class="footer-brand-desc">{{ . }}</p>{{ end }}
+          {{ with site.Params.email }}
+            <p class="footer-brand-contact">
+              <span class="footer-brand-contact-label">Email:</span>
+              <a class="footer-brand-email" href="mailto:{{ . }}">{{ . }}</a>
+            </p>
+          {{ end }}
         </div>
-        {{ with site.Params.email }}
-          <div class="footer-brand-actions">
-            <a class="footer-brand-email" href="mailto:{{ . }}">{{ . }}</a>
-          </div>
-        {{ end }}
       </section>
 
       <section class="footer-col">
