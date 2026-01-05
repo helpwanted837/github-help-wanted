@@ -2,6 +2,15 @@
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-grid">
+      <section class="footer-brand" aria-label="About this site">
+        <a class="footer-brand-link" href="/">{{ site.Params.brand | default site.Title }}</a>
+        {{ with site.Params.tagline }}<p class="footer-brand-tagline">{{ . }}</p>{{ end }}
+        {{ with site.Params.description }}<p class="footer-brand-desc">{{ . }}</p>{{ end }}
+        {{ with site.Params.email }}
+          <a class="footer-brand-email" href="mailto:{{ . }}">{{ . }}</a>
+        {{ end }}
+      </section>
+
       <section class="footer-col">
         <h2 class="footer-title">Categories</h2>
         <ul class="footer-list">
@@ -28,15 +37,6 @@
           {{ end }}
         </ul>
       </section>
-
-      <section class="footer-col">
-        <h2 class="footer-title">Connect</h2>
-        <ul class="footer-list">
-          {{ with site.Params.email }}
-            <li><a href="mailto:{{ . }}">{{ . }}</a></li>
-          {{ end }}
-        </ul>
-      </section>
     </div>
 
     <p class="footer-copy">
@@ -44,4 +44,3 @@
     </p>
   </div>
 </footer>
-

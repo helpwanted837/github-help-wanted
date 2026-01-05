@@ -4,6 +4,9 @@
     const btn = document.querySelector('[data-theme-toggle]');
     if (!btn) return;
 
+    const root = document.documentElement;
+    const media = window.matchMedia('(prefers-color-scheme: light)');
+
     function getStoredTheme() {
         try {
             return localStorage.getItem(STORAGE_KEY);
@@ -23,13 +26,16 @@
     }
 
     function getCurrentTheme() {
+        const applied = root.getAttribute('data-theme');
+        if (applied === 'light' || applied === 'dark') return applied;
+
         const stored = getStoredTheme();
         if (stored) return stored;
-        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        return media.matches ? 'light' : 'dark';
     }
 
     function applyTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
+        root.setAttribute('data-theme', theme);
     }
 
     // Toggle between dark and light
@@ -41,10 +47,15 @@
     });
 
     // Listen for system theme changes (only when no stored preference)
-    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+    const onChange = (e) => {
         if (!getStoredTheme()) {
             applyTheme(e.matches ? 'light' : 'dark');
         }
-    });
+    };
+    if (typeof media.addEventListener === 'function') {
+        media.addEventListener('change', onChange);
+    } else if (typeof media.addListener === 'function') {
+        media.addListener(onChange);
+    }
 })();
 </script>
