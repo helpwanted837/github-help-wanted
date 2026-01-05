@@ -3,37 +3,49 @@
     {{ partial "breadcrumb.html" . }}
   </nav>
 
-  {{/* 新增: TOC */}}
-  {{ if and .TableOfContents (gt (len .TableOfContents) 100) }}
-  <nav class="toc" aria-label="Table of contents">
-    <p class="toc-title">In This Article</p>
-    {{ .TableOfContents }}
-  </nav>
-  {{ end }}
+  <div class="article-layout">
+    <article class="article-main prose">
+      <header class="page-header">
+        <h1 class="page-title">{{ .Title }}</h1>
+        {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
 
-  <article class="prose">
-    <header class="page-header">
-      <h1 class="page-title">{{ .Title }}</h1>
-      {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+        {{ if and (not (eq .Section "pages")) .Date }}
+          <p class="page-meta">
+            <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
+            <span class="meta-sep">·</span>
+            <span>{{ .ReadingTime }} min read</span>
+          </p>
+        {{ end }}
 
-      {{ if and (not (eq .Section "pages")) .Date }}
-        <p class="page-meta">
-          <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
-          <span class="meta-sep">·</span>
-          <span>{{ .ReadingTime }} min read</span>
-        </p>
+        {{ with .Params.pillar }}
+          <p class="page-meta">
+            Part of: <a href="{{ . }}">{{ . }}</a>
+          </p>
+        {{ end }}
+      </header>
+
+      {{/* 平板端：TOC 放在正文顶部（侧边栏在该断点显示效果较差） */}}
+      {{ if and .TableOfContents (gt (len .TableOfContents) 100) }}
+      <nav class="toc toc-inline" aria-label="Table of contents">
+        <p class="toc-title">In This Article</p>
+        {{ .TableOfContents }}
+      </nav>
       {{ end }}
 
-      {{ with .Params.pillar }}
-        <p class="page-meta">
-          Part of: <a href="{{ . }}">{{ . }}</a>
-        </p>
+      {{ .Content }}
+    </article>
+
+    <aside class="article-sidebar" aria-label="Article sidebar">
+      {{ if and .TableOfContents (gt (len .TableOfContents) 100) }}
+      <nav class="toc toc-sidebar" aria-label="Table of contents">
+        <p class="toc-title">In This Article</p>
+        {{ .TableOfContents }}
+      </nav>
       {{ end }}
-    </header>
 
-    {{ .Content }}
-  </article>
+      {{ partial "aside.html" . }}
+    </aside>
+  </div>
 
-  {{ partial "aside.html" . }}
   {{ partial "faq-section.html" . }}
 {{ end }}

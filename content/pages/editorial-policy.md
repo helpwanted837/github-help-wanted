@@ -10,6 +10,8 @@ commercial_value: 3
 
 This site aims to publish helpful, accurate, and actionable content for developers. “Helpful” here means the page can be used to complete a real task: making a pull request, deploying a GitHub Pages site, setting up tests, preparing for an interview, or choosing a workflow with clear trade-offs.
 
+Last updated: 2026-01-05
+
 ## Key Takeaways
 
 - **Sources come first**: each article includes a References section with authoritative sources.
@@ -17,6 +19,16 @@ This site aims to publish helpful, accurate, and actionable content for develope
 - **Safety matters**: guidance prefers safe defaults, least-privilege access, and reversible changes.
 - **Updates are expected**: content is reviewed and corrected when upstream documentation changes.
 - **Transparency is required**: affiliate relationships and limitations are disclosed when relevant.
+
+## Update Cadence (What “Maintained” Means)
+
+The web changes quickly, so “maintained” is a practical promise, not a guarantee of perfection.
+
+In general:
+
+- Evergreen pages are reviewed periodically (at least annually) or sooner when upstream tools change.
+- Corrections that include primary-source evidence (official docs preferred) are prioritized.
+- If a page becomes outdated and cannot be reasonably updated, the goal is to revise it or remove misleading guidance.
 
 ## Editorial Principles
 

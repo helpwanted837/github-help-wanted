@@ -9,6 +9,8 @@ commercial_value: 3
 
 This page provides disclosures about affiliate links and general limitations of the content on GitHub Help Wanted. The goal is transparency: readers should understand when the site may benefit financially and how to interpret the guidance provided.
 
+Last updated: 2026-01-05
+
 ## Key Takeaways
 
 - **Affiliate links may exist**: some pages may contain links that generate a commission.

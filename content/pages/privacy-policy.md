@@ -9,6 +9,8 @@ commercial_value: 3
 
 GitHub Help Wanted respects user privacy and keeps data collection minimal. This Privacy Policy explains what information may be collected when you visit the site, why it is collected, and what choices you have.
 
+Last updated: 2026-01-05
+
 ## Key Takeaways
 
 - **Minimal collection by default**: the site is designed to work without requiring personal information.
@@ -16,6 +18,10 @@ GitHub Help Wanted respects user privacy and keeps data collection minimal. This
 - **No intentional collection of sensitive data**: readers should avoid sending secrets or personal data by email.
 - **Third-party services exist**: hosting/CDN providers may process basic request data to deliver the site.
 - **Policy may evolve**: updates happen when infrastructure or analytics settings change.
+
+## Summary (Plain English)
+
+This is a static content website. We do not ask you to create an account. We try to avoid collecting personal data. Like most websites, some request data may be processed by infrastructure providers to serve pages and prevent abuse. We may also use privacy-friendly analytics to understand which pages are useful.
 
 ## What Information May Be Collected
 
@@ -61,11 +67,23 @@ GitHub Help Wanted aims to keep cookie usage minimal. Depending on hosting and a
 
 If cookies are used, they are intended for operational purposes rather than advertising profiles.
 
-## Third-Party Services
+## Third-Party Services (Data Processors)
 
-This website may rely on third-party services to function (for example: hosting, CDN, security protections, analytics). Those providers may process request data in the normal course of delivering content. Where possible, configuration choices aim to minimize data collection while preserving reliability and security.
+To operate and secure the site, we may use:
 
-When reviewing third-party services, the site prefers providers with published privacy policies and clear documentation, and it avoids unnecessary integrations.
+- **Cloudflare**: delivery, caching, performance, and security protection (CDN/edge network).
+- **Umami (analytics)**: privacy-friendly analytics, which may be served via a proxy to keep measurement first-party.
+
+These providers may process basic request data to provide their services. When possible, configuration aims to minimize data collection while preserving reliability and security.
+
+## Managing Cookies / Opting Out
+
+If you prefer not to be included in analytics measurements:
+
+- you can disable JavaScript for this site, or
+- use browser privacy features / content blockers to block analytics scripts.
+
+If security cookies are set by infrastructure providers, they are typically required for abuse prevention and may not be optional without blocking the service entirely.
 
 ## Data Retention
 

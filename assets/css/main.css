@@ -783,8 +783,6 @@ html.is-search-open {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 16px 20px;
-  margin: 16px 0 24px;
-  max-width: 320px;
 }
 
 .toc-title {
@@ -872,7 +870,7 @@ html.is-search-open {
 
 /* 侧边栏 */
 .aside {
-  margin: 32px 0;
+  margin: 0;
   padding: 20px;
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -912,6 +910,69 @@ html.is-search-open {
 /* 移动端隐藏侧边栏 */
 @media (max-width: 920px) {
   .aside {
+    display: none;
+  }
+}
+
+/* ===== P4 文章页两栏布局 ===== */
+
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 48px;
+  align-items: start;
+  margin-top: 16px;
+}
+
+.article-main {
+  min-width: 0;
+}
+
+.toc-inline {
+  display: none;
+  margin: 16px 0 24px;
+}
+
+.toc-sidebar {
+  margin: 0;
+}
+
+.article-sidebar {
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  display: grid;
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .article-sidebar {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .toc-inline {
+    display: block;
+  }
+
+  .toc-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-sidebar {
+    display: none;
+  }
+
+  .toc-inline {
     display: none;
   }
 }

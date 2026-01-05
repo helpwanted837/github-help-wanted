@@ -9,6 +9,8 @@ commercial_value: 3
 
 These Terms of Service (“Terms”) govern your use of GitHub Help Wanted. By accessing or using the site, you agree to these Terms. If you do not agree, do not use the site.
 
+Last updated: 2026-01-05
+
 ## Key Takeaways
 
 - **Informational content only**: guides are educational and may not fit every environment.

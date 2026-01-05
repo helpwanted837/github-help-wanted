@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "validate:schema": "node validate-schema.js",
-    "check:indexability": "node google-indexability-check.js"
+    "check:indexability": "node google-indexability-check.js",
+    "check:sitemap": "node check-sitemap.js",
+    "check:faqpage": "node check-duplicate-faqpage.js"
   },
   "dependencies": {
     "glob": "^10.4.5"

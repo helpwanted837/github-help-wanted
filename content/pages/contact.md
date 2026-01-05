@@ -9,6 +9,8 @@ commercial_value: 3
 
 Email: `hello@github-help-wanted.com`
 
+Last updated: 2026-01-05
+
 GitHub Help Wanted is a content-first site, so the fastest way to get support is to be specific about what you need. If you are reporting an issue in an article, include enough context for the team to reproduce it and verify it against primary sources.
 
 ## Key Takeaways
@@ -18,6 +20,12 @@ GitHub Help Wanted is a content-first site, so the fastest way to get support is
 - **Do not send secrets**: never email passwords, API keys, or private credentials.
 - **Expect asynchronous replies**: responses may take time depending on the queue and complexity.
 - **Corrections are welcome**: broken links and outdated steps help the site improve.
+
+## Response Expectations
+
+- **Typical replies**: we aim to respond within **3–5 business days**.
+- **Security reports**: prioritized when the report includes clear reproduction steps and impact.
+- **Privacy requests**: handled as soon as possible, with follow-up questions if needed to identify the relevant communication.
 
 ## What to Contact Us About
 
@@ -67,15 +75,12 @@ If you believe you found a security issue related to this website (for example, 
 
 Do not include sensitive exploit payloads if they can cause harm; focus on reproducibility and impact.
 
-## Response Expectations
-
-GitHub Help Wanted is not a real-time support desk. Responses may be slower during high-volume periods. Urgent security issues are prioritized when they include clear reproduction steps and impact description.
-
 ## Email Templates (Copy/Paste)
 
 Using a consistent format makes it easier to process requests and reduces back-and-forth.
 
-### Content correction
+<details>
+<summary>Content correction template</summary>
 
 ```text
 Subject: Correction: [Page Title] — [Short summary]
@@ -95,8 +100,10 @@ Environment (if relevant):
 - Tool/version:
 - Steps to reproduce:
 ```
+</details>
 
-### Privacy request
+<details>
+<summary>Privacy request template</summary>
 
 ```text
 Subject: Privacy request — [access/deletion/question]
@@ -105,6 +112,7 @@ Request type:
 Details:
 Relevant email thread date/time:
 ```
+</details>
 
 ## What Not to Send
 

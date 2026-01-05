@@ -14,6 +14,8 @@ people:
 
 GitHub Help Wanted is a practical resource hub for developers who want to grow through open source and modern engineering practices—without getting lost in vague advice or tool hype. The site focuses on repeatable workflows: how to ship, collaborate, review, test, and maintain software in the way real teams do it.
 
+Last updated: 2026-01-05
+
 ## Key Takeaways
 
 - **This site is workflow-first**: it teaches how to execute (checklists, steps, templates), not just definitions.
@@ -42,6 +44,22 @@ GitHub Help Wanted is organized into tracks:
 - **SDLC**: phases, models, best practices, documentation, quality gates, and secure development guidance.
 - **Unit Testing**: best practices, frameworks, mocking strategies, coverage, and language-specific examples.
 - **Product Management**: skills, frameworks, tools, PRDs, prioritization methods, and interview preparation.
+
+## Our Team
+
+GitHub Help Wanted is maintained by a small editorial team of developers who write from hands-on experience—shipping software, maintaining docs, and contributing to open source.
+
+What this means in practice:
+
+- We write for real constraints (permissions, review cycles, deployment safety, and edge cases).
+- We prefer evidence-first guidance (official docs, standards, and reputable research).
+- We update content when upstream tooling or documentation changes.
+
+## Our Story
+
+GitHub Help Wanted was created in 2025 to make “how to contribute and ship” easier to follow: fewer vague opinions, more reproducible steps and verification points.
+
+As the site grows, the focus stays the same: practical workflows with transparent trade-offs, written so readers can validate claims in primary sources.
 
 ## How Articles Are Created
 
