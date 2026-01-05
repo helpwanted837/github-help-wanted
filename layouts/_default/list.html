@@ -15,12 +15,12 @@
   {{ partial "auto-comparison.html" . }}
   {{ partial "faq-section.html" . }}
 
-  {{ $items := .RegularPages.ByDate.Reverse }}
-  {{ if gt (len $items) 0 }}
+  {{ $paginator := .Paginate (.RegularPages.ByDate.Reverse) 12 }}
+  {{ if gt (len $paginator.Pages) 0 }}
     <section class="section-list">
       <h2 class="section-title">Latest in {{ .Title }}</h2>
       <div class="card-grid">
-        {{ range first 24 $items }}
+        {{ range $paginator.Pages }}
           <article class="card">
             <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
             <p class="card-desc">
@@ -30,5 +30,18 @@
         {{ end }}
       </div>
     </section>
+
+    {{/* 分页导航 */}}
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav class="pagination" aria-label="Pagination">
+      {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}" class="pagination-link">&larr; Newer</a>
+      {{ end }}
+      <span class="pagination-info">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+      {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}" class="pagination-link">Older &rarr;</a>
+      {{ end }}
+    </nav>
+    {{ end }}
   {{ end }}
 {{ end }}

@@ -28,14 +28,34 @@
     {{ partial "head/og.html" . }}
     {{ partial "head/css.html" . }}
 
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    {{/* 通用 Schema - 所有页面 */}}
     {{ partial "schema/website.html" . }}
-    {{ partial "schema/organization.html" . }}
-    {{ partial "schema/article.html" . }}
     {{ partial "schema/breadcrumb.html" . }}
-    {{ partial "schema/faq.html" . }}
+
+    {{/* 首页专用 */}}
+    {{ if .IsHome }}
+      {{ partial "schema/organization.html" . }}
+    {{ end }}
+
+    {{/* 文章页专用 */}}
+    {{ if and .IsPage (not .Params.noArticleSchema) }}
+      {{ partial "schema/article.html" . }}
+      {{ partial "schema/faq.html" . }}
+    {{ end }}
+
+    {{/* 列表页专用 */}}
+    {{ if .IsSection }}
+      {{ partial "schema/itemlist.html" . }}
+    {{ end }}
+
+    {{/* 按需加载 - 内部有条件控制 */}}
     {{ partial "schema/howto.html" . }}
     {{ partial "schema/table.html" . }}
-    {{ partial "schema/itemlist.html" . }}
     {{ partial "schema/contactpage.html" . }}
     {{ partial "schema/person.html" . }}
 

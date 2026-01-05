@@ -1,0 +1,11 @@
+{
+  "name": "github-help-wanted",
+  "private": true,
+  "scripts": {
+    "validate:schema": "node validate-schema.js",
+    "check:indexability": "node google-indexability-check.js"
+  },
+  "dependencies": {
+    "glob": "^10.4.5"
+  }
+}

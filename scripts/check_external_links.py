@@ -27,7 +27,10 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urldefrag, urlparse
 from urllib.request import Request, urlopen
 
-import tomllib
+try:
+    import tomllib  # py311+
+except ModuleNotFoundError:  # pragma: no cover
+    import tomli as tomllib
 
 
 MD_LINK_RE = re.compile(r"\]\((https?://[^)\s]+)", re.IGNORECASE)

@@ -22,7 +22,10 @@ import argparse
 import hashlib
 import json
 import re
-import tomllib
+try:
+    import tomllib  # py311+
+except ModuleNotFoundError:  # pragma: no cover
+    import tomli as tomllib
 from dataclasses import dataclass
 from datetime import date as date_type
 from datetime import datetime, timezone

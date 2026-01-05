@@ -1,14 +1,12 @@
-{{- $list := .Params.itemlist -}}
-{{- if $list -}}
+{{- $pages := .RegularPages.ByDate.Reverse -}}
+{{- if gt (len $pages) 0 -}}
   {{- $items := slice -}}
-  {{- range $i, $it := $list -}}
-    {{- $name := $it.name | default (printf "Item %d" (add $i 1)) -}}
-    {{- $url := $it.url | default "" -}}
+  {{- range $i, $p := first 12 $pages -}}
     {{- $items = $items | append (dict
       "@type" "ListItem"
       "position" (add $i 1)
-      "name" $name
-      "url" (cond (ne $url "") ($url | absURL) "")
+      "name" $p.Title
+      "url" $p.Permalink
     ) -}}
   {{- end -}}
 

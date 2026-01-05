@@ -24,33 +24,30 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="callout">
-      <h2 class="section-title">Start Your Open Source Journey</h2>
-      <p class="callout-text">
-        Learn how to contribute, find beginner-friendly issues, and build confidence through real pull requests.
-      </p>
-      <p class="callout-actions">
-        <a class="button button-secondary" href="/open-source/">Open Source Guides</a>
-      </p>
-    </div>
-  </section>
-
-  {{ $latest := where site.RegularPages "Section" "ne" "pages" }}
-  {{ $latest = where $latest "Type" "ne" "pages" }}
-  {{ $latest = $latest.ByDate.Reverse }}
-
-  <section class="section">
-    <h2 class="section-title">Latest Articles</h2>
-    <div class="list">
-      {{ range first 8 $latest }}
-        <article class="list-item">
-          <h3 class="list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <p class="list-desc">{{ .Description | default (.Summary | plainify) }}</p>
-        </article>
+  {{/* 按分类展示文章 */}}
+  {{ $sections := slice "open-source" "devops-engineer" "github-pages" "sdlc" "unit-testing" "product-management" }}
+  {{ range $sections }}
+    {{ $section := site.GetPage (printf "/%s" .) }}
+    {{ if $section }}
+      {{ $pages := $section.RegularPages.ByDate.Reverse }}
+      {{ if gt (len $pages) 0 }}
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">{{ $section.Title }}</h2>
+          <a href="{{ $section.RelPermalink }}" class="section-more">View all &rarr;</a>
+        </div>
+        <div class="list">
+          {{ range first 3 $pages }}
+            <article class="list-item">
+              <h3 class="list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              <p class="list-desc">{{ .Description | default (.Summary | plainify) | truncate 120 }}</p>
+            </article>
+          {{ end }}
+        </div>
+      </section>
       {{ end }}
-    </div>
-  </section>
+    {{ end }}
+  {{ end }}
 
   {{ with .Content }}
     <section class="section">

@@ -1,11 +1,9 @@
-{{- if .IsHome -}}
-  {{- $data := dict
-    "@context" "https://schema.org"
-    "@type" "WebSite"
-    "name" .Site.Title
-    "url" .Site.BaseURL
-    "description" ((.Site.Params.description | default "") | plainify)
-  -}}
-  <script type="application/ld+json">{{ $data | jsonify }}</script>
-{{- end -}}
+{{- $data := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" .Site.Title
+  "url" .Site.BaseURL
+  "description" ((.Site.Params.description | default "") | plainify)
+-}}
+<script type="application/ld+json">{{ $data | jsonify }}</script>
 

@@ -90,6 +90,15 @@ function validatePage(filePath) {
         }
       }
 
+      if (type === 'Organization') {
+        if (!data.name || data.name.trim() === '') {
+          errors.push('Organization missing required "name" field');
+        }
+        if (!data.url) {
+          errors.push('Organization missing required "url" field');
+        }
+      }
+
     } catch (e) {
       errors.push(`Invalid JSON-LD syntax: ${e.message.substring(0, 50)}`);
     }

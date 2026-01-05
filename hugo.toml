@@ -20,11 +20,11 @@ brand = "GitHub Help Wanted"
 tagline = "Your Guide to Developer Success"
 description = "Guides for open source contribution, DevOps, testing, CI/CD, and product management—checklists, tool comparisons, and workflows to help developers ship."
 email = "hello@github-help-wanted.com"
-defaultOGImage = "/images/default-og.svg"
+defaultOGImage = "/og/site-default.jpg"
 
   [params.organization]
   name = "GitHub Help Wanted"
-  logo = "/images/default-og.svg"
+  logo = "/og/site-default.jpg"
   email = "hello@github-help-wanted.com"
 
   # Umami Analytics (via Cloudflare Worker proxy)

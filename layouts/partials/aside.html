@@ -1,0 +1,23 @@
+{{/* 侧边栏 - 显示同 section 最相似文章 */}}
+{{- $section := .Section -}}
+{{- $linksData := site.Data.internal_links -}}
+{{- $currentPath := .RelPermalink -}}
+
+{{/* 获取当前页面的推荐链接 */}}
+{{- $pageLinks := index $linksData $currentPath -}}
+
+{{- if and $pageLinks $pageLinks.links -}}
+<aside class="aside" aria-label="Related articles">
+  <p class="aside-title">Related Articles</p>
+  <ul class="aside-list">
+    {{- range first 5 $pageLinks.links -}}
+      {{- $targetPage := site.GetPage .url -}}
+      {{- if and $targetPage (eq $targetPage.Section $section) -}}
+      <li>
+        <a href="{{ .url }}">{{ .title }}</a>
+      </li>
+      {{- end -}}
+    {{- end -}}
+  </ul>
+</aside>
+{{- end -}}

@@ -3,6 +3,14 @@
     {{ partial "breadcrumb.html" . }}
   </nav>
 
+  {{/* 新增: TOC */}}
+  {{ if and .TableOfContents (gt (len .TableOfContents) 100) }}
+  <nav class="toc" aria-label="Table of contents">
+    <p class="toc-title">In This Article</p>
+    {{ .TableOfContents }}
+  </nav>
+  {{ end }}
+
   <article class="prose">
     <header class="page-header">
       <h1 class="page-title">{{ .Title }}</h1>
@@ -11,6 +19,8 @@
       {{ if and (not (eq .Section "pages")) .Date }}
         <p class="page-meta">
           <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
+          <span class="meta-sep">·</span>
+          <span>{{ .ReadingTime }} min read</span>
         </p>
       {{ end }}
 
@@ -24,6 +34,6 @@
     {{ .Content }}
   </article>
 
+  {{ partial "aside.html" . }}
   {{ partial "faq-section.html" . }}
-  {{ partial "related-articles.html" . }}
 {{ end }}
