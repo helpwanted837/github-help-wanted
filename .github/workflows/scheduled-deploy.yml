@@ -5,7 +5,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: "17 2,8,14,20 * * *" # 每天4次（UTC 02:17, 08:17, 14:17, 20:17）
+    - cron: "17 6 * * *" # 每天1次（UTC 06:17 = 北京 14:17）
 
 concurrency:
   group: github-help-wanted-pages
