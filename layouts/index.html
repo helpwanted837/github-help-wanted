@@ -1,16 +1,48 @@
 {{ define "main" }}
   <header class="hero">
     <div class="hero-inner">
-      <h1 class="hero-title">{{ .Site.Params.tagline | default "Your Guide to Developer Success" }}</h1>
-      <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+      <h1 class="hero-title">Find Open Source Issues to Contribute</h1>
+      <p class="hero-subtitle">Discover <strong>help wanted</strong> and <strong>good first issue</strong> labeled issues across GitHub. Start your open source journey today.</p>
       <p class="hero-cta">
-        <a class="button" href="/open-source/">Browse Categories</a>
+        <a class="button button-primary" href="/issues/">Find Issues</a>
+        <a class="button button-outline" href="/open-source/">Browse Guides</a>
       </p>
     </div>
   </header>
 
+  <!-- Quick Language Links -->
   <section class="section">
-    <h2 class="section-title">Categories</h2>
+    <h2 class="section-title">Browse Issues by Language</h2>
+    <div class="language-grid">
+      <a href="/issues/python/" class="language-card">
+        <span class="language-name">Python</span>
+      </a>
+      <a href="/issues/javascript/" class="language-card">
+        <span class="language-name">JavaScript</span>
+      </a>
+      <a href="/issues/typescript/" class="language-card">
+        <span class="language-name">TypeScript</span>
+      </a>
+      <a href="/issues/go/" class="language-card">
+        <span class="language-name">Go</span>
+      </a>
+      <a href="/issues/rust/" class="language-card">
+        <span class="language-name">Rust</span>
+      </a>
+      <a href="/issues/java/" class="language-card">
+        <span class="language-name">Java</span>
+      </a>
+      <a href="/issues/ruby/" class="language-card">
+        <span class="language-name">Ruby</span>
+      </a>
+      <a href="/issues/php/" class="language-card">
+        <span class="language-name">PHP</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Guides & Resources</h2>
     <div class="card-grid">
       {{ range $item := site.Data.navigation.header }}
         {{ $sectionPage := site.GetPage $item.url }}

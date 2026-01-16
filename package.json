@@ -9,5 +9,8 @@
   },
   "dependencies": {
     "glob": "^10.4.5"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.1"
   }
 }

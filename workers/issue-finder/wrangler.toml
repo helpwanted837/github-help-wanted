@@ -1,0 +1,21 @@
+# Issue Finder API Worker
+# Route: github-help-wanted.com/api/issues
+
+name = "ghw-issue-finder"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+account_id = "ce9cf8e42932251bf7d4526c8af26ad4"
+
+routes = [
+  { pattern = "github-help-wanted.com/api/issues", zone_name = "github-help-wanted.com" }
+]
+
+[vars]
+# GitHub API rate limit: 10 req/min (unauthenticated), 30 req/min (authenticated)
+# Cache TTL in seconds
+CACHE_TTL_HOT = "600"      # 10 min for popular queries (python, javascript)
+CACHE_TTL_COLD = "1800"    # 30 min for less popular queries
+CACHE_TTL_ERROR = "60"     # 1 min for error responses
+
+# Set GITHUB_TOKEN as a secret:
+# wrangler secret put GITHUB_TOKEN

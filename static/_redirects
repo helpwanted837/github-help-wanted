@@ -1,4 +1,22 @@
 # 说明：
-# - Cloudflare Pages 的 `_redirects` 不支持“按 query 参数匹配 source”，这里只放纯路径规则。
+# - Cloudflare Pages 的 `_redirects` 不支持"按 query 参数匹配 source"，这里只放纯路径规则。
 # - 历史 `/?languages=...&labels=...` 这类 URL 的 301 由 Pages Functions 在 `functions/index.ts` 处理。
+
+# ========================================
+# 原站 GitHub 项目文件路径 301 重定向
+# 这些 URL 有外链指向，保留权重
+# ========================================
+
+# Cloudflare 邮件保护路径 (18 links)
+/cdn-cgi/l/email-protection  /  301
+
+# GitHub 项目文档文件
+/.github/CODE_OF_CONDUCT.md  /  301
+/CODE_OF_CONDUCT.md          /  301
+/CONTRIBUTING.md             /  301
+/README.md                   /  301
+/docs/DEVELOPMENT.md         /  301
+
+# 原站功能页面
+/discussions                 /  301
 

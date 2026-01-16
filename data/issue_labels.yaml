@@ -1,0 +1,32 @@
+# Issue labels for pSEO pages
+# Each will generate /issues/{language}/{slug}/ pages
+
+- name: Good First Issue
+  slug: good-first-issue
+  github_label: good first issue
+  description: Issues tagged for newcomers. Perfect for your first open source contribution.
+
+- name: Help Wanted
+  slug: help-wanted
+  github_label: help wanted
+  description: Maintainers actively seeking contributors. Great for making meaningful impact.
+
+- name: Bug
+  slug: bug
+  github_label: bug
+  description: Bug reports and fixes. Help improve software quality by squashing bugs.
+
+- name: Documentation
+  slug: documentation
+  github_label: documentation
+  description: Documentation improvements. Great way to contribute without deep code knowledge.
+
+- name: Enhancement
+  slug: enhancement
+  github_label: enhancement
+  description: Feature requests and improvements. Help add new functionality to projects.
+
+- name: Hacktoberfest
+  slug: hacktoberfest
+  github_label: hacktoberfest
+  description: Issues participating in Hacktoberfest. Contribute in October and earn swag!

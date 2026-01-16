@@ -1879,3 +1879,63 @@ html.is-search-open {
 .pillar-details .prose {
   padding: 20px;
 }
+
+/* ===== Homepage Language Grid ===== */
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .language-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .language-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.language-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-4);
+  min-height: 80px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color var(--transition-fast), transform var(--transition-fast), background var(--transition-fast);
+}
+
+.language-card:hover {
+  border-color: rgba(124, 92, 255, 0.45);
+  background: var(--hover-bg);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.language-name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+/* Button variants */
+.button-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.button-outline:hover {
+  background: var(--btn-secondary-bg);
+  border-color: rgba(124, 92, 255, 0.45);
+}

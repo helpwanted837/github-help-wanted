@@ -1,0 +1,102 @@
+# Programming languages for pSEO pages
+# Each will generate /issues/{slug}/ page
+
+- name: Python
+  slug: python
+  icon: python
+  description: Python is a versatile, high-level programming language known for its readability and extensive ecosystem. Popular for web development, data science, machine learning, and automation.
+
+- name: JavaScript
+  slug: javascript
+  icon: javascript
+  description: JavaScript is the language of the web, powering interactive websites and applications. Used for frontend development with frameworks like React, Vue, and Angular.
+
+- name: TypeScript
+  slug: typescript
+  icon: typescript
+  description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Adds static typing for better tooling and error detection.
+
+- name: Go
+  slug: go
+  icon: go
+  description: Go (Golang) is a statically typed language designed at Google. Known for simplicity, performance, and excellent concurrency support.
+
+- name: Rust
+  slug: rust
+  icon: rust
+  description: Rust is a systems programming language focused on safety, speed, and concurrency. Prevents memory errors at compile time.
+
+- name: Java
+  slug: java
+  icon: java
+  description: Java is a class-based, object-oriented language used for enterprise applications, Android development, and large-scale systems.
+
+- name: C++
+  slug: c++
+  icon: cpp
+  description: C++ is a powerful systems programming language used for performance-critical applications, game engines, and operating systems.
+
+- name: Ruby
+  slug: ruby
+  icon: ruby
+  description: Ruby is a dynamic language focused on simplicity and productivity. Best known for the Ruby on Rails web framework.
+
+- name: PHP
+  slug: php
+  icon: php
+  description: PHP is a server-side scripting language widely used for web development. Powers WordPress, Laravel, and many popular CMS platforms.
+
+- name: Swift
+  slug: swift
+  icon: swift
+  description: Swift is Apple's modern programming language for iOS, macOS, watchOS, and tvOS development.
+
+- name: Kotlin
+  slug: kotlin
+  icon: kotlin
+  description: Kotlin is a modern language that runs on the JVM. Official language for Android development and gaining popularity for backend.
+
+- name: C#
+  slug: c-sharp
+  icon: csharp
+  description: "C# is Microsoft's modern, object-oriented language used for .NET development, game development with Unity, and enterprise applications."
+
+- name: Scala
+  slug: scala
+  icon: scala
+  description: Scala combines object-oriented and functional programming on the JVM. Popular for big data processing with Apache Spark.
+
+- name: Shell
+  slug: shell
+  icon: shell
+  description: Shell scripting with Bash and other Unix shells. Essential for DevOps, automation, and system administration.
+
+- name: Elixir
+  slug: elixir
+  icon: elixir
+  description: Elixir is a functional language built on the Erlang VM. Known for building scalable, fault-tolerant distributed systems.
+
+- name: Dart
+  slug: dart
+  icon: dart
+  description: Dart is Google's language for building Flutter apps. Creates cross-platform mobile, web, and desktop applications.
+
+- name: R
+  slug: r
+  icon: r
+  description: R is a language for statistical computing and graphics. Popular in data science, bioinformatics, and academic research.
+
+- name: Haskell
+  slug: haskell
+  icon: haskell
+  description: Haskell is a purely functional programming language with strong static typing and lazy evaluation.
+
+- name: Lua
+  slug: lua
+  icon: lua
+  description: Lua is a lightweight scripting language used for embedded scripting, game development, and configuration.
+
+- name: Clojure
+  slug: clojure
+  icon: clojure
+  description: Clojure is a modern, functional Lisp dialect that runs on the JVM. Known for immutability and powerful data structures.

@@ -1,0 +1,574 @@
+{{ define "main" }}
+<div class="issue-finder">
+  <header class="issue-finder-hero">
+    <h1>Find Open Source Issues</h1>
+    <p>Discover <strong>help wanted</strong> and <strong>good first issue</strong> labeled issues on GitHub</p>
+  </header>
+
+  <div class="issue-finder-container">
+    <!-- Sidebar Filters -->
+    <aside class="issue-finder-sidebar">
+      <div class="filter-section">
+        <h2 class="filter-title">Language</h2>
+        <div class="language-chips" id="language-chips">
+          <button class="chip chip-active" data-language="">All</button>
+          <button class="chip" data-language="python">Python</button>
+          <button class="chip" data-language="javascript">JavaScript</button>
+          <button class="chip" data-language="typescript">TypeScript</button>
+          <button class="chip" data-language="go">Go</button>
+          <button class="chip" data-language="rust">Rust</button>
+          <button class="chip" data-language="java">Java</button>
+          <button class="chip" data-language="c++">C++</button>
+          <button class="chip" data-language="ruby">Ruby</button>
+          <button class="chip" data-language="php">PHP</button>
+          <button class="chip" data-language="swift">Swift</button>
+          <button class="chip" data-language="kotlin">Kotlin</button>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <h2 class="filter-title">Label</h2>
+        <div class="label-options" id="label-options">
+          <label class="radio-label">
+            <input type="radio" name="label" value="" checked>
+            <span>All contribution labels</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="label" value="good first issue">
+            <span>Good First Issue</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="label" value="help wanted">
+            <span>Help Wanted</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="label" value="bug">
+            <span>Bug</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="label" value="documentation">
+            <span>Documentation</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="label" value="hacktoberfest">
+            <span>Hacktoberfest</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <h2 class="filter-title">Sort By</h2>
+        <select id="sort-select" class="sort-select">
+          <option value="created-desc">Newest first</option>
+          <option value="created-asc">Oldest first</option>
+          <option value="updated-desc">Recently updated</option>
+          <option value="comments-desc">Most comments</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Issue List -->
+    <main class="issue-finder-main">
+      <div class="issue-list-header">
+        <span id="result-count">Loading...</span>
+      </div>
+
+      <div id="issue-list" class="issue-list">
+        <div class="loading-spinner">
+          <div class="spinner"></div>
+          <p>Finding issues...</p>
+        </div>
+      </div>
+
+      <div id="load-more-container" class="load-more-container" style="display: none;">
+        <button id="load-more-btn" class="button button-secondary">Load More</button>
+      </div>
+    </main>
+  </div>
+</div>
+
+<style>
+/* Issue Finder Styles */
+.issue-finder {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.issue-finder-hero {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.issue-finder-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.issue-finder-hero p {
+  color: var(--color-text-secondary, #666);
+  font-size: 1.1rem;
+}
+
+.issue-finder-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .issue-finder-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sidebar */
+.issue-finder-sidebar {
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary, #666);
+  margin-bottom: 0.75rem;
+}
+
+/* Language Chips */
+.language-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--color-border, #ddd);
+  border-radius: 1rem;
+  background: var(--color-bg, #fff);
+  color: var(--color-text, #333);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chip:hover {
+  border-color: var(--color-primary, #0066cc);
+  color: var(--color-primary, #0066cc);
+}
+
+.chip-active {
+  background: var(--color-primary, #0066cc);
+  border-color: var(--color-primary, #0066cc);
+  color: white;
+}
+
+.chip-active:hover {
+  color: white;
+}
+
+/* Radio Labels */
+.label-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.radio-label input[type="radio"] {
+  accent-color: var(--color-primary, #0066cc);
+}
+
+/* Sort Select */
+.sort-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border, #ddd);
+  border-radius: 0.375rem;
+  background: var(--color-bg, #fff);
+  font-size: 0.9rem;
+}
+
+/* Issue List */
+.issue-list-header {
+  margin-bottom: 1rem;
+  color: var(--color-text-secondary, #666);
+  font-size: 0.9rem;
+}
+
+.issue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Issue Card */
+.issue-card {
+  padding: 1rem;
+  border: 1px solid var(--color-border, #ddd);
+  border-radius: 0.5rem;
+  background: var(--color-bg, #fff);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.issue-card:hover {
+  border-color: var(--color-primary, #0066cc);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.issue-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.issue-card-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.issue-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.issue-card-title a {
+  color: var(--color-text, #333);
+  text-decoration: none;
+}
+
+.issue-card-title a:hover {
+  color: var(--color-primary, #0066cc);
+}
+
+.issue-card-repo {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary, #666);
+  margin-bottom: 0.5rem;
+}
+
+.issue-card-repo a {
+  color: var(--color-text-secondary, #666);
+  text-decoration: none;
+}
+
+.issue-card-repo a:hover {
+  color: var(--color-primary, #0066cc);
+}
+
+.issue-card-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 0.5rem;
+}
+
+.issue-label {
+  padding: 0.125rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.issue-card-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary, #666);
+}
+
+.issue-card-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Loading */
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  color: var(--color-text-secondary, #666);
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-border, #ddd);
+  border-top-color: var(--color-primary, #0066cc);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Load More */
+.load-more-container {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.button-secondary {
+  background: var(--color-bg, #fff);
+  color: var(--color-primary, #0066cc);
+  border: 1px solid var(--color-primary, #0066cc);
+}
+
+.button-secondary:hover {
+  background: var(--color-primary, #0066cc);
+  color: white;
+}
+
+/* Error State */
+.error-message {
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-error, #dc3545);
+}
+
+/* Empty State */
+.empty-message {
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text-secondary, #666);
+}
+</style>
+
+<script>
+(function() {
+  const API_URL = '/api/issues';
+  let currentPage = 1;
+  let currentLanguage = '';
+  let currentLabel = '';
+  let currentSort = 'created';
+  let currentOrder = 'desc';
+  let totalCount = 0;
+  let loadedCount = 0;
+
+  // DOM elements
+  const issueList = document.getElementById('issue-list');
+  const resultCount = document.getElementById('result-count');
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const loadMoreContainer = document.getElementById('load-more-container');
+  const languageChips = document.querySelectorAll('#language-chips .chip');
+  const labelRadios = document.querySelectorAll('#label-options input[type="radio"]');
+  const sortSelect = document.getElementById('sort-select');
+
+  // Initialize
+  fetchIssues();
+
+  // Language chip click
+  languageChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      languageChips.forEach(c => c.classList.remove('chip-active'));
+      chip.classList.add('chip-active');
+      currentLanguage = chip.dataset.language;
+      currentPage = 1;
+      loadedCount = 0;
+      fetchIssues(true);
+    });
+  });
+
+  // Label radio change
+  labelRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      currentLabel = radio.value;
+      currentPage = 1;
+      loadedCount = 0;
+      fetchIssues(true);
+    });
+  });
+
+  // Sort change
+  sortSelect.addEventListener('change', () => {
+    const [sort, order] = sortSelect.value.split('-');
+    currentSort = sort;
+    currentOrder = order;
+    currentPage = 1;
+    loadedCount = 0;
+    fetchIssues(true);
+  });
+
+  // Load more
+  loadMoreBtn.addEventListener('click', () => {
+    currentPage++;
+    fetchIssues(false);
+  });
+
+  async function fetchIssues(replace = true) {
+    if (replace) {
+      issueList.innerHTML = `
+        <div class="loading-spinner">
+          <div class="spinner"></div>
+          <p>Finding issues...</p>
+        </div>
+      `;
+      loadMoreContainer.style.display = 'none';
+    } else {
+      loadMoreBtn.disabled = true;
+      loadMoreBtn.textContent = 'Loading...';
+    }
+
+    const params = new URLSearchParams({
+      page: currentPage,
+      per_page: 20,
+      sort: currentSort,
+      order: currentOrder
+    });
+
+    if (currentLanguage) params.set('language', currentLanguage);
+    if (currentLabel) params.set('label', currentLabel.replace(/ /g, '-'));
+
+    try {
+      const response = await fetch(`${API_URL}?${params}`);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to fetch issues');
+      }
+
+      totalCount = data.total_count;
+      loadedCount += data.items.length;
+
+      if (replace) {
+        issueList.innerHTML = '';
+      }
+
+      if (data.items.length === 0 && replace) {
+        issueList.innerHTML = `
+          <div class="empty-message">
+            <p>No issues found matching your criteria.</p>
+            <p>Try selecting different filters.</p>
+          </div>
+        `;
+      } else {
+        data.items.forEach(issue => {
+          issueList.appendChild(createIssueCard(issue));
+        });
+      }
+
+      // Update result count
+      resultCount.textContent = `${totalCount.toLocaleString()} issues found`;
+      if (data.cached) {
+        resultCount.textContent += ` (cached ${data.cache_age}s ago)`;
+      }
+
+      // Show/hide load more
+      if (loadedCount < totalCount && data.items.length > 0) {
+        loadMoreContainer.style.display = 'block';
+        loadMoreBtn.disabled = false;
+        loadMoreBtn.textContent = 'Load More';
+      } else {
+        loadMoreContainer.style.display = 'none';
+      }
+
+    } catch (error) {
+      console.error('Error fetching issues:', error);
+      if (replace) {
+        issueList.innerHTML = `
+          <div class="error-message">
+            <p>Failed to load issues: ${error.message}</p>
+            <p>Please try again later.</p>
+          </div>
+        `;
+      }
+      loadMoreBtn.disabled = false;
+      loadMoreBtn.textContent = 'Load More';
+    }
+  }
+
+  function createIssueCard(issue) {
+    const card = document.createElement('div');
+    card.className = 'issue-card';
+
+    const labels = issue.labels.map(label => {
+      const color = `#${label.color}`;
+      const textColor = isLightColor(label.color) ? '#000' : '#fff';
+      return `<span class="issue-label" style="background:${color};color:${textColor}">${escapeHtml(label.name)}</span>`;
+    }).join('');
+
+    const timeAgo = getTimeAgo(new Date(issue.created_at));
+
+    card.innerHTML = `
+      <div class="issue-card-header">
+        <img class="issue-card-avatar" src="${issue.user.avatar_url}&s=64" alt="${escapeHtml(issue.user.login)}" loading="lazy">
+        <div>
+          <h3 class="issue-card-title">
+            <a href="${issue.html_url}" target="_blank" rel="noopener">${escapeHtml(issue.title)}</a>
+          </h3>
+          <div class="issue-card-repo">
+            <a href="${issue.repository.html_url}" target="_blank" rel="noopener">${escapeHtml(issue.repository.full_name)}</a>
+          </div>
+        </div>
+      </div>
+      <div class="issue-card-labels">${labels}</div>
+      <div class="issue-card-meta">
+        <span>#${issue.number}</span>
+        <span>${timeAgo}</span>
+        <span>${issue.comments} comments</span>
+      </div>
+    `;
+
+    return card;
+  }
+
+  function isLightColor(hex) {
+    const r = parseInt(hex.substr(0, 2), 16);
+    const g = parseInt(hex.substr(2, 2), 16);
+    const b = parseInt(hex.substr(4, 2), 16);
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    return luminance > 0.5;
+  }
+
+  function getTimeAgo(date) {
+    const seconds = Math.floor((new Date() - date) / 1000);
+    const intervals = [
+      { label: 'year', seconds: 31536000 },
+      { label: 'month', seconds: 2592000 },
+      { label: 'week', seconds: 604800 },
+      { label: 'day', seconds: 86400 },
+      { label: 'hour', seconds: 3600 },
+      { label: 'minute', seconds: 60 }
+    ];
+
+    for (const interval of intervals) {
+      const count = Math.floor(seconds / interval.seconds);
+      if (count >= 1) {
+        return `${count} ${interval.label}${count > 1 ? 's' : ''} ago`;
+      }
+    }
+    return 'just now';
+  }
+
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+})();
+</script>
+{{ end }}
