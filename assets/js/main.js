@@ -1,4 +1,64 @@
 // 由 Hugo Pipes 处理的源文件（assets/js/main.js）
+
+// Header Dropdown Navigation
+(() => {
+  const dropdowns = document.querySelectorAll('.nav-dropdown');
+  if (!dropdowns.length) return;
+
+  // 桌面端：hover 展开
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+    if (!trigger) return;
+
+    // 点击展开/收起
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.contains('is-open');
+      // 关闭其他下拉
+      dropdowns.forEach(d => d.classList.remove('is-open'));
+      if (!isOpen) {
+        dropdown.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      } else {
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // 桌面端 hover 展开
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      dropdown.addEventListener('mouseenter', () => {
+        dropdown.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      });
+      dropdown.addEventListener('mouseleave', () => {
+        dropdown.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  // 点击外部关闭
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) {
+      dropdowns.forEach(d => {
+        d.classList.remove('is-open');
+        d.querySelector('.nav-dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  // ESC 关闭
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdowns.forEach(d => {
+        d.classList.remove('is-open');
+        d.querySelector('.nav-dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+})();
+
+// Mobile Nav Toggle
 (() => {
   const toggle = document.querySelector("[data-menu-toggle]");
   const nav = document.getElementById("site-nav");

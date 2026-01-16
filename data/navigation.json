@@ -1,20 +1,39 @@
 {
-  "header": [
-    { "name": "Open Source", "url": "/open-source/" },
-    { "name": "GitHub Pages", "url": "/github-pages/" },
-    { "name": "DevOps", "url": "/devops-engineer/" },
-    { "name": "SDLC", "url": "/sdlc/" },
-    { "name": "Unit Testing", "url": "/unit-testing/" },
-    { "name": "Product Management", "url": "/product-management/" }
-  ],
-  "footer": {
-    "categories": [
+  "header": {
+    "languages": [
+      { "name": "Python", "slug": "python" },
+      { "name": "JavaScript", "slug": "javascript" },
+      { "name": "TypeScript", "slug": "typescript" },
+      { "name": "Go", "slug": "go" },
+      { "name": "Rust", "slug": "rust" },
+      { "name": "Java", "slug": "java" },
+      { "name": "C++", "slug": "c++" },
+      { "name": "Ruby", "slug": "ruby" }
+    ],
+    "guides": [
       { "name": "Open Source", "url": "/open-source/" },
       { "name": "GitHub Pages", "url": "/github-pages/" },
-      { "name": "DevOps Engineer", "url": "/devops-engineer/" },
+      { "name": "DevOps", "url": "/devops-engineer/" },
       { "name": "SDLC", "url": "/sdlc/" },
       { "name": "Unit Testing", "url": "/unit-testing/" },
       { "name": "Product Management", "url": "/product-management/" }
+    ]
+  },
+  "footer": {
+    "issues": [
+      { "name": "All Issues", "url": "/issues/" },
+      { "name": "Python", "url": "/issues/python/" },
+      { "name": "JavaScript", "url": "/issues/javascript/" },
+      { "name": "TypeScript", "url": "/issues/typescript/" },
+      { "name": "Go", "url": "/issues/go/" },
+      { "name": "Rust", "url": "/issues/rust/" }
+    ],
+    "guides": [
+      { "name": "Open Source", "url": "/open-source/" },
+      { "name": "GitHub Pages", "url": "/github-pages/" },
+      { "name": "DevOps", "url": "/devops-engineer/" },
+      { "name": "SDLC", "url": "/sdlc/" },
+      { "name": "Unit Testing", "url": "/unit-testing/" }
     ],
     "resources": [
       { "name": "About Us", "url": "/about/" },
@@ -28,4 +47,3 @@
     ]
   }
 }
-

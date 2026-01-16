@@ -1,4 +1,4 @@
-{{ $items := site.Data.navigation.header }}
+{{ $nav := site.Data.navigation.header }}
 {{ $current := .RelPermalink }}
 
 <header class="header">
@@ -13,14 +13,44 @@
       <button class="nav-close" type="button" aria-label="Close menu" data-nav-close>
         ×
       </button>
+
       <ul class="nav-list">
-        {{ range $items }}
-          {{ $url := .url }}
-          {{ $active := or (eq $current $url) (and (ne $url "/") (hasPrefix $current $url)) }}
-          <li class="nav-item">
-            <a class="nav-link {{ if $active }}is-active{{ end }}" href="{{ $url }}">{{ .name }}</a>
-          </li>
-        {{ end }}
+        <!-- Issues 主入口 -->
+        <li class="nav-item">
+          <a class="nav-link {{ if hasPrefix $current "/issues/" }}is-active{{ end }}" href="/issues/">Issues</a>
+        </li>
+
+        <!-- Languages 下拉 -->
+        <li class="nav-item nav-dropdown">
+          <button class="nav-dropdown-trigger" type="button" aria-expanded="false">
+            Languages
+            <svg class="nav-dropdown-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 5l3 3 3-3"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            {{ range $nav.languages }}
+            <a href="/issues/{{ .slug }}/" class="nav-dropdown-item">{{ .name }}</a>
+            {{ end }}
+            <div class="nav-dropdown-divider"></div>
+            <a href="/issues/" class="nav-dropdown-item nav-dropdown-item--all">All Languages →</a>
+          </div>
+        </li>
+
+        <!-- Guides 下拉 -->
+        <li class="nav-item nav-dropdown">
+          <button class="nav-dropdown-trigger" type="button" aria-expanded="false">
+            Guides
+            <svg class="nav-dropdown-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 5l3 3 3-3"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            {{ range $nav.guides }}
+            <a href="{{ .url }}" class="nav-dropdown-item">{{ .name }}</a>
+            {{ end }}
+          </div>
+        </li>
       </ul>
     </nav>
 
@@ -33,7 +63,6 @@
       </button>
 
       <button class="theme-toggle" type="button" aria-label="Toggle theme" data-theme-toggle>
-        <!-- Sun icon (shown in dark mode, click to switch to light) -->
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5"></circle>
           <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -45,7 +74,6 @@
           <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
         </svg>
-        <!-- Moon icon (shown in light mode, click to switch to dark) -->
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>

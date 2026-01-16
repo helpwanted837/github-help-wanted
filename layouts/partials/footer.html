@@ -17,9 +17,18 @@
       </section>
 
       <section class="footer-col">
-        <h2 class="footer-title">Categories</h2>
+        <h2 class="footer-title">Find Issues</h2>
         <ul class="footer-list">
-          {{ range $nav.categories }}
+          {{ range $nav.issues }}
+            <li><a href="{{ .url }}">{{ .name }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+
+      <section class="footer-col">
+        <h2 class="footer-title">Guides</h2>
+        <ul class="footer-list">
+          {{ range $nav.guides }}
             <li><a href="{{ .url }}">{{ .name }}</a></li>
           {{ end }}
         </ul>
